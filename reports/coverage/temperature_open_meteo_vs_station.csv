@@ -1,0 +1,9 @@
+sensor_id,location_name,zone_id,hours_overlap,hourly_corr,mean_bias_om_minus_station_c,hourly_mae_c,daily_mean_mae_c
+12235656,"Manali, Chennai - CPCB",2,10772,0.86,0.19,0.98,0.58
+12235534,"Velachery Res. Area, Chennai - CPCB",13,10833,0.925,0.25,0.96,0.65
+12235799,"Manali Village, Chennai - TNPCB",2,12755,0.14,-3.28,4.17,3.41
+12236302,"Royapuram, Chennai - TNPCB",5,10432,0.874,3.75,3.76,3.75
+12236311,"Kodungaiyur, Chennai - TNPCB",4,11055,0.922,-0.66,1.11,0.81
+12236277,"Arumbakkam, Chennai - TNPCB",10,9569,0.928,-0.6,1.24,0.73
+12236293,"Perungudi, Chennai - TNPCB",14,10806,0.896,-0.89,1.42,1.05
+14018152,"Alandur Bus Depot, Chennai - CPCB",12,435,0.679,0.33,1.65,0.67

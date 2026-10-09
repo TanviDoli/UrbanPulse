@@ -1,0 +1,17 @@
+station_name,station_file,station_id,latitude,longitude,zone_id,zone_label,mapping_method,mapping_confidence,notes
+"Gandhi Nagar_Ennore, Chennai - TNPCB",gandhi-nagar-2024-25.csv,site_5618,13.2081,80.3204,1,Thiruvottiyur,Point-in-Polygon,1.0,Monitored. Located in Ennore industrial corridor within Zone 1. High sensor missingness (~90%).
+"Manali, Chennai - CPCB",manali-2024-25.csv,site_306,13.1656,80.2588,2,Manali,Point-in-Polygon,1.0,Monitored (Primary station for Zone 2). Complete criteria pollutant series.
+"Manali Village, Chennai - TNPCB",manali-village-2024-25.csv,site_5092,13.1709,80.2642,2,Manali,Point-in-Polygon,0.85,Secondary station in Zone 2. Rainfall sensor exhibits continuous hardware drift and is masked.
+None,None,None,,,3,Madhavaram,Unmonitored,0.0,"Unmonitored. No continuous CAAQMS station. Inferred via MRF from neighboring zones (Manali, Ambattur, TVK Nagar)."
+"Kodungaiyur, Chennai - TNPCB",kodungaiyur-2024-25.csv,site_5365,13.1367,80.2458,4,Tondiarpet,Point-in-Polygon,1.0,Monitored. Located in northern urban industrial sector within Zone 4.
+"Royapuram, Chennai - TNPCB",royapuram-2024-25.csv,site_5364,13.1118,80.2941,5,Royapuram,Point-in-Polygon,1.0,Monitored. Coastal port zone station with continuous pollutant records.
+None,None,None,,,6,Thiru-Vi-Ka Nagar,Unmonitored,0.0,"Unmonitored. Inferred via MRF from neighboring zones (Tondiarpet, Royapuram, Anna Nagar, Madhavaram)."
+None,None,None,,,7,Ambattur,Unmonitored,0.0,"Unmonitored. Major industrial belt without dedicated CAAQMS in raw dataset. Inferred via MRF from Anna Nagar, Valasaravakkam, Madhavaram."
+None,None,None,,,8,Anna Nagar,Unmonitored,0.0,"Unmonitored. Inferred via MRF from neighboring Kodambakkam, Teynampet, Ambattur, TVK Nagar."
+None,None,None,,,9,Teynampet,Unmonitored,0.0,"Unmonitored. Central commercial corridor. Inferred via MRF from Royapuram, Anna Nagar, Kodambakkam, Adyar."
+"Arumbakkam, Chennai - TNPCB",arumbakkam-2024-25.csv,site_5361,13.064,80.2078,10,Kodambakkam,Point-in-Polygon,1.0,"Monitored. Located in Zone 10 near Anna Nagar boundary. Lacks CO/O3 sensors but provides PM, NO2, SO2, NH3."
+None,None,None,,,11,Valasaravakkam,Unmonitored,0.0,"Unmonitored. Western residential zone. Inferred via MRF from Kodambakkam, Ambattur, Alandur."
+"Alandur Bus Depot, Chennai - CPCB",alandur-2024-25.csv,site_293,12.9972,80.2005,12,Alandur,Point-in-Polygon,1.0,"Monitored. Transit hub station in Zone 12. Complete pollutant profile until Dec 2, 2025."
+"Velachery Res. Area, Chennai - CPCB",velachery-2024-25.csv,site_288,12.9786,80.2185,13,Adyar,Point-in-Polygon,1.0,Monitored. Located within Zone 13 administrative polygon. High completeness criteria pollutants.
+"Perungudi, Chennai - TNPCB",perungudi-2024-25.csv,site_5363,12.966,80.2452,14,Perungudi,Point-in-Polygon,1.0,Monitored. Southern IT and marshland corridor within Zone 14.
+None,None,None,,,15,Sholinganallur,Unmonitored,0.0,Unmonitored. Southernmost IT corridor zone. Inferred via MRF from adjacent Perungudi.

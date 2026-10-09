@@ -1,0 +1,5 @@
+zone_id,gauge_station,hours_overlap,days_overlap,daily_corr,gauge_total_mm_overlap_days,om_total_mm_overlap_days,gauge_wet_hour_frac,om_wet_hour_frac,gauge_max_hour_mm,om_max_hour_mm,gauge_days_ge_64_5,om_days_ge_64_5,gauge_15min_frac_nonzero,om_max_day_mm,gauge_on_om_max_day_mm,om_max_day
+4,kodungaiyur-2024-25.csv,8291,341,-0.004,847.2,1610.2,0.018,0.12,71.0,34.0,4,3,0.018,152.2,0.7,2025-12-02
+5,royapuram-2024-25.csv,7629,309,0.053,698.5,977.4,0.013,0.09,60.0,21.8,2,0,0.011,49.0,0.5,2025-10-28
+10,arumbakkam-2024-25.csv,6541,270,-0.014,239.8,1403.7,0.01,0.134,23.0,19.6,1,2,0.026,110.8,0.0,2025-12-02
+14,perungudi-2024-25.csv,7743,319,0.241,12578.5,1598.2,0.349,0.123,122.0,23.9,107,3,0.166,91.8,0.8,2025-12-02

@@ -1,0 +1,287 @@
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\src\audit\openaq_audit.py:117: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat(frames, ignore_index=True)
+[OpenAQ audit] window 2025-01-01 00:00:00+05:30 .. 2026-10-08 23:00:00+05:30 IST (15504 hours)
+  locations found in bbox: 13
+  sensors: 146 total, 95 overlap window
+  sensor  12235648 Manali, Chennai - CPCB                           co
+  sensor  12235649 Manali, Chennai - CPCB                           no
+  sensor  12235650 Manali, Chennai - CPCB                          no2
+  sensor  14340870 Manali, Chennai - CPCB                          nox
+  sensor  12235651 Manali, Chennai - CPCB                           o3
+  sensor  12235652 Manali, Chennai - CPCB                         pm10
+  sensor  12235653 Manali, Chennai - CPCB                         pm25
+  sensor  12235654 Manali, Chennai - CPCB             relativehumidity
+  sensor  12235655 Manali, Chennai - CPCB                          so2
+  sensor  12235656 Manali, Chennai - CPCB                  temperature
+  sensor  14340871 Manali, Chennai - CPCB               wind_direction
+  sensor  14340872 Manali, Chennai - CPCB                   wind_speed
+  sensor  12235526 Velachery Res. Area, Chennai - CPC               co
+  sensor  12235527 Velachery Res. Area, Chennai - CPC               no
+  sensor  12235528 Velachery Res. Area, Chennai - CPC              no2
+  sensor  14340852 Velachery Res. Area, Chennai - CPC              nox
+  sensor  12235529 Velachery Res. Area, Chennai - CPC               o3
+  sensor  12235530 Velachery Res. Area, Chennai - CPC             pm10
+  sensor  12235531 Velachery Res. Area, Chennai - CPC             pm25
+  sensor  12235532 Velachery Res. Area, Chennai - CPC relativehumidity
+  sensor  12235533 Velachery Res. Area, Chennai - CPC              so2
+  sensor  12235534 Velachery Res. Area, Chennai - CPC      temperature
+  sensor  14340853 Velachery Res. Area, Chennai - CPC   wind_direction
+  sensor  14340854 Velachery Res. Area, Chennai - CPC       wind_speed
+  sensor   5077812 Chennai                                        pm25
+  sensor  12235791 Manali Village, Chennai - TNPCB                  co
+  sensor  12235792 Manali Village, Chennai - TNPCB                  no
+  sensor  12235793 Manali Village, Chennai - TNPCB                 no2
+  sensor  14340913 Manali Village, Chennai - TNPCB                 nox
+  sensor  12235794 Manali Village, Chennai - TNPCB                  o3
+  sensor  12235795 Manali Village, Chennai - TNPCB                pm10
+  sensor  12235796 Manali Village, Chennai - TNPCB                pm25
+  sensor  12235797 Manali Village, Chennai - TNPCB    relativehumidity
+  sensor  12235798 Manali Village, Chennai - TNPCB                 so2
+  sensor  12235799 Manali Village, Chennai - TNPCB         temperature
+  sensor  14340914 Manali Village, Chennai - TNPCB      wind_direction
+  sensor  14340915 Manali Village, Chennai - TNPCB          wind_speed
+  sensor  12236294 Royapuram, Chennai - TNPCB                       co
+  sensor  12236295 Royapuram, Chennai - TNPCB                       no
+  sensor  12236296 Royapuram, Chennai - TNPCB                      no2
+  sensor  14340995 Royapuram, Chennai - TNPCB                      nox
+  sensor  12236297 Royapuram, Chennai - TNPCB                       o3
+  sensor  12236298 Royapuram, Chennai - TNPCB                     pm10
+  sensor  12236299 Royapuram, Chennai - TNPCB                     pm25
+  sensor  12236300 Royapuram, Chennai - TNPCB         relativehumidity
+  sensor  12236301 Royapuram, Chennai - TNPCB                      so2
+  sensor  12236302 Royapuram, Chennai - TNPCB              temperature
+  sensor  14340996 Royapuram, Chennai - TNPCB           wind_direction
+  sensor  14340997 Royapuram, Chennai - TNPCB               wind_speed
+  sensor  12236303 Kodungaiyur, Chennai - TNPCB                     co
+  sensor  12236304 Kodungaiyur, Chennai - TNPCB                     no
+  sensor  12236305 Kodungaiyur, Chennai - TNPCB                    no2
+  sensor  14340998 Kodungaiyur, Chennai - TNPCB                    nox
+  sensor  12236306 Kodungaiyur, Chennai - TNPCB                     o3
+  sensor  12236307 Kodungaiyur, Chennai - TNPCB                   pm10
+  sensor  12236308 Kodungaiyur, Chennai - TNPCB                   pm25
+  sensor  12236309 Kodungaiyur, Chennai - TNPCB       relativehumidity
+  sensor  12236310 Kodungaiyur, Chennai - TNPCB                    so2
+  sensor  12236311 Kodungaiyur, Chennai - TNPCB            temperature
+  sensor  14340999 Kodungaiyur, Chennai - TNPCB         wind_direction
+  sensor  14341000 Kodungaiyur, Chennai - TNPCB             wind_speed
+  sensor  12236271 Arumbakkam, Chennai - TNPCB                      no
+  sensor  12236272 Arumbakkam, Chennai - TNPCB                     no2
+  sensor  14340986 Arumbakkam, Chennai - TNPCB                     nox
+  sensor  12236273 Arumbakkam, Chennai - TNPCB                    pm10
+  sensor  12236274 Arumbakkam, Chennai - TNPCB                    pm25
+  sensor  12236275 Arumbakkam, Chennai - TNPCB        relativehumidity
+  sensor  12236276 Arumbakkam, Chennai - TNPCB                     so2
+  sensor  12236277 Arumbakkam, Chennai - TNPCB             temperature
+  sensor  14340987 Arumbakkam, Chennai - TNPCB          wind_direction
+  sensor  14340988 Arumbakkam, Chennai - TNPCB              wind_speed
+  sensor  12236285 Perungudi, Chennai - TNPCB                       co
+  sensor  12236286 Perungudi, Chennai - TNPCB                       no
+  sensor  12236287 Perungudi, Chennai - TNPCB                      no2
+  sensor  14340992 Perungudi, Chennai - TNPCB                      nox
+  sensor  12236288 Perungudi, Chennai - TNPCB                       o3
+  sensor  12236289 Perungudi, Chennai - TNPCB                     pm10
+  sensor  12236290 Perungudi, Chennai - TNPCB                     pm25
+  sensor  12236291 Perungudi, Chennai - TNPCB         relativehumidity
+  sensor  12236292 Perungudi, Chennai - TNPCB                      so2
+  sensor  12236293 Perungudi, Chennai - TNPCB              temperature
+  sensor  14340993 Perungudi, Chennai - TNPCB           wind_direction
+  sensor  14340994 Perungudi, Chennai - TNPCB               wind_speed
+  sensor  12235544 Alandur Bus Depot, Chennai - CPCB                co
+  sensor  12235545 Alandur Bus Depot, Chennai - CPCB                no
+  sensor  12235546 Alandur Bus Depot, Chennai - CPCB               no2
+  sensor  14341857 Alandur Bus Depot, Chennai - CPCB               nox
+  sensor  12235547 Alandur Bus Depot, Chennai - CPCB                o3
+  sensor  12235548 Alandur Bus Depot, Chennai - CPCB              pm10
+  sensor  12235549 Alandur Bus Depot, Chennai - CPCB              pm25
+  sensor  14484666 Alandur Bus Depot, Chennai - CPCB  relativehumidity
+  sensor  12235550 Alandur Bus Depot, Chennai - CPCB               so2
+  sensor  14018152 Alandur Bus Depot, Chennai - CPCB       temperature
+  sensor  14341858 Alandur Bus Depot, Chennai - CPCB    wind_direction
+  sensor  14341859 Alandur Bus Depot, Chennai - CPCB        wind_speed
+[OpenAQ audit] done. failed sensor-months: 0. Outputs in C:\Users\Tanvi\Desktop\Books\Sem-5\PR\UrbanPulse\reports\openaq_audit

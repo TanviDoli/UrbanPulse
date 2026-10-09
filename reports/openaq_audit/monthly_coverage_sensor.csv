@@ -1,0 +1,1802 @@
+sensor_id,location_id,location_name,parameter,month,valid_hours,expected_hours,coverage_pct
+12235648,2586,"Manali, Chennai - CPCB",co,2025-08,724,744,97.31
+12235648,2586,"Manali, Chennai - CPCB",co,2026-03,712,744,95.7
+12235648,2586,"Manali, Chennai - CPCB",co,2025-07,708,744,95.16
+12235648,2586,"Manali, Chennai - CPCB",co,2026-09,704,720,97.78
+12235648,2586,"Manali, Chennai - CPCB",co,2025-11,683,720,94.86
+12235648,2586,"Manali, Chennai - CPCB",co,2026-04,680,720,94.44
+12235648,2586,"Manali, Chennai - CPCB",co,2025-03,676,744,90.86
+12235648,2586,"Manali, Chennai - CPCB",co,2026-07,651,744,87.5
+12235648,2586,"Manali, Chennai - CPCB",co,2026-05,650,744,87.37
+12235648,2586,"Manali, Chennai - CPCB",co,2025-12,641,744,86.16
+12235648,2586,"Manali, Chennai - CPCB",co,2025-09,629,720,87.36
+12235648,2586,"Manali, Chennai - CPCB",co,2026-06,628,720,87.22
+12235648,2586,"Manali, Chennai - CPCB",co,2025-10,605,744,81.32
+12235648,2586,"Manali, Chennai - CPCB",co,2025-06,604,720,83.89
+12235648,2586,"Manali, Chennai - CPCB",co,2026-08,588,744,79.03
+12235648,2586,"Manali, Chennai - CPCB",co,2025-05,578,744,77.69
+12235648,2586,"Manali, Chennai - CPCB",co,2026-02,572,672,85.12
+12235648,2586,"Manali, Chennai - CPCB",co,2025-04,492,720,68.33
+12235648,2586,"Manali, Chennai - CPCB",co,2026-01,454,744,61.02
+12235648,2586,"Manali, Chennai - CPCB",co,2026-10,146,192,76.04
+12235648,2586,"Manali, Chennai - CPCB",co,2025-02,53,672,7.89
+12235649,2586,"Manali, Chennai - CPCB",no,2025-08,724,744,97.31
+12235649,2586,"Manali, Chennai - CPCB",no,2026-03,712,744,95.7
+12235649,2586,"Manali, Chennai - CPCB",no,2025-07,708,744,95.16
+12235649,2586,"Manali, Chennai - CPCB",no,2025-11,683,720,94.86
+12235649,2586,"Manali, Chennai - CPCB",no,2026-04,680,720,94.44
+12235649,2586,"Manali, Chennai - CPCB",no,2025-03,676,744,90.86
+12235649,2586,"Manali, Chennai - CPCB",no,2026-05,650,744,87.37
+12235649,2586,"Manali, Chennai - CPCB",no,2025-12,641,744,86.16
+12235649,2586,"Manali, Chennai - CPCB",no,2026-09,635,720,88.19
+12235649,2586,"Manali, Chennai - CPCB",no,2025-09,629,720,87.36
+12235649,2586,"Manali, Chennai - CPCB",no,2026-07,608,744,81.72
+12235649,2586,"Manali, Chennai - CPCB",no,2025-10,605,744,81.32
+12235649,2586,"Manali, Chennai - CPCB",no,2025-06,604,720,83.89
+12235649,2586,"Manali, Chennai - CPCB",no,2025-05,578,744,77.69
+12235649,2586,"Manali, Chennai - CPCB",no,2026-02,572,672,85.12
+12235649,2586,"Manali, Chennai - CPCB",no,2026-06,554,720,76.94
+12235649,2586,"Manali, Chennai - CPCB",no,2026-08,495,744,66.53
+12235649,2586,"Manali, Chennai - CPCB",no,2025-04,492,720,68.33
+12235649,2586,"Manali, Chennai - CPCB",no,2026-01,454,744,61.02
+12235649,2586,"Manali, Chennai - CPCB",no,2026-10,116,192,60.42
+12235649,2586,"Manali, Chennai - CPCB",no,2025-02,53,672,7.89
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-08,724,744,97.31
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-03,712,744,95.7
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-07,708,744,95.16
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-11,683,720,94.86
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-04,680,720,94.44
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-03,676,744,90.86
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-05,650,744,87.37
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-12,641,744,86.16
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-09,635,720,88.19
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-09,629,720,87.36
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-07,608,744,81.72
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-10,605,744,81.32
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-06,604,720,83.89
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-05,578,744,77.69
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-02,572,672,85.12
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-06,554,720,76.94
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-08,495,744,66.53
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-04,492,720,68.33
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-01,454,744,61.02
+12235650,2586,"Manali, Chennai - CPCB",no2,2026-10,116,192,60.42
+12235650,2586,"Manali, Chennai - CPCB",no2,2025-02,53,672,7.89
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-08,724,744,97.31
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-03,712,744,95.7
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-07,708,744,95.16
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-11,683,720,94.86
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-04,680,720,94.44
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-03,676,744,90.86
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-05,650,744,87.37
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-12,641,744,86.16
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-09,635,720,88.19
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-09,629,720,87.36
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-07,608,744,81.72
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-10,605,744,81.32
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-06,604,720,83.89
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-05,578,744,77.69
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-02,572,672,85.12
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-06,554,720,76.94
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-08,495,744,66.53
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-04,492,720,68.33
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-01,454,744,61.02
+14340870,2586,"Manali, Chennai - CPCB",nox,2026-10,117,192,60.94
+14340870,2586,"Manali, Chennai - CPCB",nox,2025-02,53,672,7.89
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-08,724,744,97.31
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-03,712,744,95.7
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-07,708,744,95.16
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-09,705,720,97.92
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-11,683,720,94.86
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-04,680,720,94.44
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-03,676,744,90.86
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-05,650,744,87.37
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-07,648,744,87.1
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-12,641,744,86.16
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-09,629,720,87.36
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-06,628,720,87.22
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-10,605,744,81.32
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-06,600,720,83.33
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-08,589,744,79.17
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-05,578,744,77.69
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-02,572,672,85.12
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-04,492,720,68.33
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-01,454,744,61.02
+12235651,2586,"Manali, Chennai - CPCB",o3,2026-10,146,192,76.04
+12235651,2586,"Manali, Chennai - CPCB",o3,2025-02,53,672,7.89
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-08,724,744,97.31
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-07,708,744,95.16
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-03,707,744,95.03
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-04,679,720,94.31
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-03,672,744,90.32
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-11,655,720,90.97
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-05,646,744,86.83
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-12,641,744,86.16
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-09,629,720,87.36
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-07,623,744,83.74
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-10,602,744,80.91
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-06,601,720,83.47
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-05,578,744,77.69
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-06,577,720,80.14
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-09,573,720,79.58
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-02,572,672,85.12
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-08,496,744,66.67
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-04,487,720,67.64
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-01,447,744,60.08
+12235652,2586,"Manali, Chennai - CPCB",pm10,2026-10,141,192,73.44
+12235652,2586,"Manali, Chennai - CPCB",pm10,2025-02,53,672,7.89
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-08,722,744,97.04
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-03,712,744,95.7
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-07,708,744,95.16
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-11,681,720,94.58
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-04,673,720,93.47
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-03,672,744,90.32
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-05,650,744,87.37
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-12,641,744,86.16
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-09,629,720,87.36
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-09,618,720,85.83
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-06,605,720,84.03
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-10,605,744,81.32
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-06,604,720,83.89
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-07,585,744,78.63
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-05,578,744,77.69
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-02,571,672,84.97
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-04,492,720,68.33
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-08,455,744,61.16
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-01,454,744,61.02
+12235653,2586,"Manali, Chennai - CPCB",pm25,2026-10,115,192,59.9
+12235653,2586,"Manali, Chennai - CPCB",pm25,2025-02,53,672,7.89
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-08,723,744,97.18
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-03,712,744,95.7
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-07,708,744,95.16
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-09,705,720,97.92
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-11,683,720,94.86
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-04,680,720,94.44
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-03,673,744,90.46
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-07,651,744,87.5
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-12,641,744,86.16
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-09,629,720,87.36
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-06,618,720,85.83
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-05,615,744,82.66
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-10,605,744,81.32
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-06,601,720,83.47
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-08,588,744,79.03
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-05,575,744,77.28
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-02,572,672,85.12
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-04,488,720,67.78
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-01,454,744,61.02
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2026-10,146,192,76.04
+12235654,2586,"Manali, Chennai - CPCB",relativehumidity,2025-02,52,672,7.74
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-08,724,744,97.31
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-03,712,744,95.7
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-07,708,744,95.16
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-11,683,720,94.86
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-04,680,720,94.44
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-03,676,744,90.86
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-05,650,744,87.37
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-12,641,744,86.16
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-09,629,720,87.36
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-09,609,720,84.58
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-10,605,744,81.32
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-06,604,720,83.89
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-07,584,744,78.49
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-05,578,744,77.69
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-02,572,672,85.12
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-06,565,720,78.47
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-04,492,720,68.33
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-08,469,744,63.04
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-01,454,744,61.02
+12235655,2586,"Manali, Chennai - CPCB",so2,2026-10,116,192,60.42
+12235655,2586,"Manali, Chennai - CPCB",so2,2025-02,53,672,7.89
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-08,724,744,97.31
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-03,712,744,95.7
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-07,708,744,95.16
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-11,683,720,94.86
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-04,680,720,94.44
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-03,676,744,90.86
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-07,651,744,87.5
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-05,650,744,87.37
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-12,641,744,86.16
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-06,629,720,87.36
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-09,629,720,87.36
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-10,605,744,81.32
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-06,604,720,83.89
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-05,578,744,77.69
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-02,572,672,85.12
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-04,492,720,68.33
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-01,454,744,61.02
+12235656,2586,"Manali, Chennai - CPCB",temperature,2026-08,132,744,17.74
+12235656,2586,"Manali, Chennai - CPCB",temperature,2025-02,53,672,7.89
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-08,724,744,97.31
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-03,712,744,95.7
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-07,708,744,95.16
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-11,683,720,94.86
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-04,680,720,94.44
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-03,676,744,90.86
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-05,650,744,87.37
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-12,641,744,86.16
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-09,629,720,87.36
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-06,620,720,86.11
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-07,605,744,81.32
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-10,605,744,81.32
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-06,604,720,83.89
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-05,578,744,77.69
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-02,572,672,85.12
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-09,532,720,73.89
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-04,492,720,68.33
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-08,483,744,64.92
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-01,454,744,61.02
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2026-10,100,192,52.08
+14340871,2586,"Manali, Chennai - CPCB",wind_direction,2025-02,53,672,7.89
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-08,724,744,97.31
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-03,712,744,95.7
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-07,708,744,95.16
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-11,683,720,94.86
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-04,680,720,94.44
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-03,676,744,90.86
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-05,650,744,87.37
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-12,641,744,86.16
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-09,629,720,87.36
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-06,620,720,86.11
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-07,605,744,81.32
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-10,605,744,81.32
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-06,604,720,83.89
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-05,578,744,77.69
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-02,572,672,85.12
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-09,532,720,73.89
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-04,492,720,68.33
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-08,483,744,64.92
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-01,454,744,61.02
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2026-10,100,192,52.08
+14340872,2586,"Manali, Chennai - CPCB",wind_speed,2025-02,53,672,7.89
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-03,729,744,97.98
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-12,704,744,94.62
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-07,692,744,93.01
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-10,690,744,92.74
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-05,682,744,91.67
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-08,679,744,91.26
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-04,670,720,93.06
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-09,668,720,92.78
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-03,663,744,89.11
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-05,657,744,88.31
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-09,654,720,90.83
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-08,637,744,85.62
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-06,618,720,85.83
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-11,607,720,84.31
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-07,583,744,78.36
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-02,524,672,77.98
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-01,496,744,66.67
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-06,454,720,63.06
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-04,398,720,55.28
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2025-02,216,672,32.14
+12235526,5655,"Velachery Res. Area, Chennai - CPCB",co,2026-10,146,192,76.04
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-03,729,744,97.98
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-12,713,744,95.83
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-10,690,744,92.74
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-05,682,744,91.67
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-08,679,744,91.26
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-07,673,744,90.46
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-04,670,720,93.06
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-09,668,720,92.78
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-03,663,744,89.11
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-05,657,744,88.31
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-08,637,744,85.62
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-06,617,720,85.69
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-11,607,720,84.31
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-09,592,720,82.22
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-07,583,744,78.36
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-02,524,672,77.98
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-01,496,744,66.67
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-06,454,720,63.06
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-04,398,720,55.28
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2025-02,216,672,32.14
+12235527,5655,"Velachery Res. Area, Chennai - CPCB",no,2026-10,146,192,76.04
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-03,729,744,97.98
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-12,711,744,95.56
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-10,690,744,92.74
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-05,682,744,91.67
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-08,679,744,91.26
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-07,673,744,90.46
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-04,670,720,93.06
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-09,668,720,92.78
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-03,663,744,89.11
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-05,656,744,88.17
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-08,637,744,85.62
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-06,617,720,85.69
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-11,607,720,84.31
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-09,592,720,82.22
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-07,583,744,78.36
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-02,524,672,77.98
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-01,496,744,66.67
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-06,454,720,63.06
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-04,398,720,55.28
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2025-02,216,672,32.14
+12235528,5655,"Velachery Res. Area, Chennai - CPCB",no2,2026-10,146,192,76.04
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-03,729,744,97.98
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-12,713,744,95.83
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-10,690,744,92.74
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-05,682,744,91.67
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-08,679,744,91.26
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-07,673,744,90.46
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-04,670,720,93.06
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-09,668,720,92.78
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-03,663,744,89.11
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-05,657,744,88.31
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-08,638,744,85.75
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-06,618,720,85.83
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-11,607,720,84.31
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-09,593,720,82.36
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-07,583,744,78.36
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-02,524,672,77.98
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-01,496,744,66.67
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-06,454,720,63.06
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-04,398,720,55.28
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2025-02,216,672,32.14
+14340852,5655,"Velachery Res. Area, Chennai - CPCB",nox,2026-10,146,192,76.04
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-03,729,744,97.98
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-12,703,744,94.49
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-07,692,744,93.01
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-10,690,744,92.74
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-05,682,744,91.67
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-08,679,744,91.26
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-04,670,720,93.06
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-09,668,720,92.78
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-03,663,744,89.11
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-05,657,744,88.31
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-09,654,720,90.83
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-08,637,744,85.62
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-06,618,720,85.83
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-11,607,720,84.31
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-07,583,744,78.36
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-02,524,672,77.98
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-01,496,744,66.67
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-06,454,720,63.06
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-04,398,720,55.28
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2025-02,216,672,32.14
+12235529,5655,"Velachery Res. Area, Chennai - CPCB",o3,2026-10,146,192,76.04
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-03,729,744,97.98
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-12,713,744,95.83
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-10,689,744,92.61
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-05,682,744,91.67
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-08,679,744,91.26
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-04,670,720,93.06
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-07,669,744,89.92
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-09,668,720,92.78
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-03,663,744,89.11
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-05,656,744,88.17
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-09,651,720,90.42
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-08,638,744,85.75
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-06,618,720,85.83
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-11,607,720,84.31
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-07,583,744,78.36
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-02,524,672,77.98
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-01,496,744,66.67
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-06,454,720,63.06
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-04,398,720,55.28
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2025-02,216,672,32.14
+12235530,5655,"Velachery Res. Area, Chennai - CPCB",pm10,2026-10,146,192,76.04
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-03,729,744,97.98
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-12,713,744,95.83
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-10,690,744,92.74
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-05,682,744,91.67
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-08,677,744,90.99
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-07,674,744,90.59
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-04,670,720,93.06
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-09,668,720,92.78
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-03,663,744,89.11
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-05,657,744,88.31
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-09,654,720,90.83
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-08,638,744,85.75
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-06,617,720,85.69
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-11,607,720,84.31
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-07,583,744,78.36
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-02,523,672,77.83
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-01,496,744,66.67
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-06,454,720,63.06
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-04,398,720,55.28
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2025-02,216,672,32.14
+12235531,5655,"Velachery Res. Area, Chennai - CPCB",pm25,2026-10,146,192,76.04
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-03,729,744,97.98
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-12,713,744,95.83
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-07,692,744,93.01
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-05,682,744,91.67
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-08,679,744,91.26
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-04,670,720,93.06
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-03,663,744,89.11
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-05,656,744,88.17
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-09,654,720,90.83
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-10,629,744,84.54
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-06,618,720,85.83
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-11,607,720,84.31
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-07,583,744,78.36
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-08,555,744,74.6
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-09,531,720,73.75
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-02,524,672,77.98
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-01,496,744,66.67
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-06,454,720,63.06
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-04,398,720,55.28
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2025-02,216,672,32.14
+12235532,5655,"Velachery Res. Area, Chennai - CPCB",relativehumidity,2026-10,146,192,76.04
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-03,729,744,97.98
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-12,706,744,94.89
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-10,690,744,92.74
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-05,682,744,91.67
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-08,679,744,91.26
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-07,674,744,90.59
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-04,670,720,93.06
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-09,668,720,92.78
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-03,663,744,89.11
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-05,657,744,88.31
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-09,654,720,90.83
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-08,637,744,85.62
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-06,618,720,85.83
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-11,607,720,84.31
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-07,583,744,78.36
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-02,524,672,77.98
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-01,496,744,66.67
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-06,454,720,63.06
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-04,398,720,55.28
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2025-02,216,672,32.14
+12235533,5655,"Velachery Res. Area, Chennai - CPCB",so2,2026-10,146,192,76.04
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-03,729,744,97.98
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-12,713,744,95.83
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-07,692,744,93.01
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-10,690,744,92.74
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-05,682,744,91.67
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-04,670,720,93.06
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-09,668,720,92.78
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-03,663,744,89.11
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-05,657,744,88.31
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-08,637,744,85.62
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-06,618,720,85.83
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-11,607,720,84.31
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-07,583,744,78.36
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-02,524,672,77.98
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-01,496,744,66.67
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-06,454,720,63.06
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-04,398,720,55.28
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2025-02,216,672,32.14
+12235534,5655,"Velachery Res. Area, Chennai - CPCB",temperature,2026-08,137,744,18.41
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-03,729,744,97.98
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-12,713,744,95.83
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-10,690,744,92.74
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-05,682,744,91.67
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-04,670,720,93.06
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-09,668,720,92.78
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-03,663,744,89.11
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-05,657,744,88.31
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-08,637,744,85.62
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-06,610,720,84.72
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-11,607,720,84.31
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-07,583,744,78.36
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-02,524,672,77.98
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-01,496,744,66.67
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-06,454,720,63.06
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-04,398,720,55.28
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2025-02,216,672,32.14
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-08,206,744,27.69
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-07,204,744,27.42
+14340853,5655,"Velachery Res. Area, Chennai - CPCB",wind_direction,2026-09,91,720,12.64
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-03,729,744,97.98
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-12,713,744,95.83
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-10,690,744,92.74
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-05,682,744,91.67
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-04,670,720,93.06
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-09,668,720,92.78
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-03,663,744,89.11
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-05,656,744,88.17
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-08,637,744,85.62
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-06,610,720,84.72
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-11,607,720,84.31
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-07,583,744,78.36
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-02,524,672,77.98
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-01,496,744,66.67
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-06,454,720,63.06
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-04,398,720,55.28
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2025-02,216,672,32.14
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-07,206,744,27.69
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-08,206,744,27.69
+14340854,5655,"Velachery Res. Area, Chennai - CPCB",wind_speed,2026-09,94,720,13.06
+5077812,8558,Chennai,pm25,2026-07,744,744,100.0
+5077812,8558,Chennai,pm25,2026-08,744,744,100.0
+5077812,8558,Chennai,pm25,2025-03,743,744,99.87
+5077812,8558,Chennai,pm25,2025-01,731,744,98.25
+5077812,8558,Chennai,pm25,2025-04,720,720,100.0
+5077812,8558,Chennai,pm25,2026-09,719,720,99.86
+5077812,8558,Chennai,pm25,2026-06,716,720,99.44
+5077812,8558,Chennai,pm25,2025-06,713,720,99.03
+5077812,8558,Chennai,pm25,2026-05,708,744,95.16
+5077812,8558,Chennai,pm25,2025-02,664,672,98.81
+5077812,8558,Chennai,pm25,2025-05,555,744,74.6
+5077812,8558,Chennai,pm25,2026-10,192,192,100.0
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-03,740,744,99.46
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-07,731,744,98.25
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-07,712,744,95.7
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-10,704,744,94.62
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-09,702,720,97.5
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-05,695,744,93.41
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-09,694,720,96.39
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-12,684,744,91.94
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-08,675,744,90.73
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-04,673,720,93.47
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-06,667,720,92.64
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-11,660,720,91.67
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-08,657,744,88.31
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-03,627,744,84.27
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-06,618,720,85.83
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-04,612,720,85.0
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-05,579,744,77.82
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-02,538,672,80.06
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-01,473,744,63.58
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2025-02,239,672,35.57
+12235791,10780,"Manali Village, Chennai - TNPCB",co,2026-10,146,192,76.04
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-03,740,744,99.46
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-07,712,744,95.7
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-07,706,744,94.89
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-10,704,744,94.62
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-09,702,720,97.5
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-05,695,744,93.41
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-12,684,744,91.94
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-08,675,744,90.73
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-04,673,720,93.47
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-06,667,720,92.64
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-11,660,720,91.67
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-08,657,744,88.31
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-03,627,744,84.27
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-09,626,720,86.94
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-06,618,720,85.83
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-04,612,720,85.0
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-05,579,744,77.82
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-02,538,672,80.06
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-01,473,744,63.58
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2025-02,239,672,35.57
+12235792,10780,"Manali Village, Chennai - TNPCB",no,2026-10,137,192,71.35
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-03,740,744,99.46
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-07,712,744,95.7
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-10,704,744,94.62
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-09,702,720,97.5
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-05,695,744,93.41
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-07,688,744,92.47
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-12,684,744,91.94
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-04,673,720,93.47
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-08,669,744,89.92
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-06,667,720,92.64
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-09,661,720,91.81
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-11,660,720,91.67
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-08,657,744,88.31
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-03,627,744,84.27
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-06,614,720,85.28
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-04,612,720,85.0
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-05,579,744,77.82
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-02,538,672,80.06
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-01,473,744,63.58
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2025-02,239,672,35.57
+12235793,10780,"Manali Village, Chennai - TNPCB",no2,2026-10,127,192,66.15
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-03,740,744,99.46
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-07,731,744,98.25
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-07,712,744,95.7
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-10,704,744,94.62
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-09,702,720,97.5
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-05,695,744,93.41
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-09,694,720,96.39
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-12,684,744,91.94
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-08,675,744,90.73
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-04,673,720,93.47
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-06,667,720,92.64
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-11,660,720,91.67
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-08,657,744,88.31
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-03,627,744,84.27
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-06,618,720,85.83
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-04,612,720,85.0
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-05,579,744,77.82
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-02,538,672,80.06
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-01,473,744,63.58
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2025-02,239,672,35.57
+14340913,10780,"Manali Village, Chennai - TNPCB",nox,2026-10,146,192,76.04
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-03,740,744,99.46
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-07,712,744,95.7
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-10,704,744,94.62
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-09,702,720,97.5
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-05,695,744,93.41
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-07,689,744,92.61
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-12,684,744,91.94
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-08,675,744,90.73
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-04,673,720,93.47
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-06,667,720,92.64
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-11,660,720,91.67
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-08,657,744,88.31
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-03,627,744,84.27
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-06,618,720,85.83
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-04,612,720,85.0
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-05,579,744,77.82
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-02,538,672,80.06
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-01,473,744,63.58
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2025-02,239,672,35.57
+12235794,10780,"Manali Village, Chennai - TNPCB",o3,2026-09,162,720,22.5
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-03,740,744,99.46
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-07,712,744,95.7
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-10,704,744,94.62
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-09,702,720,97.5
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-05,695,744,93.41
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-12,684,744,91.94
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-07,679,744,91.26
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-04,673,720,93.47
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-06,667,720,92.64
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-11,660,720,91.67
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-08,657,744,88.31
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-09,654,720,90.83
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-03,627,744,84.27
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-08,618,744,83.06
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-04,612,720,85.0
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-06,612,720,85.0
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-05,579,744,77.82
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-02,538,672,80.06
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-01,473,744,63.58
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2025-02,239,672,35.57
+12235795,10780,"Manali Village, Chennai - TNPCB",pm10,2026-10,134,192,69.79
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-03,740,744,99.46
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-07,712,744,95.7
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-10,703,744,94.49
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-09,702,720,97.5
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-05,695,744,93.41
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-07,693,744,93.15
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-12,684,744,91.94
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-04,673,720,93.47
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-08,668,744,89.78
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-06,667,720,92.64
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-11,660,720,91.67
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-09,659,720,91.53
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-08,657,744,88.31
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-03,627,744,84.27
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-06,615,720,85.42
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-04,612,720,85.0
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-05,579,744,77.82
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-02,538,672,80.06
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-01,473,744,63.58
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2025-02,239,672,35.57
+12235796,10780,"Manali Village, Chennai - TNPCB",pm25,2026-10,134,192,69.79
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-03,740,744,99.46
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-07,712,744,95.7
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-07,708,744,95.16
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-10,704,744,94.62
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-09,702,720,97.5
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-05,695,744,93.41
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-09,694,720,96.39
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-12,684,744,91.94
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-08,675,744,90.73
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-04,673,720,93.47
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-06,667,720,92.64
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-11,660,720,91.67
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-08,657,744,88.31
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-03,627,744,84.27
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-06,618,720,85.83
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-04,612,720,85.0
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-05,579,744,77.82
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-02,538,672,80.06
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-01,473,744,63.58
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2025-02,239,672,35.57
+12235797,10780,"Manali Village, Chennai - TNPCB",relativehumidity,2026-10,146,192,76.04
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-03,740,744,99.46
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-07,712,744,95.7
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-07,708,744,95.16
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-10,704,744,94.62
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-09,702,720,97.5
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-05,695,744,93.41
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-12,684,744,91.94
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-09,675,720,93.75
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-08,675,744,90.73
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-04,673,720,93.47
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-06,667,720,92.64
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-11,660,720,91.67
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-08,657,744,88.31
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-03,627,744,84.27
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-06,618,720,85.83
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-04,612,720,85.0
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-05,579,744,77.82
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-02,538,672,80.06
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-01,473,744,63.58
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2025-02,239,672,35.57
+12235798,10780,"Manali Village, Chennai - TNPCB",so2,2026-10,146,192,76.04
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-03,740,744,99.46
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-07,712,744,95.7
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-07,708,744,95.16
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-10,704,744,94.62
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-09,702,720,97.5
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-05,695,744,93.41
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-09,694,720,96.39
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-12,684,744,91.94
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-08,675,744,90.73
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-04,673,720,93.47
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-06,667,720,92.64
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-11,660,720,91.67
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-08,657,744,88.31
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-03,627,744,84.27
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-06,618,720,85.83
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-04,612,720,85.0
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-05,579,744,77.82
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-02,538,672,80.06
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-01,473,744,63.58
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2025-02,239,672,35.57
+12235799,10780,"Manali Village, Chennai - TNPCB",temperature,2026-10,146,192,76.04
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-03,740,744,99.46
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-07,712,744,95.7
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-07,708,744,95.16
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-10,704,744,94.62
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-09,702,720,97.5
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-05,695,744,93.41
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-09,694,720,96.39
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-12,684,744,91.94
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-08,675,744,90.73
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-04,673,720,93.47
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-06,667,720,92.64
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-11,660,720,91.67
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-08,657,744,88.31
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-03,627,744,84.27
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-06,618,720,85.83
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-04,612,720,85.0
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-05,579,744,77.82
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-02,538,672,80.06
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-01,473,744,63.58
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2025-02,239,672,35.57
+14340914,10780,"Manali Village, Chennai - TNPCB",wind_direction,2026-10,146,192,76.04
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-03,740,744,99.46
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-07,712,744,95.7
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-07,708,744,95.16
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-10,704,744,94.62
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-09,702,720,97.5
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-05,695,744,93.41
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-09,694,720,96.39
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-12,684,744,91.94
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-08,675,744,90.73
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-04,673,720,93.47
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-06,667,720,92.64
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-11,660,720,91.67
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-08,657,744,88.31
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-03,627,744,84.27
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-06,618,720,85.83
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-04,612,720,85.0
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-05,579,744,77.82
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-02,538,672,80.06
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-01,473,744,63.58
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2025-02,239,672,35.57
+14340915,10780,"Manali Village, Chennai - TNPCB",wind_speed,2026-10,146,192,76.04
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-03,741,744,99.6
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-03,710,744,95.43
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-07,708,744,95.16
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-05,695,744,93.41
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-04,680,720,94.44
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-09,678,720,94.17
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-08,674,744,90.59
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-05,672,744,90.32
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-06,660,720,91.67
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-06,628,720,87.22
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-08,627,744,84.27
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-04,605,720,84.03
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-07,557,744,74.87
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-02,551,672,81.99
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-12,498,744,66.94
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-01,450,744,60.48
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-09,406,720,56.39
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-10,390,744,52.42
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-02,222,672,33.04
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2025-11,189,720,26.25
+12236294,11578,"Royapuram, Chennai - TNPCB",co,2026-10,146,192,76.04
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-03,710,744,95.43
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-05,695,744,93.41
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-03,688,744,92.47
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-07,684,744,91.94
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-04,680,720,94.44
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-09,678,720,94.17
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-08,674,744,90.59
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-05,654,744,87.9
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-06,628,720,87.22
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-08,627,744,84.27
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-06,622,720,86.39
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-04,580,720,80.56
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-07,557,744,74.87
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-02,551,672,81.99
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-12,498,744,66.94
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-01,450,744,60.48
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-09,406,720,56.39
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-10,390,744,52.42
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-02,202,672,30.06
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2025-11,189,720,26.25
+12236295,11578,"Royapuram, Chennai - TNPCB",no,2026-10,146,192,76.04
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-03,719,744,96.64
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-03,710,744,95.43
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-05,695,744,93.41
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-07,684,744,91.94
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-04,680,720,94.44
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-09,678,720,94.17
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-08,674,744,90.59
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-05,658,744,88.44
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-06,628,720,87.22
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-08,627,744,84.27
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-06,623,720,86.53
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-04,580,720,80.56
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-07,557,744,74.87
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-02,551,672,81.99
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-12,498,744,66.94
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-01,450,744,60.48
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-09,405,720,56.25
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-10,390,744,52.42
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-02,221,672,32.89
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2025-11,189,720,26.25
+12236296,11578,"Royapuram, Chennai - TNPCB",no2,2026-10,146,192,76.04
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-03,719,744,96.64
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-03,710,744,95.43
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-05,695,744,93.41
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-07,684,744,91.94
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-04,680,720,94.44
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-09,678,720,94.17
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-08,674,744,90.59
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-05,658,744,88.44
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-06,628,720,87.22
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-08,627,744,84.27
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-06,623,720,86.53
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-04,580,720,80.56
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-07,557,744,74.87
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-02,551,672,81.99
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-12,498,744,66.94
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-01,450,744,60.48
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-09,406,720,56.39
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-10,390,744,52.42
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-02,221,672,32.89
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2025-11,189,720,26.25
+14340995,11578,"Royapuram, Chennai - TNPCB",nox,2026-10,146,192,76.04
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-03,710,744,95.43
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-03,701,744,94.22
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-05,695,744,93.41
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-04,680,720,94.44
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-09,678,720,94.17
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-08,674,744,90.59
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-06,651,720,90.42
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-06,628,720,87.22
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-08,627,744,84.27
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-05,613,744,82.39
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-04,563,720,78.19
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-07,557,744,74.87
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-02,551,672,81.99
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-12,498,744,66.94
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-07,460,744,61.83
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-01,450,744,60.48
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-09,406,720,56.39
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-10,390,744,52.42
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-02,222,672,33.04
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2025-11,189,720,26.25
+12236297,11578,"Royapuram, Chennai - TNPCB",o3,2026-10,146,192,76.04
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-03,741,744,99.6
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-07,725,744,97.45
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-03,710,744,95.43
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-05,695,744,93.41
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-05,681,744,91.53
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-04,680,720,94.44
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-08,672,744,90.32
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-09,664,720,92.22
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-06,640,720,88.89
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-06,628,720,87.22
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-08,620,744,83.33
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-04,605,720,84.03
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-07,557,744,74.87
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-02,551,672,81.99
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-12,497,744,66.8
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-01,450,744,60.48
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-09,405,720,56.25
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-10,389,744,52.28
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-02,222,672,33.04
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2025-11,186,720,25.83
+12236298,11578,"Royapuram, Chennai - TNPCB",pm10,2026-10,146,192,76.04
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-07,723,744,97.18
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-03,712,744,95.7
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-03,710,744,95.43
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-05,695,744,93.41
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-04,680,720,94.44
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-09,676,720,93.89
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-08,671,744,90.19
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-05,668,744,89.78
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-06,650,720,90.28
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-06,628,720,87.22
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-04,598,720,83.06
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-08,574,744,77.15
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-07,557,744,74.87
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-02,551,672,81.99
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-12,496,744,66.67
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-01,450,744,60.48
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-09,405,720,56.25
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-10,390,744,52.42
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-02,222,672,33.04
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2025-11,185,720,25.69
+12236299,11578,"Royapuram, Chennai - TNPCB",pm25,2026-10,146,192,76.04
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-03,741,744,99.6
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-07,726,744,97.58
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-03,710,744,95.43
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-05,695,744,93.41
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-05,681,744,91.53
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-04,680,720,94.44
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-09,678,720,94.17
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-08,674,744,90.59
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-06,661,720,91.81
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-06,628,720,87.22
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-08,627,744,84.27
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-04,614,720,85.28
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-07,557,744,74.87
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-02,551,672,81.99
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-12,498,744,66.94
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-01,450,744,60.48
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-09,406,720,56.39
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-10,390,744,52.42
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-02,222,672,33.04
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2025-11,189,720,26.25
+12236300,11578,"Royapuram, Chennai - TNPCB",relativehumidity,2026-10,146,192,76.04
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-03,736,744,98.92
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-03,710,744,95.43
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-05,695,744,93.41
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-04,680,720,94.44
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-09,678,720,94.17
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-08,674,744,90.59
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-06,656,720,91.11
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-06,628,720,87.22
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-08,627,744,84.27
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-05,621,744,83.47
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-04,612,720,85.0
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-07,557,744,74.87
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-02,551,672,81.99
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-12,498,744,66.94
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-07,472,744,63.44
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-01,450,744,60.48
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-09,406,720,56.39
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-10,390,744,52.42
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-02,222,672,33.04
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2025-11,189,720,26.25
+12236301,11578,"Royapuram, Chennai - TNPCB",so2,2026-10,146,192,76.04
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-03,741,744,99.6
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-07,726,744,97.58
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-03,710,744,95.43
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-05,695,744,93.41
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-05,681,744,91.53
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-04,680,720,94.44
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-09,678,720,94.17
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-06,661,720,91.81
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-06,628,720,87.22
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-08,627,744,84.27
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-04,614,720,85.28
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-07,557,744,74.87
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-02,551,672,81.99
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-12,498,744,66.94
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-01,450,744,60.48
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-10,390,744,52.42
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-02,222,672,33.04
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2025-11,189,720,26.25
+12236302,11578,"Royapuram, Chennai - TNPCB",temperature,2026-08,136,744,18.28
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-03,741,744,99.6
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-07,726,744,97.58
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-03,710,744,95.43
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-05,695,744,93.41
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-05,681,744,91.53
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-04,680,720,94.44
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-09,678,720,94.17
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-08,674,744,90.59
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-06,661,720,91.81
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-06,628,720,87.22
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-08,627,744,84.27
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-04,614,720,85.28
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-07,557,744,74.87
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-02,551,672,81.99
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-12,498,744,66.94
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-01,450,744,60.48
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-09,406,720,56.39
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-10,390,744,52.42
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-02,222,672,33.04
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2025-11,189,720,26.25
+14340996,11578,"Royapuram, Chennai - TNPCB",wind_direction,2026-10,146,192,76.04
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-03,741,744,99.6
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-07,726,744,97.58
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-03,710,744,95.43
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-05,695,744,93.41
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-05,681,744,91.53
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-04,680,720,94.44
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-09,678,720,94.17
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-08,674,744,90.59
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-06,661,720,91.81
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-06,628,720,87.22
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-08,627,744,84.27
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-04,614,720,85.28
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-07,557,744,74.87
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-02,551,672,81.99
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-12,498,744,66.94
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-01,450,744,60.48
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-09,397,720,55.14
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-10,390,744,52.42
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-02,222,672,33.04
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2025-11,189,720,26.25
+14340997,11578,"Royapuram, Chennai - TNPCB",wind_speed,2026-10,132,192,68.75
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-07,736,744,98.92
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-10,710,744,95.43
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-03,710,744,95.43
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-08,692,744,93.01
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-04,678,720,94.17
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-08,672,744,90.32
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-11,667,720,92.64
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-05,664,744,89.25
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-09,634,720,88.06
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-06,632,720,87.78
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-12,622,744,83.6
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-02,560,672,83.33
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-05,553,744,74.33
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-03,546,744,73.39
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-06,532,720,73.89
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-04,529,720,73.47
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-01,497,744,66.8
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-07,422,744,56.72
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-09,380,720,52.78
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2026-10,146,192,76.04
+12236303,11579,"Kodungaiyur, Chennai - TNPCB",co,2025-02,19,672,2.83
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-07,736,744,98.92
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-10,710,744,95.43
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-03,710,744,95.43
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-08,692,744,93.01
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-04,678,720,94.17
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-08,672,744,90.32
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-11,667,720,92.64
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-05,664,744,89.25
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-06,649,720,90.14
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-03,645,744,86.69
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-07,642,744,86.29
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-09,634,720,88.06
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-06,632,720,87.78
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-12,622,744,83.6
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-05,599,744,80.51
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-04,571,720,79.31
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-02,560,672,83.33
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-01,497,744,66.8
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-09,380,720,52.78
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2026-10,146,192,76.04
+12236304,11579,"Kodungaiyur, Chennai - TNPCB",no,2025-02,19,672,2.83
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-07,736,744,98.92
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-10,710,744,95.43
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-03,710,744,95.43
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-08,692,744,93.01
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-04,678,720,94.17
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-08,672,744,90.32
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-11,667,720,92.64
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-05,664,744,89.25
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-06,649,720,90.14
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-03,646,744,86.83
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-07,642,744,86.29
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-09,634,720,88.06
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-06,632,720,87.78
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-12,622,744,83.6
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-04,574,720,79.72
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-05,571,744,76.75
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-02,560,672,83.33
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-01,497,744,66.8
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-09,380,720,52.78
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2026-10,146,192,76.04
+12236305,11579,"Kodungaiyur, Chennai - TNPCB",no2,2025-02,19,672,2.83
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-07,736,744,98.92
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-10,710,744,95.43
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-03,710,744,95.43
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-08,692,744,93.01
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-04,678,720,94.17
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-08,672,744,90.32
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-11,667,720,92.64
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-05,664,744,89.25
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-06,649,720,90.14
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-03,646,744,86.83
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-07,642,744,86.29
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-09,634,720,88.06
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-06,632,720,87.78
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-12,622,744,83.6
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-05,590,744,79.3
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-04,574,720,79.72
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-02,560,672,83.33
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-01,497,744,66.8
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-09,380,720,52.78
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2026-10,146,192,76.04
+14340998,11579,"Kodungaiyur, Chennai - TNPCB",nox,2025-02,19,672,2.83
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-07,736,744,98.92
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-10,710,744,95.43
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-03,710,744,95.43
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-08,692,744,93.01
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-04,678,720,94.17
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-08,672,744,90.32
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-11,667,720,92.64
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-05,664,744,89.25
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-06,647,720,89.86
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-03,645,744,86.69
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-09,634,720,88.06
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-06,632,720,87.78
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-12,622,744,83.6
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-07,609,744,81.85
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-05,590,744,79.3
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-04,574,720,79.72
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-02,560,672,83.33
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-01,497,744,66.8
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-09,380,720,52.78
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2026-10,146,192,76.04
+12236306,11579,"Kodungaiyur, Chennai - TNPCB",o3,2025-02,19,672,2.83
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-07,736,744,98.92
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-03,710,744,95.43
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-10,707,744,95.03
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-08,689,744,92.61
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-04,678,720,94.17
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-08,672,744,90.32
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-11,666,720,92.5
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-05,664,744,89.25
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-06,649,720,90.14
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-06,632,720,87.78
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-09,631,720,87.64
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-07,630,744,84.68
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-12,620,744,83.33
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-05,601,744,80.78
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-04,573,720,79.58
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-02,560,672,83.33
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-03,556,744,74.73
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-01,497,744,66.8
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-09,380,720,52.78
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2026-10,146,192,76.04
+12236307,11579,"Kodungaiyur, Chennai - TNPCB",pm10,2025-02,19,672,2.83
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-07,736,744,98.92
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-03,710,744,95.43
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-10,709,744,95.3
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-08,689,744,92.61
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-04,678,720,94.17
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-08,672,744,90.32
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-11,666,720,92.5
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-05,664,744,89.25
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-06,649,720,90.14
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-06,632,720,87.78
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-09,630,720,87.5
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-12,621,744,83.47
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-05,601,744,80.78
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-07,576,744,77.42
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-04,573,720,79.58
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-02,560,672,83.33
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-03,503,744,67.61
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-01,497,744,66.8
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-09,380,720,52.78
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2026-10,146,192,76.04
+12236308,11579,"Kodungaiyur, Chennai - TNPCB",pm25,2025-02,19,672,2.83
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-07,736,744,98.92
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-10,710,744,95.43
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-03,710,744,95.43
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-08,692,744,93.01
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-04,678,720,94.17
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-08,672,744,90.32
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-11,667,720,92.64
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-05,664,744,89.25
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-06,649,720,90.14
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-07,642,744,86.29
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-09,634,720,88.06
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-06,632,720,87.78
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-03,626,744,84.14
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-12,622,744,83.6
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-05,603,744,81.05
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-04,576,720,80.0
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-02,560,672,83.33
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-01,497,744,66.8
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-09,380,720,52.78
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2026-10,146,192,76.04
+12236309,11579,"Kodungaiyur, Chennai - TNPCB",relativehumidity,2025-02,19,672,2.83
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-07,736,744,98.92
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-10,710,744,95.43
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-03,710,744,95.43
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-08,692,744,93.01
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-04,678,720,94.17
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-08,672,744,90.32
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-11,667,720,92.64
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-05,664,744,89.25
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-09,634,720,88.06
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-06,632,720,87.78
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-12,622,744,83.6
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-07,603,744,81.05
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-05,567,744,76.21
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-02,560,672,83.33
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-06,554,720,76.94
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-04,553,720,76.81
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-03,525,744,70.56
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-01,497,744,66.8
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-09,380,720,52.78
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2026-10,146,192,76.04
+12236310,11579,"Kodungaiyur, Chennai - TNPCB",so2,2025-02,19,672,2.83
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-07,736,744,98.92
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-10,710,744,95.43
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-03,710,744,95.43
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-08,692,744,93.01
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-04,678,720,94.17
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-11,667,720,92.64
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-05,664,744,89.25
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-06,649,720,90.14
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-07,642,744,86.29
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-09,634,720,88.06
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-06,632,720,87.78
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-03,626,744,84.14
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-12,622,744,83.6
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-05,603,744,81.05
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-04,576,720,80.0
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-02,560,672,83.33
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-01,497,744,66.8
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-08,136,744,18.28
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2025-02,19,672,2.83
+12236311,11579,"Kodungaiyur, Chennai - TNPCB",temperature,2026-09,8,720,1.11
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-07,736,744,98.92
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-10,710,744,95.43
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-03,710,744,95.43
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-08,692,744,93.01
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-04,678,720,94.17
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-08,672,744,90.32
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-11,667,720,92.64
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-05,664,744,89.25
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-06,649,720,90.14
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-07,642,744,86.29
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-09,634,720,88.06
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-06,632,720,87.78
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-03,622,744,83.6
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-12,622,744,83.6
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-05,603,744,81.05
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-04,576,720,80.0
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-02,560,672,83.33
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-01,497,744,66.8
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-09,380,720,52.78
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2026-10,146,192,76.04
+14340999,11579,"Kodungaiyur, Chennai - TNPCB",wind_direction,2025-02,19,672,2.83
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-07,736,744,98.92
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-10,710,744,95.43
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-03,710,744,95.43
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-08,692,744,93.01
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-04,678,720,94.17
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-08,672,744,90.32
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-11,667,720,92.64
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-05,664,744,89.25
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-06,649,720,90.14
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-07,643,744,86.42
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-09,634,720,88.06
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-06,632,720,87.78
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-12,622,744,83.6
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-05,603,744,81.05
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-03,593,744,79.7
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-04,576,720,80.0
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-02,560,672,83.33
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-01,497,744,66.8
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2026-09,206,720,28.61
+14341000,11579,"Kodungaiyur, Chennai - TNPCB",wind_speed,2025-02,19,672,2.83
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-07,736,744,98.92
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-07,734,744,98.66
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-08,730,744,98.12
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-10,715,744,96.1
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-03,693,744,93.15
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-04,685,720,95.14
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-09,681,720,94.58
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-08,669,744,89.92
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-05,669,744,89.92
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-12,661,744,88.84
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-11,660,720,91.67
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-06,556,720,77.22
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-02,553,672,82.29
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-01,496,744,66.67
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-06,429,720,59.58
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-09,406,720,56.39
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-03,278,744,37.37
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2025-02,222,672,33.04
+12236271,11581,"Arumbakkam, Chennai - TNPCB",no,2026-10,146,192,76.04
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-07,736,744,98.92
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-07,735,744,98.79
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-08,730,744,98.12
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-10,715,744,96.1
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-03,693,744,93.15
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-04,685,720,95.14
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-09,681,720,94.58
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-08,669,744,89.92
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-05,669,744,89.92
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-12,661,744,88.84
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-11,660,720,91.67
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-06,556,720,77.22
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-02,553,672,82.29
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-01,496,744,66.67
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-06,429,720,59.58
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-09,406,720,56.39
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-03,279,744,37.5
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2025-02,223,672,33.18
+12236272,11581,"Arumbakkam, Chennai - TNPCB",no2,2026-10,146,192,76.04
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-07,736,744,98.92
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-07,735,744,98.79
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-08,730,744,98.12
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-10,715,744,96.1
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-03,693,744,93.15
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-04,685,720,95.14
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-09,681,720,94.58
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-08,671,744,90.19
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-05,669,744,89.92
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-12,661,744,88.84
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-11,660,720,91.67
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-06,556,720,77.22
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-02,553,672,82.29
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-01,496,744,66.67
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-06,429,720,59.58
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-09,406,720,56.39
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-03,279,744,37.5
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2025-02,223,672,33.18
+14340986,11581,"Arumbakkam, Chennai - TNPCB",nox,2026-10,146,192,76.04
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-07,729,744,97.98
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-08,728,744,97.85
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-07,709,744,95.3
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-10,705,744,94.76
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-03,693,744,93.15
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-04,685,720,95.14
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-05,669,744,89.92
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-08,663,744,89.11
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-12,661,744,88.84
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-09,655,720,90.97
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-11,636,720,88.33
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-06,555,720,77.08
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-02,553,672,82.29
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-01,496,744,66.67
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-06,429,720,59.58
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-09,404,720,56.11
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-03,279,744,37.5
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2025-02,222,672,33.04
+12236273,11581,"Arumbakkam, Chennai - TNPCB",pm10,2026-10,146,192,76.04
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-08,730,744,98.12
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-07,729,744,97.98
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-10,714,744,95.97
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-03,693,744,93.15
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-04,685,720,95.14
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-09,681,720,94.58
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-05,669,744,89.92
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-08,668,744,89.78
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-12,661,744,88.84
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-11,660,720,91.67
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-07,655,744,88.04
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-06,555,720,77.08
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-02,553,672,82.29
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-01,496,744,66.67
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-09,404,720,56.11
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-03,279,744,37.5
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-02,211,672,31.4
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2026-10,146,192,76.04
+12236274,11581,"Arumbakkam, Chennai - TNPCB",pm25,2025-06,102,720,14.17
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-07,736,744,98.92
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-08,730,744,98.12
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-07,728,744,97.85
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-10,715,744,96.1
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-03,693,744,93.15
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-04,685,720,95.14
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-09,681,720,94.58
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-08,671,744,90.19
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-05,669,744,89.92
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-12,661,744,88.84
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-11,660,720,91.67
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-06,556,720,77.22
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-02,553,672,82.29
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-01,496,744,66.67
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-06,428,720,59.44
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-09,406,720,56.39
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-03,279,744,37.5
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2025-02,223,672,33.18
+12236275,11581,"Arumbakkam, Chennai - TNPCB",relativehumidity,2026-10,146,192,76.04
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-07,736,744,98.92
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-07,735,744,98.79
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-08,730,744,98.12
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-10,715,744,96.1
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-03,693,744,93.15
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-04,685,720,95.14
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-09,681,720,94.58
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-08,671,744,90.19
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-05,669,744,89.92
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-12,661,744,88.84
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-11,660,720,91.67
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-06,556,720,77.22
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-02,553,672,82.29
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-01,496,744,66.67
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-06,428,720,59.44
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-09,406,720,56.39
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-03,279,744,37.5
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2025-02,223,672,33.18
+12236276,11581,"Arumbakkam, Chennai - TNPCB",so2,2026-10,146,192,76.04
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-07,736,744,98.92
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-07,735,744,98.79
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-08,730,744,98.12
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-10,715,744,96.1
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-03,693,744,93.15
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-04,685,720,95.14
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-09,681,720,94.58
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-05,669,744,89.92
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-12,661,744,88.84
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-11,660,720,91.67
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-06,556,720,77.22
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-02,553,672,82.29
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-01,496,744,66.67
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-06,428,720,59.44
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-03,279,744,37.5
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2025-02,223,672,33.18
+12236277,11581,"Arumbakkam, Chennai - TNPCB",temperature,2026-08,136,744,18.28
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-07,736,744,98.92
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-08,730,744,98.12
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-10,715,744,96.1
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-03,693,744,93.15
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-04,685,720,95.14
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-09,681,720,94.58
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-08,671,744,90.19
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-05,669,744,89.92
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-12,661,744,88.84
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-11,660,720,91.67
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-06,556,720,77.22
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-02,553,672,82.29
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-01,496,744,66.67
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-09,407,720,56.53
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2026-10,146,192,76.04
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-07,38,744,5.11
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-02,9,672,1.34
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-03,5,744,0.67
+14340987,11581,"Arumbakkam, Chennai - TNPCB",wind_direction,2025-06,1,720,0.14
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-07,736,744,98.92
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-07,735,744,98.79
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-08,730,744,98.12
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-10,715,744,96.1
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-03,693,744,93.15
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-04,685,720,95.14
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-09,681,720,94.58
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-08,671,744,90.19
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-05,669,744,89.92
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-12,661,744,88.84
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-11,660,720,91.67
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-06,556,720,77.22
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-02,553,672,82.29
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-01,496,744,66.67
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-09,407,720,56.53
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-06,329,720,45.69
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-03,279,744,37.5
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2025-02,223,672,33.18
+14340988,11581,"Arumbakkam, Chennai - TNPCB",wind_speed,2026-10,146,192,76.04
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-03,739,744,99.33
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-07,727,744,97.72
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-12,715,744,96.1
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-03,708,744,95.16
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-08,708,744,95.16
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-07,705,744,94.76
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-09,702,720,97.5
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-05,696,744,93.55
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-05,694,744,93.28
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-04,683,720,94.86
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-08,672,744,90.32
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-06,665,720,92.36
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-06,633,720,87.92
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-11,631,720,87.64
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-04,624,720,86.67
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-10,604,744,81.18
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-02,576,672,85.71
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-01,494,744,66.4
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2026-09,364,720,50.56
+12236285,12046,"Perungudi, Chennai - TNPCB",co,2025-02,234,672,34.82
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-03,732,744,98.39
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-07,727,744,97.72
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-12,715,744,96.1
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-03,708,744,95.16
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-08,708,744,95.16
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-09,702,720,97.5
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-05,696,744,93.55
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-05,689,744,92.61
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-07,689,744,92.61
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-04,683,720,94.86
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-08,672,744,90.32
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-06,663,720,92.08
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-06,633,720,87.92
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-11,631,720,87.64
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-04,622,720,86.39
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-10,604,744,81.18
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-02,576,672,85.71
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-01,494,744,66.4
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2026-09,364,720,50.56
+12236286,12046,"Perungudi, Chennai - TNPCB",no,2025-02,233,672,34.67
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-03,736,744,98.92
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-07,727,744,97.72
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-12,715,744,96.1
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-03,708,744,95.16
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-08,708,744,95.16
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-09,702,720,97.5
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-05,696,744,93.55
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-05,696,744,93.55
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-07,690,744,92.74
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-04,683,720,94.86
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-08,672,744,90.32
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-06,665,720,92.36
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-06,633,720,87.92
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-11,631,720,87.64
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-04,623,720,86.53
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-10,604,744,81.18
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-02,576,672,85.71
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-01,494,744,66.4
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2026-09,364,720,50.56
+12236287,12046,"Perungudi, Chennai - TNPCB",no2,2025-02,233,672,34.67
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-03,735,744,98.79
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-07,727,744,97.72
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-12,715,744,96.1
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-03,708,744,95.16
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-08,708,744,95.16
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-09,702,720,97.5
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-05,696,744,93.55
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-05,694,744,93.28
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-07,690,744,92.74
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-04,683,720,94.86
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-08,672,744,90.32
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-06,665,720,92.36
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-06,633,720,87.92
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-11,631,720,87.64
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-04,623,720,86.53
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-10,604,744,81.18
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-02,576,672,85.71
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-01,494,744,66.4
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2026-09,364,720,50.56
+14340992,12046,"Perungudi, Chennai - TNPCB",nox,2025-02,233,672,34.67
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-03,737,744,99.06
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-07,727,744,97.72
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-12,715,744,96.1
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-03,708,744,95.16
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-08,708,744,95.16
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-09,702,720,97.5
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-07,697,744,93.68
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-05,696,744,93.55
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-05,695,744,93.41
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-04,683,720,94.86
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-08,672,744,90.32
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-06,636,720,88.33
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-06,633,720,87.92
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-11,631,720,87.64
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-04,624,720,86.67
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-10,604,744,81.18
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-02,576,672,85.71
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-01,494,744,66.4
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2026-09,364,720,50.56
+12236288,12046,"Perungudi, Chennai - TNPCB",o3,2025-02,233,672,34.67
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-03,733,744,98.52
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-12,715,744,96.1
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-07,712,744,95.7
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-03,708,744,95.16
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-08,708,744,95.16
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-07,705,744,94.76
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-09,702,720,97.5
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-05,696,744,93.55
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-05,695,744,93.41
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-04,683,720,94.86
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-08,672,744,90.32
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-06,666,720,92.5
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-11,631,720,87.64
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-06,629,720,87.36
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-04,622,720,86.39
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-10,604,744,81.18
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-02,576,672,85.71
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-01,494,744,66.4
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2026-09,349,720,48.47
+12236289,12046,"Perungudi, Chennai - TNPCB",pm10,2025-02,233,672,34.67
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-03,736,744,98.92
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-12,715,744,96.1
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-08,708,744,95.16
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-03,708,744,95.16
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-07,702,744,94.35
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-09,702,720,97.5
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-05,696,744,93.55
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-05,695,744,93.41
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-07,692,744,93.01
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-04,683,720,94.86
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-08,662,744,88.98
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-06,660,720,91.67
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-06,633,720,87.92
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-11,631,720,87.64
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-04,623,720,86.53
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-10,604,744,81.18
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-02,576,672,85.71
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-01,494,744,66.4
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2026-09,346,720,48.06
+12236290,12046,"Perungudi, Chennai - TNPCB",pm25,2025-02,233,672,34.67
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-03,739,744,99.33
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-07,727,744,97.72
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-12,715,744,96.1
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-03,708,744,95.16
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-08,708,744,95.16
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-07,705,744,94.76
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-09,702,720,97.5
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-05,696,744,93.55
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-04,683,720,94.86
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-08,646,744,86.83
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-06,633,720,87.92
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-11,631,720,87.64
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-04,624,720,86.67
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-10,604,744,81.18
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-02,576,672,85.71
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-01,494,744,66.4
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-05,491,744,65.99
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2026-09,364,720,50.56
+12236291,12046,"Perungudi, Chennai - TNPCB",relativehumidity,2025-02,234,672,34.82
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-03,738,744,99.19
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-07,727,744,97.72
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-12,715,744,96.1
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-03,708,744,95.16
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-08,708,744,95.16
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-07,704,744,94.62
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-09,702,720,97.5
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-05,696,744,93.55
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-05,694,744,93.28
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-04,683,720,94.86
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-08,672,744,90.32
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-06,666,720,92.5
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-06,633,720,87.92
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-11,631,720,87.64
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-04,622,720,86.39
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-10,604,744,81.18
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-02,576,672,85.71
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-01,494,744,66.4
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2026-09,364,720,50.56
+12236292,12046,"Perungudi, Chennai - TNPCB",so2,2025-02,234,672,34.82
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-03,739,744,99.33
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-07,727,744,97.72
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-12,715,744,96.1
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-03,708,744,95.16
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-08,708,744,95.16
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-07,705,744,94.76
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-09,702,720,97.5
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-05,696,744,93.55
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-05,696,744,93.55
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-04,683,720,94.86
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-06,666,720,92.5
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-06,633,720,87.92
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-11,631,720,87.64
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-04,624,720,86.67
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-10,604,744,81.18
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-02,576,672,85.71
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-01,494,744,66.4
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2025-02,234,672,34.82
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-08,136,744,18.28
+12236293,12046,"Perungudi, Chennai - TNPCB",temperature,2026-09,2,720,0.28
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-03,739,744,99.33
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-07,727,744,97.72
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-12,715,744,96.1
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-03,708,744,95.16
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-08,708,744,95.16
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-07,705,744,94.76
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-09,702,720,97.5
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-05,696,744,93.55
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-04,683,720,94.86
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-08,646,744,86.83
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-06,633,720,87.92
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-11,631,720,87.64
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-04,624,720,86.67
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-10,604,744,81.18
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-02,576,672,85.71
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-01,494,744,66.4
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-05,489,744,65.73
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2026-09,364,720,50.56
+14340993,12046,"Perungudi, Chennai - TNPCB",wind_direction,2025-02,234,672,34.82
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-03,739,744,99.33
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-07,727,744,97.72
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-12,715,744,96.1
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-03,708,744,95.16
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-08,708,744,95.16
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-07,705,744,94.76
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-09,702,720,97.5
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-05,696,744,93.55
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-04,683,720,94.86
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-08,672,744,90.32
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-06,633,720,87.92
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-11,631,720,87.64
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-04,624,720,86.67
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-05,611,744,82.12
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-10,604,744,81.18
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-02,576,672,85.71
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-01,494,744,66.4
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-06,370,720,51.39
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2026-09,364,720,50.56
+14340994,12046,"Perungudi, Chennai - TNPCB",wind_speed,2025-02,234,672,34.82
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-07,715,744,96.1
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-10,655,744,88.04
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-11,648,720,90.0
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-03,644,744,86.56
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-06,640,720,88.89
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-09,632,720,87.78
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-04,622,720,86.39
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-05,615,744,82.66
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-08,280,744,37.63
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-02,217,672,32.29
+12235544,3409319,"Alandur Bus Depot, Chennai - CPCB",co,2025-12,34,744,4.57
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-07,715,744,96.1
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-10,655,744,88.04
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-11,648,720,90.0
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-03,644,744,86.56
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-06,640,720,88.89
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-09,632,720,87.78
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-04,622,720,86.39
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-05,615,744,82.66
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-08,280,744,37.63
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-02,217,672,32.29
+12235545,3409319,"Alandur Bus Depot, Chennai - CPCB",no,2025-12,34,744,4.57
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-07,715,744,96.1
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-10,655,744,88.04
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-11,648,720,90.0
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-03,644,744,86.56
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-06,640,720,88.89
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-09,632,720,87.78
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-04,622,720,86.39
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-05,615,744,82.66
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-08,280,744,37.63
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-02,217,672,32.29
+12235546,3409319,"Alandur Bus Depot, Chennai - CPCB",no2,2025-12,34,744,4.57
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-07,715,744,96.1
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-10,655,744,88.04
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-11,648,720,90.0
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-03,644,744,86.56
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-06,640,720,88.89
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-09,632,720,87.78
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-04,622,720,86.39
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-05,615,744,82.66
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-08,280,744,37.63
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-02,217,672,32.29
+14341857,3409319,"Alandur Bus Depot, Chennai - CPCB",nox,2025-12,34,744,4.57
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-07,715,744,96.1
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-10,655,744,88.04
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-11,648,720,90.0
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-03,644,744,86.56
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-06,640,720,88.89
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-09,632,720,87.78
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-04,622,720,86.39
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-05,615,744,82.66
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-08,280,744,37.63
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-02,217,672,32.29
+12235547,3409319,"Alandur Bus Depot, Chennai - CPCB",o3,2025-12,34,744,4.57
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-07,715,744,96.1
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-10,655,744,88.04
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-11,648,720,90.0
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-03,644,744,86.56
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-06,640,720,88.89
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-09,631,720,87.64
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-04,622,720,86.39
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-05,615,744,82.66
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-08,280,744,37.63
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-02,217,672,32.29
+12235548,3409319,"Alandur Bus Depot, Chennai - CPCB",pm10,2025-12,34,744,4.57
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-07,715,744,96.1
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-10,655,744,88.04
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-11,648,720,90.0
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-03,644,744,86.56
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-06,640,720,88.89
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-09,632,720,87.78
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-04,622,720,86.39
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-05,615,744,82.66
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-08,280,744,37.63
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-02,217,672,32.29
+12235549,3409319,"Alandur Bus Depot, Chennai - CPCB",pm25,2025-12,34,744,4.57
+14484666,3409319,"Alandur Bus Depot, Chennai - CPCB",relativehumidity,2025-11,648,720,90.0
+14484666,3409319,"Alandur Bus Depot, Chennai - CPCB",relativehumidity,2025-10,99,744,13.31
+14484666,3409319,"Alandur Bus Depot, Chennai - CPCB",relativehumidity,2025-12,34,744,4.57
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-07,715,744,96.1
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-10,655,744,88.04
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-11,648,720,90.0
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-03,644,744,86.56
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-06,640,720,88.89
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-09,632,720,87.78
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-04,622,720,86.39
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-05,615,744,82.66
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-08,280,744,37.63
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-02,217,672,32.29
+12235550,3409319,"Alandur Bus Depot, Chennai - CPCB",so2,2025-12,34,744,4.57
+14018152,3409319,"Alandur Bus Depot, Chennai - CPCB",temperature,2025-09,435,720,60.42
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-07,715,744,96.1
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-10,655,744,88.04
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-11,648,720,90.0
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-03,644,744,86.56
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-06,640,720,88.89
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-09,632,720,87.78
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-04,622,720,86.39
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-05,615,744,82.66
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-08,280,744,37.63
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-02,217,672,32.29
+14341858,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_direction,2025-12,34,744,4.57
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-07,715,744,96.1
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-10,655,744,88.04
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-11,648,720,90.0
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-03,644,744,86.56
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-06,640,720,88.89
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-09,632,720,87.78
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-04,622,720,86.39
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-05,615,744,82.66
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-08,280,744,37.63
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-02,217,672,32.29
+14341859,3409319,"Alandur Bus Depot, Chennai - CPCB",wind_speed,2025-12,34,744,4.57

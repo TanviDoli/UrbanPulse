@@ -1,0 +1,16 @@
+# Versions installed and tested on 2026-10-09 (Python 3.10.11)
+pandas==2.3.3
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+hmmlearn==0.3.3
+shapely==2.1.2
+networkx==3.4.2
+joblib==1.5.3
+requests==2.34.2
+python-dotenv==1.2.2
+streamlit==1.65.0
+folium==0.20.0
+streamlit-folium==0.26.2
+matplotlib==3.10.8
+pytest==9.1.1

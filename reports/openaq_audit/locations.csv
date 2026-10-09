@@ -1,0 +1,14 @@
+location_id,name,provider,owner,is_mobile,is_monitor,latitude,longitude,metadata_first_utc,metadata_last_utc,n_sensors,pip_zone_id,pip_zone_label,nearest_zone_id,nearest_zone_label,distance_to_nearest_zone_km
+378,Alandur Bus Depot,CPCB,Unknown Governmental Organization,False,True,12.99711389,80.19151667,2016-03-22T00:45:00Z,2018-02-22T03:45:00Z,5,,,12.0,Alandur,0.09
+2461,US Diplomatic Post: Chennai,StateAir Chennai,Unknown Governmental Organization,False,True,13.052371,80.251932,2016-01-30T00:30:00Z,2016-11-09T16:30:00Z,1,9.0,Teynampet,,,0.0
+2549,IIT,CPCB,Unknown Governmental Organization,False,True,12.992513890000001,80.23744722,2016-03-22T00:45:00Z,2018-02-22T03:45:00Z,5,13.0,Adyar,,,0.0
+2586,"Manali, Chennai - CPCB",CPCB,Central Pollution Control Board,False,True,13.164544,80.26285,2016-03-21T10:00:00Z,2026-10-07T14:30:00Z,18,2.0,Manali,,,0.0
+5558,"Alandur Bus Depot, Chennai - CPCB",caaqm,Unknown Governmental Organization,False,True,12.909916100000002,80.1076538,2018-03-09T05:30:00Z,2022-10-31T01:45:00Z,6,,,14.0,Perungudi,9.64
+5655,"Velachery Res. Area, Chennai - CPCB",CPCB,Central Pollution Control Board,False,True,13.0052189,80.2398125,2018-03-09T05:30:00Z,2026-10-07T14:30:00Z,18,13.0,Adyar,,,0.0
+8558,Chennai,AirNow,Unknown Governmental Organization,False,True,13.08784,80.278475,2022-10-03T20:00:00Z,2026-10-09T06:30:00Z,1,5.0,Royapuram,,,0.0
+10780,"Manali Village, Chennai - TNPCB",CPCB,Tamil Nadu Pollution Control Board,False,True,13.1662,80.2584,2019-07-19T06:00:00Z,2026-10-07T14:30:00Z,18,2.0,Manali,,,0.0
+11578,"Royapuram, Chennai - TNPCB",CPCB,Tamil Nadu Pollution Control Board,False,True,13.1036,80.2909,2020-11-08T14:00:00Z,2026-10-07T14:30:00Z,18,5.0,Royapuram,,,0.0
+11579,"Kodungaiyur, Chennai - TNPCB",CPCB,Tamil Nadu Pollution Control Board,False,True,13.1278,80.2642,2020-11-08T14:00:00Z,2026-10-07T14:30:00Z,18,4.0,Tondiarpet,,,0.0
+11581,"Arumbakkam, Chennai - TNPCB",CPCB,Tamil Nadu Pollution Control Board,False,True,13.0664,80.2112,2020-11-08T12:00:00Z,2026-10-07T14:30:00Z,14,8.0,Anna Nagar,,,0.0
+12046,"Perungudi, Chennai - TNPCB",CPCB,Tamil Nadu Pollution Control Board,False,True,12.9533,80.2357,2025-02-18T20:15:00Z,2026-09-28T18:45:00Z,12,15.0,Sholinganallur,,,0.0
+3409319,"Alandur Bus Depot, Chennai - CPCB",CPCB,Central Pollution Control Board,False,True,12.9099161,80.1076538,2025-02-18T20:15:00Z,2025-12-02T11:00:00Z,12,,,14.0,Perungudi,9.64

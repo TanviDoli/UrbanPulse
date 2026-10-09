@@ -1,0 +1,10 @@
+station_name,station_file,mapped_zone_id,local_lat,local_lon,local_coord_pip_zone,openaq_location_id,openaq_lat,openaq_lon,openaq_coord_pip_zone,separation_km,consistent
+"Gandhi Nagar_Ennore, Chennai - TNPCB",gandhi-nagar-2024-25.csv,1,13.2081,80.3204,1,,,,,,True
+"Manali, Chennai - CPCB",manali-2024-25.csv,2,13.1656,80.2588,2,2586.0,13.164544,80.26285,2.0,0.45,True
+"Manali Village, Chennai - TNPCB",manali-village-2024-25.csv,2,13.1709,80.2642,2,10780.0,13.1662,80.2584,2.0,0.82,True
+"Kodungaiyur, Chennai - TNPCB",kodungaiyur-2024-25.csv,4,13.1367,80.2458,4,11579.0,13.1278,80.2642,4.0,2.22,True
+"Royapuram, Chennai - TNPCB",royapuram-2024-25.csv,5,13.1118,80.2941,5,11578.0,13.1036,80.2909,5.0,0.97,True
+"Arumbakkam, Chennai - TNPCB",arumbakkam-2024-25.csv,10,13.064,80.2078,10,11581.0,13.0664,80.2112,8.0,0.45,False
+"Alandur Bus Depot, Chennai - CPCB",alandur-2024-25.csv,12,12.9972,80.2005,12,3409319.0,12.9099161,80.1076538,,13.94,False
+"Velachery Res. Area, Chennai - CPCB",velachery-2024-25.csv,13,12.9786,80.2185,13,5655.0,13.0052189,80.2398125,13.0,3.75,True
+"Perungudi, Chennai - TNPCB",perungudi-2024-25.csv,14,12.966,80.2452,14,12046.0,12.9533,80.2357,15.0,1.74,False

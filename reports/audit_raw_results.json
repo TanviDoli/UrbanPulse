@@ -1,0 +1,3482 @@
+{
+  "aqi": {
+    "alandur-2024-25.csv": {
+      "n_rows": 62790,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_293",
+        "2025"
+      ],
+      "station_names": [
+        "Alandur Bus Depot, Chennai - CPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-02 16:30:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 61554,
+        "0 days 00:30:00": 1155,
+        "0 days 00:45:00": 44,
+        "0 days 01:00:00": 11,
+        "0 days 01:15:00": 2
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 4990,
+          "null_pct": 7.95,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 979.03,
+          "mean": 38.31,
+          "q01": 6.72,
+          "q99": 224.91,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 4694,
+          "null_pct": 7.48,
+          "dtype": "float64",
+          "min": 0.03,
+          "max": 966.57,
+          "mean": 72.32,
+          "q01": 15.01,
+          "q99": 364.84,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 9103,
+          "null_pct": 14.5,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 296.03,
+          "mean": 8.34,
+          "q01": 0.25,
+          "q99": 63.8,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 6289,
+          "null_pct": 10.02,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 343.09,
+          "mean": 15.47,
+          "q01": 3.41,
+          "q99": 60.04,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 5481,
+          "null_pct": 8.73,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 498.89,
+          "mean": 22.69,
+          "q01": 0.0,
+          "q99": 115.61,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 10763,
+          "null_pct": 17.14,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 491.86,
+          "mean": 22.38,
+          "q01": 2.1,
+          "q99": 73.56,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 2327,
+          "null_pct": 3.71,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 195.88,
+          "mean": 9.19,
+          "q01": 0.15,
+          "q99": 23.12,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 291,
+          "null_pct": 0.46,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 9.99,
+          "mean": 1.07,
+          "q01": 0.01,
+          "q99": 4.52,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 1047,
+          "null_pct": 1.67,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 455.34,
+          "mean": 16.16,
+          "q01": 0.39,
+          "q99": 126.2,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 4997,
+          "null_pct": 7.96,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 32.54,
+          "mean": 0.59,
+          "q01": 0.0,
+          "q99": 1.5,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 36840,
+          "null_pct": 58.67,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 6.28,
+          "mean": 1.19,
+          "q01": 0.0,
+          "q99": 2.01,
+          "negative_count": 0
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 62790,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 62790,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 10985,
+          "null_pct": 17.49,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 5.92,
+          "mean": 0.52,
+          "q01": 0.01,
+          "q99": 1.16,
+          "negative_count": 0
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 39030,
+          "null_pct": 62.16,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 4.09,
+          "mean": 0.65,
+          "q01": 0.03,
+          "q99": 0.9,
+          "negative_count": 0
+        },
+        "AT (\u00b0C)": {
+          "null_count": 62790,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 33495,
+          "null_pct": 53.34,
+          "dtype": "float64",
+          "min": 28.62,
+          "max": 99.65,
+          "mean": 79.47,
+          "q01": 42.46,
+          "q99": 99.55,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 338,
+          "null_pct": 0.54,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 9.87,
+          "mean": 1.1,
+          "q01": 0.1,
+          "q99": 2.91,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 363,
+          "null_pct": 0.58,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 359.99,
+          "mean": 157.83,
+          "q01": 3.52,
+          "q99": 356.2,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 62790,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "TOT-RF (mm)": {
+          "null_count": 62790,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "SR (W/mt2)": {
+          "null_count": 37909,
+          "null_pct": 60.37,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 978.41,
+          "mean": 53.77,
+          "q01": 0.01,
+          "q99": 524.16,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 28339,
+          "null_pct": 45.13,
+          "dtype": "float64",
+          "min": 745.05,
+          "max": 800.62,
+          "mean": 754.94,
+          "q01": 747.3,
+          "q99": 766.65,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 28351,
+          "null_pct": 45.15,
+          "dtype": "float64",
+          "min": -0.52,
+          "max": -0.07,
+          "mean": -0.49,
+          "q01": -0.51,
+          "q99": -0.39,
+          "negative_count": 34439
+        }
+      }
+    },
+    "arumbakkam-2024-25.csv": {
+      "n_rows": 70177,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_5361",
+        "2025"
+      ],
+      "station_names": [
+        "Arumbakkam, Chennai - TNPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 70175
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 16774,
+          "null_pct": 23.9,
+          "dtype": "float64",
+          "min": 0.64,
+          "max": 1000.0,
+          "mean": 31.19,
+          "q01": 2.0,
+          "q99": 113.47,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 14346,
+          "null_pct": 20.44,
+          "dtype": "float64",
+          "min": 1.0,
+          "max": 1000.0,
+          "mean": 80.71,
+          "q01": 9.0,
+          "q99": 240.0,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 27648,
+          "null_pct": 39.4,
+          "dtype": "float64",
+          "min": 0.1,
+          "max": 142.76,
+          "mean": 9.39,
+          "q01": 0.5,
+          "q99": 75.72,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 26883,
+          "null_pct": 38.31,
+          "dtype": "float64",
+          "min": 0.1,
+          "max": 123.57,
+          "mean": 12.98,
+          "q01": 3.4,
+          "q99": 36.2,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 26582,
+          "null_pct": 37.88,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 161.39,
+          "mean": 16.92,
+          "q01": 2.8,
+          "q99": 87.71,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 27210,
+          "null_pct": 38.77,
+          "dtype": "float64",
+          "min": 0.1,
+          "max": 65.9,
+          "mean": 10.75,
+          "q01": 2.56,
+          "q99": 24.1,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 13304,
+          "null_pct": 18.96,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 135.3,
+          "mean": 5.46,
+          "q01": 0.58,
+          "q99": 31.73,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "AT (\u00b0C)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 12777,
+          "null_pct": 18.21,
+          "dtype": "float64",
+          "min": 1.0,
+          "max": 99.0,
+          "mean": 79.48,
+          "q01": 54.0,
+          "q99": 98.0,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 11911,
+          "null_pct": 16.97,
+          "dtype": "float64",
+          "min": 0.27,
+          "max": 19.0,
+          "mean": 1.87,
+          "q01": 0.27,
+          "q99": 4.22,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 55505,
+          "null_pct": 79.09,
+          "dtype": "float64",
+          "min": 3.62,
+          "max": 149.5,
+          "mean": 89.48,
+          "q01": 12.0,
+          "q99": 146.14,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 12093,
+          "null_pct": 17.23,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 50.0,
+          "mean": 0.23,
+          "q01": 0.0,
+          "q99": 4.0,
+          "negative_count": 0
+        },
+        "TOT-RF (mm)": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 50.0,
+          "mean": 0.19,
+          "q01": 0.0,
+          "q99": 2.0,
+          "negative_count": 0
+        },
+        "SR (W/mt2)": {
+          "null_count": 11526,
+          "null_pct": 16.42,
+          "dtype": "float64",
+          "min": 10.0,
+          "max": 866.0,
+          "mean": 168.6,
+          "q01": 45.0,
+          "q99": 619.0,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 12204,
+          "null_pct": 17.39,
+          "dtype": "float64",
+          "min": 700.01,
+          "max": 850.0,
+          "mean": 738.07,
+          "q01": 700.64,
+          "q99": 759.0,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        }
+      }
+    },
+    "gandhi-nagar-2024-25.csv": {
+      "n_rows": 70177,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_5618",
+        "2025"
+      ],
+      "station_names": [
+        "Gandhi Nagar_Ennore, Chennai - TNPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 70175
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 63208,
+          "null_pct": 90.07,
+          "dtype": "float64",
+          "min": 0.12,
+          "max": 316.0,
+          "mean": 38.09,
+          "q01": 4.0,
+          "q99": 106.0,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 64225,
+          "null_pct": 91.52,
+          "dtype": "float64",
+          "min": 0.25,
+          "max": 538.2,
+          "mean": 64.13,
+          "q01": 12.9,
+          "q99": 184.6,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 64402,
+          "null_pct": 91.77,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 85.77,
+          "mean": 16.42,
+          "q01": 0.01,
+          "q99": 50.79,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 62963,
+          "null_pct": 89.72,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 87.89,
+          "mean": 13.16,
+          "q01": 1.12,
+          "q99": 45.16,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 65628,
+          "null_pct": 93.52,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 133.48,
+          "mean": 33.43,
+          "q01": 0.0,
+          "q99": 94.11,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 64093,
+          "null_pct": 91.33,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 209.74,
+          "mean": 7.37,
+          "q01": 0.38,
+          "q99": 26.91,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 61314,
+          "null_pct": 87.37,
+          "dtype": "float64",
+          "min": 0.49,
+          "max": 71.51,
+          "mean": 18.14,
+          "q01": 8.73,
+          "q99": 55.97,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 67482,
+          "null_pct": 96.16,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 8.89,
+          "mean": 0.51,
+          "q01": 0.06,
+          "q99": 2.92,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 64133,
+          "null_pct": 91.39,
+          "dtype": "float64",
+          "min": 0.29,
+          "max": 125.57,
+          "mean": 12.96,
+          "q01": 1.49,
+          "q99": 99.56,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 68910,
+          "null_pct": 98.19,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 1.0,
+          "mean": 0.01,
+          "q01": 0.0,
+          "q99": 0.08,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 69883,
+          "null_pct": 99.58,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 1.17,
+          "mean": 0.06,
+          "q01": 0.01,
+          "q99": 1.1,
+          "negative_count": 0
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 69888,
+          "null_pct": 99.59,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 1.02,
+          "mean": 0.05,
+          "q01": 0.01,
+          "q99": 0.93,
+          "negative_count": 0
+        },
+        "AT (\u00b0C)": {
+          "null_count": 62440,
+          "null_pct": 88.98,
+          "dtype": "float64",
+          "min": 20.34,
+          "max": 36.09,
+          "mean": 27.26,
+          "q01": 22.12,
+          "q99": 32.91,
+          "negative_count": 0
+        },
+        "RH (%)": {
+          "null_count": 70157,
+          "null_pct": 99.97,
+          "dtype": "float64",
+          "min": 0.23,
+          "max": 5.01,
+          "mean": 1.04,
+          "q01": 0.24,
+          "q99": 4.57,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 62439,
+          "null_pct": 88.97,
+          "dtype": "float64",
+          "min": 0.19,
+          "max": 3.87,
+          "mean": 1.13,
+          "q01": 0.27,
+          "q99": 2.62,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 62439,
+          "null_pct": 88.97,
+          "dtype": "float64",
+          "min": 22.02,
+          "max": 329.56,
+          "mean": 174.04,
+          "q01": 51.64,
+          "q99": 309.32,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "TOT-RF (mm)": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "q01": 0.0,
+          "q99": 0.0,
+          "negative_count": 0
+        },
+        "SR (W/mt2)": {
+          "null_count": 62440,
+          "null_pct": 88.98,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 881.34,
+          "mean": 138.91,
+          "q01": 0.0,
+          "q99": 805.4,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 62440,
+          "null_pct": 88.98,
+          "dtype": "float64",
+          "min": 922.27,
+          "max": 1019.29,
+          "mean": 1013.22,
+          "q01": 1005.44,
+          "q99": 1018.44,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        }
+      }
+    },
+    "kodungaiyur-2024-25.csv": {
+      "n_rows": 70177,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_5365",
+        "2025"
+      ],
+      "station_names": [
+        "Kodungaiyur, Chennai - TNPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 70175
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 5237,
+          "null_pct": 7.46,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 822.59,
+          "mean": 20.79,
+          "q01": 2.0,
+          "q99": 107.0,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 5536,
+          "null_pct": 7.89,
+          "dtype": "float64",
+          "min": 0.09,
+          "max": 997.0,
+          "mean": 63.1,
+          "q01": 6.0,
+          "q99": 193.0,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 5196,
+          "null_pct": 7.4,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 334.28,
+          "mean": 4.08,
+          "q01": 0.6,
+          "q99": 18.0,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 3884,
+          "null_pct": 5.53,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 313.42,
+          "mean": 11.73,
+          "q01": 0.87,
+          "q99": 33.8,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 3202,
+          "null_pct": 4.56,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 430.71,
+          "mean": 9.86,
+          "q01": 0.63,
+          "q99": 31.0,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 3436,
+          "null_pct": 4.9,
+          "dtype": "float64",
+          "min": 0.1,
+          "max": 424.46,
+          "mean": 18.59,
+          "q01": 7.9,
+          "q99": 44.0,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 7944,
+          "null_pct": 11.32,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 147.8,
+          "mean": 4.99,
+          "q01": 0.3,
+          "q99": 43.2,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 7959,
+          "null_pct": 11.34,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 6.34,
+          "mean": 0.63,
+          "q01": 0.0,
+          "q99": 1.51,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 17503,
+          "null_pct": 24.94,
+          "dtype": "float64",
+          "min": 0.2,
+          "max": 194.04,
+          "mean": 24.85,
+          "q01": 4.12,
+          "q99": 76.83,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 6520,
+          "null_pct": 9.29,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 86.5,
+          "mean": 2.1,
+          "q01": 0.3,
+          "q99": 7.9,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 6336,
+          "null_pct": 9.03,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 110.9,
+          "mean": 8.9,
+          "q01": 0.6,
+          "q99": 44.9,
+          "negative_count": 0
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 59754,
+          "null_pct": 85.15,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 22.73,
+          "mean": 1.65,
+          "q01": 0.0,
+          "q99": 7.37,
+          "negative_count": 0
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "AT (\u00b0C)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 2608,
+          "null_pct": 3.72,
+          "dtype": "float64",
+          "min": 0.58,
+          "max": 99.8,
+          "mean": 67.73,
+          "q01": 61.24,
+          "q99": 74.94,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 2346,
+          "null_pct": 3.34,
+          "dtype": "float64",
+          "min": 0.27,
+          "max": 8.7,
+          "mean": 1.98,
+          "q01": 0.27,
+          "q99": 4.9,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 11711,
+          "null_pct": 16.69,
+          "dtype": "float64",
+          "min": 0.58,
+          "max": 360.0,
+          "mean": 216.04,
+          "q01": 40.0,
+          "q99": 351.0,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 2191,
+          "null_pct": 3.12,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 48.0,
+          "mean": 0.06,
+          "q01": 0.0,
+          "q99": 1.0,
+          "negative_count": 0
+        },
+        "TOT-RF (mm)": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 48.0,
+          "mean": 0.06,
+          "q01": 0.0,
+          "q99": 1.0,
+          "negative_count": 0
+        },
+        "SR (W/mt2)": {
+          "null_count": 2212,
+          "null_pct": 3.15,
+          "dtype": "float64",
+          "min": 0.58,
+          "max": 1383.2,
+          "mean": 114.2,
+          "q01": 14.83,
+          "q99": 495.0,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 70176,
+          "null_pct": 100.0,
+          "dtype": "float64",
+          "min": 745.01,
+          "max": 745.01,
+          "mean": 745.01,
+          "q01": 745.01,
+          "q99": 745.01,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        }
+      }
+    },
+    "manali-2024-25.csv": {
+      "n_rows": 63740,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_306",
+        "2025"
+      ],
+      "station_names": [
+        "Manali, Chennai - CPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 62950,
+        "0 days 00:30:00": 569,
+        "0 days 00:45:00": 60,
+        "0 days 01:00:00": 57,
+        "0 days 01:15:00": 16
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 11246,
+          "null_pct": 17.64,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 890.58,
+          "mean": 28.91,
+          "q01": 1.99,
+          "q99": 109.82,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 7953,
+          "null_pct": 12.48,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 982.2,
+          "mean": 65.43,
+          "q01": 7.43,
+          "q99": 237.81,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 6689,
+          "null_pct": 10.49,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 171.56,
+          "mean": 6.84,
+          "q01": 1.16,
+          "q99": 25.9,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 7600,
+          "null_pct": 11.92,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 493.37,
+          "mean": 10.21,
+          "q01": 0.4,
+          "q99": 33.47,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 6482,
+          "null_pct": 10.17,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 416.8,
+          "mean": 16.59,
+          "q01": 3.71,
+          "q99": 58.8,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 6523,
+          "null_pct": 10.23,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 497.53,
+          "mean": 24.0,
+          "q01": 14.35,
+          "q99": 45.23,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 8471,
+          "null_pct": 13.29,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 199.99,
+          "mean": 10.06,
+          "q01": 1.19,
+          "q99": 49.92,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 1309,
+          "null_pct": 2.05,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 9.99,
+          "mean": 1.29,
+          "q01": 0.0,
+          "q99": 4.56,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 1097,
+          "null_pct": 1.72,
+          "dtype": "float64",
+          "min": 1.25,
+          "max": 497.3,
+          "mean": 19.7,
+          "q01": 6.39,
+          "q99": 56.01,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 2224,
+          "null_pct": 3.49,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 50.2,
+          "mean": 2.08,
+          "q01": 0.13,
+          "q99": 6.05,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 2251,
+          "null_pct": 3.53,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 459.46,
+          "mean": 5.48,
+          "q01": 0.29,
+          "q99": 22.43,
+          "negative_count": 0
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 63740,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 63740,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 2608,
+          "null_pct": 4.09,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 40.22,
+          "mean": 1.92,
+          "q01": 0.04,
+          "q99": 7.6,
+          "negative_count": 0
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 2601,
+          "null_pct": 4.08,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 44.8,
+          "mean": 2.3,
+          "q01": 0.1,
+          "q99": 6.96,
+          "negative_count": 0
+        },
+        "AT (\u00b0C)": {
+          "null_count": 63740,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 527,
+          "null_pct": 0.83,
+          "dtype": "float64",
+          "min": 17.83,
+          "max": 99.13,
+          "mean": 80.88,
+          "q01": 40.71,
+          "q99": 98.97,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 519,
+          "null_pct": 0.81,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 9.93,
+          "mean": 1.2,
+          "q01": 0.17,
+          "q99": 3.35,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 1050,
+          "null_pct": 1.65,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 359.99,
+          "mean": 172.5,
+          "q01": 2.87,
+          "q99": 356.71,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 63740,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "TOT-RF (mm)": {
+          "null_count": 63740,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "SR (W/mt2)": {
+          "null_count": 8415,
+          "null_pct": 13.2,
+          "dtype": "float64",
+          "min": 2.2,
+          "max": 711.1,
+          "mean": 169.58,
+          "q01": 16.3,
+          "q99": 509.0,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 2710,
+          "null_pct": 4.25,
+          "dtype": "float64",
+          "min": 800.5,
+          "max": 1072.0,
+          "mean": 1005.26,
+          "q01": 991.6,
+          "q99": 1030.67,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 200,
+          "null_pct": 0.31,
+          "dtype": "float64",
+          "min": -0.5,
+          "max": 0.72,
+          "mean": -0.42,
+          "q01": -0.5,
+          "q99": -0.24,
+          "negative_count": 63091
+        }
+      }
+    },
+    "manali-village-2024-25.csv": {
+      "n_rows": 70177,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_5092",
+        "2025"
+      ],
+      "station_names": [
+        "Manali Village, Chennai - TNPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 70175
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 30067,
+          "null_pct": 42.84,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 451.28,
+          "mean": 32.12,
+          "q01": 0.38,
+          "q99": 121.21,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 29119,
+          "null_pct": 41.49,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 985.0,
+          "mean": 62.88,
+          "q01": 10.22,
+          "q99": 201.52,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 28691,
+          "null_pct": 40.88,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 500.0,
+          "mean": 13.05,
+          "q01": 0.53,
+          "q99": 97.47,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 30342,
+          "null_pct": 43.24,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 294.5,
+          "mean": 4.74,
+          "q01": 0.07,
+          "q99": 21.89,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 23954,
+          "null_pct": 34.13,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 489.85,
+          "mean": 12.13,
+          "q01": 0.0,
+          "q99": 46.96,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 25156,
+          "null_pct": 35.85,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 500.0,
+          "mean": 7.34,
+          "q01": 0.57,
+          "q99": 31.4,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 23481,
+          "null_pct": 33.46,
+          "dtype": "float64",
+          "min": 0.18,
+          "max": 35.02,
+          "mean": 12.08,
+          "q01": 1.93,
+          "q99": 21.72,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 24921,
+          "null_pct": 35.51,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 5.0,
+          "mean": 0.66,
+          "q01": 0.0,
+          "q99": 3.19,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 23878,
+          "null_pct": 34.03,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 500.0,
+          "mean": 44.96,
+          "q01": 15.93,
+          "q99": 207.15,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 22844,
+          "null_pct": 32.55,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "q01": 0.0,
+          "q99": 0.0,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "AT (\u00b0C)": {
+          "null_count": 23755,
+          "null_pct": 33.85,
+          "dtype": "float64",
+          "min": 0.14,
+          "max": 33.66,
+          "mean": 32.44,
+          "q01": 16.46,
+          "q99": 33.41,
+          "negative_count": 0
+        },
+        "RH (%)": {
+          "null_count": 23463,
+          "null_pct": 33.43,
+          "dtype": "float64",
+          "min": 41.02,
+          "max": 63.16,
+          "mean": 61.54,
+          "q01": 56.56,
+          "q99": 62.07,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 23463,
+          "null_pct": 33.43,
+          "dtype": "float64",
+          "min": 2.3,
+          "max": 42.19,
+          "mean": 23.41,
+          "q01": 7.17,
+          "q99": 30.49,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 23463,
+          "null_pct": 33.43,
+          "dtype": "float64",
+          "min": 5.38,
+          "max": 207.39,
+          "mean": 139.47,
+          "q01": 29.3,
+          "q99": 202.94,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 22827,
+          "null_pct": 32.53,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 5.64,
+          "mean": 2.01,
+          "q01": 0.0,
+          "q99": 5.56,
+          "negative_count": 0
+        },
+        "TOT-RF (mm)": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 5.64,
+          "mean": 1.35,
+          "q01": 0.0,
+          "q99": 5.55,
+          "negative_count": 0
+        },
+        "SR (W/mt2)": {
+          "null_count": 23463,
+          "null_pct": 33.43,
+          "dtype": "float64",
+          "min": 145.17,
+          "max": 174.21,
+          "mean": 158.13,
+          "q01": 150.18,
+          "q99": 166.99,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "VWS (m/s)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        }
+      }
+    },
+    "perungudi-2024-25.csv": {
+      "n_rows": 70177,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_5363",
+        "2025"
+      ],
+      "station_names": [
+        "Perungudi, Chennai - TNPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 70175
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 5546,
+          "null_pct": 7.9,
+          "dtype": "float64",
+          "min": 0.05,
+          "max": 969.0,
+          "mean": 29.93,
+          "q01": 1.0,
+          "q99": 117.0,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 3055,
+          "null_pct": 4.35,
+          "dtype": "float64",
+          "min": 0.91,
+          "max": 1000.0,
+          "mean": 78.7,
+          "q01": 7.0,
+          "q99": 317.0,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 2307,
+          "null_pct": 3.29,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 481.1,
+          "mean": 6.08,
+          "q01": 0.46,
+          "q99": 28.3,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 1761,
+          "null_pct": 2.51,
+          "dtype": "float64",
+          "min": 0.08,
+          "max": 207.5,
+          "mean": 4.95,
+          "q01": 0.55,
+          "q99": 16.9,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 1454,
+          "null_pct": 2.07,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 400.0,
+          "mean": 7.8,
+          "q01": 1.9,
+          "q99": 29.0,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 1880,
+          "null_pct": 2.68,
+          "dtype": "float64",
+          "min": 0.1,
+          "max": 155.29,
+          "mean": 13.95,
+          "q01": 5.9,
+          "q99": 32.49,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 2309,
+          "null_pct": 3.29,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 41.7,
+          "mean": 3.58,
+          "q01": 0.3,
+          "q99": 8.5,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 1918,
+          "null_pct": 2.73,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 4.57,
+          "mean": 0.66,
+          "q01": 0.07,
+          "q99": 1.48,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 2705,
+          "null_pct": 3.85,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 488.47,
+          "mean": 11.44,
+          "q01": 0.81,
+          "q99": 36.2,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 29175,
+          "null_pct": 41.57,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 172.4,
+          "mean": 1.95,
+          "q01": 0.0,
+          "q99": 19.14,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 38751,
+          "null_pct": 55.22,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 499.58,
+          "mean": 20.31,
+          "q01": 0.0,
+          "q99": 138.7,
+          "negative_count": 0
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 61983,
+          "null_pct": 88.32,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 498.5,
+          "mean": 23.51,
+          "q01": 0.0,
+          "q99": 445.83,
+          "negative_count": 0
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "AT (\u00b0C)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 4637,
+          "null_pct": 6.61,
+          "dtype": "float64",
+          "min": 40.26,
+          "max": 96.0,
+          "mean": 78.53,
+          "q01": 56.0,
+          "q99": 95.0,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 2609,
+          "null_pct": 3.72,
+          "dtype": "float64",
+          "min": 0.27,
+          "max": 29.0,
+          "mean": 1.23,
+          "q01": 0.27,
+          "q99": 14.0,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 4642,
+          "null_pct": 6.61,
+          "dtype": "float64",
+          "min": 2.66,
+          "max": 346.0,
+          "mean": 214.5,
+          "q01": 48.0,
+          "q99": 334.62,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 4561,
+          "null_pct": 6.5,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 50.0,
+          "mean": 0.23,
+          "q01": 0.0,
+          "q99": 1.85,
+          "negative_count": 0
+        },
+        "TOT-RF (mm)": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 50.0,
+          "mean": 0.22,
+          "q01": 0.0,
+          "q99": 1.83,
+          "negative_count": 0
+        },
+        "SR (W/mt2)": {
+          "null_count": 4735,
+          "null_pct": 6.75,
+          "dtype": "float64",
+          "min": 1.0,
+          "max": 516.0,
+          "mean": 99.52,
+          "q01": 3.0,
+          "q99": 431.0,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 15531,
+          "null_pct": 22.13,
+          "dtype": "float64",
+          "min": 724.27,
+          "max": 939.13,
+          "mean": 751.13,
+          "q01": 737.0,
+          "q99": 866.24,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        }
+      }
+    },
+    "royapuram-2024-25.csv": {
+      "n_rows": 70177,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_5364",
+        "2025"
+      ],
+      "station_names": [
+        "Royapuram, Chennai - TNPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 70175
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 12022,
+          "null_pct": 17.13,
+          "dtype": "float64",
+          "min": 0.11,
+          "max": 712.35,
+          "mean": 26.27,
+          "q01": 2.0,
+          "q99": 96.0,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 10253,
+          "null_pct": 14.61,
+          "dtype": "float64",
+          "min": 0.33,
+          "max": 970.0,
+          "mean": 57.99,
+          "q01": 6.0,
+          "q99": 177.0,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 17121,
+          "null_pct": 24.4,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 258.0,
+          "mean": 8.24,
+          "q01": 0.1,
+          "q99": 62.92,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 11865,
+          "null_pct": 16.91,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 139.86,
+          "mean": 20.62,
+          "q01": 3.8,
+          "q99": 57.5,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 11553,
+          "null_pct": 16.46,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 284.16,
+          "mean": 18.39,
+          "q01": 2.2,
+          "q99": 70.7,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 11798,
+          "null_pct": 16.81,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 249.66,
+          "mean": 11.47,
+          "q01": 1.1,
+          "q99": 35.31,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 19917,
+          "null_pct": 28.38,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 161.2,
+          "mean": 4.81,
+          "q01": 0.3,
+          "q99": 17.9,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 17067,
+          "null_pct": 24.32,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 9.96,
+          "mean": 0.59,
+          "q01": 0.0,
+          "q99": 1.61,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 13706,
+          "null_pct": 19.53,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 368.01,
+          "mean": 13.26,
+          "q01": 2.41,
+          "q99": 32.6,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 10689,
+          "null_pct": 15.23,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 82.6,
+          "mean": 1.91,
+          "q01": 0.0,
+          "q99": 9.81,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 11156,
+          "null_pct": 15.9,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 119.0,
+          "mean": 5.01,
+          "q01": 0.0,
+          "q99": 24.88,
+          "negative_count": 0
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 61193,
+          "null_pct": 87.2,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 5.9,
+          "mean": 0.98,
+          "q01": 0.0,
+          "q99": 2.75,
+          "negative_count": 0
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "AT (\u00b0C)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 8365,
+          "null_pct": 11.92,
+          "dtype": "float64",
+          "min": 1.0,
+          "max": 96.0,
+          "mean": 75.69,
+          "q01": 59.0,
+          "q99": 91.0,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 8366,
+          "null_pct": 11.92,
+          "dtype": "float64",
+          "min": 0.27,
+          "max": 6.0,
+          "mean": 1.12,
+          "q01": 0.27,
+          "q99": 3.0,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 8433,
+          "null_pct": 12.02,
+          "dtype": "float64",
+          "min": 1.0,
+          "max": 360.0,
+          "mean": 188.25,
+          "q01": 25.0,
+          "q99": 350.0,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 8338,
+          "null_pct": 11.88,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 38.0,
+          "mean": 0.04,
+          "q01": 0.0,
+          "q99": 1.0,
+          "negative_count": 0
+        },
+        "TOT-RF (mm)": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 38.0,
+          "mean": 0.04,
+          "q01": 0.0,
+          "q99": 0.02,
+          "negative_count": 0
+        },
+        "SR (W/mt2)": {
+          "null_count": 8617,
+          "null_pct": 12.28,
+          "dtype": "float64",
+          "min": 1.0,
+          "max": 731.0,
+          "mean": 98.77,
+          "q01": 6.22,
+          "q99": 356.0,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 8374,
+          "null_pct": 11.93,
+          "dtype": "float64",
+          "min": 711.0,
+          "max": 993.0,
+          "mean": 737.87,
+          "q01": 721.0,
+          "q99": 751.0,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 70177,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        }
+      }
+    },
+    "velachery-2024-25.csv": {
+      "n_rows": 66245,
+      "n_cols": 29,
+      "columns": [
+        "Station ID",
+        "State",
+        "City",
+        "Station Name",
+        "Timestamp",
+        "PM2.5 (\u00b5g/m\u00b3)",
+        "PM10 (\u00b5g/m\u00b3)",
+        "NO (\u00b5g/m\u00b3)",
+        "NO2 (\u00b5g/m\u00b3)",
+        "NOx (ppb)",
+        "NH3 (\u00b5g/m\u00b3)",
+        "SO2 (\u00b5g/m\u00b3)",
+        "CO (mg/m\u00b3)",
+        "Ozone (\u00b5g/m\u00b3)",
+        "Benzene (\u00b5g/m\u00b3)",
+        "Toluene (\u00b5g/m\u00b3)",
+        "Xylene (\u00b5g/m\u00b3)",
+        "O Xylene (\u00b5g/m\u00b3)",
+        "Eth-Benzene (\u00b5g/m\u00b3)",
+        "MP-Xylene (\u00b5g/m\u00b3)",
+        "AT (\u00b0C)",
+        "RH (%)",
+        "WS (m/s)",
+        "WD (deg)",
+        "RF (mm)",
+        "TOT-RF (mm)",
+        "SR (W/mt2)",
+        "BP (mmHg)",
+        "VWS (m/s)"
+      ],
+      "dtypes": {
+        "Station ID": "object",
+        "State": "object",
+        "City": "object",
+        "Station Name": "object",
+        "Timestamp": "object",
+        "PM2.5 (\u00b5g/m\u00b3)": "float64",
+        "PM10 (\u00b5g/m\u00b3)": "float64",
+        "NO (\u00b5g/m\u00b3)": "float64",
+        "NO2 (\u00b5g/m\u00b3)": "float64",
+        "NOx (ppb)": "float64",
+        "NH3 (\u00b5g/m\u00b3)": "float64",
+        "SO2 (\u00b5g/m\u00b3)": "float64",
+        "CO (mg/m\u00b3)": "float64",
+        "Ozone (\u00b5g/m\u00b3)": "float64",
+        "Benzene (\u00b5g/m\u00b3)": "float64",
+        "Toluene (\u00b5g/m\u00b3)": "float64",
+        "Xylene (\u00b5g/m\u00b3)": "float64",
+        "O Xylene (\u00b5g/m\u00b3)": "float64",
+        "Eth-Benzene (\u00b5g/m\u00b3)": "float64",
+        "MP-Xylene (\u00b5g/m\u00b3)": "float64",
+        "AT (\u00b0C)": "float64",
+        "RH (%)": "float64",
+        "WS (m/s)": "float64",
+        "WD (deg)": "float64",
+        "RF (mm)": "float64",
+        "TOT-RF (mm)": "float64",
+        "SR (W/mt2)": "float64",
+        "BP (mmHg)": "float64",
+        "VWS (m/s)": "float64"
+      },
+      "station_ids": [
+        "site_288",
+        "2025"
+      ],
+      "station_names": [
+        "Velachery Res. Area, Chennai - CPCB"
+      ],
+      "cities": [
+        "Chennai"
+      ],
+      "states": [
+        "Tamil Nadu"
+      ],
+      "ts_min": "2024-01-01 00:00:00+00:00",
+      "ts_max": "2025-12-31 23:45:00+00:00",
+      "null_ts": 1,
+      "top_diffs": {
+        "0 days 00:15:00": 65569,
+        "0 days 00:30:00": 628,
+        "0 days 00:45:00": 15,
+        "0 days 01:00:00": 3,
+        "0 days 17:00:00": 3
+      },
+      "exact_duplicates": 0,
+      "timestamp_duplicates": 0,
+      "col_summary": {
+        "Station ID": {
+          "null_count": 0,
+          "null_pct": 0.0,
+          "dtype": "object",
+          "min": 2025.0,
+          "max": 2025.0,
+          "mean": 2025.0,
+          "q01": 2025.0,
+          "q99": 2025.0,
+          "negative_count": 0
+        },
+        "State": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "City": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Station Name": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "Timestamp": {
+          "null_count": 1,
+          "null_pct": 0.0,
+          "dtype": "object"
+        },
+        "PM2.5 (\u00b5g/m\u00b3)": {
+          "null_count": 2381,
+          "null_pct": 3.59,
+          "dtype": "float64",
+          "min": 0.71,
+          "max": 994.91,
+          "mean": 28.43,
+          "q01": 6.53,
+          "q99": 75.31,
+          "negative_count": 0
+        },
+        "PM10 (\u00b5g/m\u00b3)": {
+          "null_count": 2857,
+          "null_pct": 4.31,
+          "dtype": "float64",
+          "min": 1.58,
+          "max": 945.35,
+          "mean": 60.49,
+          "q01": 11.68,
+          "q99": 163.09,
+          "negative_count": 0
+        },
+        "NO (\u00b5g/m\u00b3)": {
+          "null_count": 2208,
+          "null_pct": 3.33,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 90.73,
+          "mean": 5.54,
+          "q01": 0.45,
+          "q99": 31.81,
+          "negative_count": 0
+        },
+        "NO2 (\u00b5g/m\u00b3)": {
+          "null_count": 2199,
+          "null_pct": 3.32,
+          "dtype": "float64",
+          "min": 2.41,
+          "max": 146.99,
+          "mean": 14.44,
+          "q01": 5.9,
+          "q99": 40.77,
+          "negative_count": 0
+        },
+        "NOx (ppb)": {
+          "null_count": 2182,
+          "null_pct": 3.29,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 226.94,
+          "mean": 19.98,
+          "q01": 6.52,
+          "q99": 67.82,
+          "negative_count": 0
+        },
+        "NH3 (\u00b5g/m\u00b3)": {
+          "null_count": 3224,
+          "null_pct": 4.87,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 300.53,
+          "mean": 30.78,
+          "q01": 3.5,
+          "q99": 95.63,
+          "negative_count": 0
+        },
+        "SO2 (\u00b5g/m\u00b3)": {
+          "null_count": 931,
+          "null_pct": 1.41,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 199.3,
+          "mean": 8.8,
+          "q01": 3.74,
+          "q99": 24.81,
+          "negative_count": 0
+        },
+        "CO (mg/m\u00b3)": {
+          "null_count": 506,
+          "null_pct": 0.76,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 10.0,
+          "mean": 1.06,
+          "q01": 0.0,
+          "q99": 3.8,
+          "negative_count": 0
+        },
+        "Ozone (\u00b5g/m\u00b3)": {
+          "null_count": 942,
+          "null_pct": 1.42,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 199.97,
+          "mean": 18.88,
+          "q01": 0.48,
+          "q99": 63.15,
+          "negative_count": 0
+        },
+        "Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 326,
+          "null_pct": 0.49,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 9.22,
+          "mean": 0.37,
+          "q01": 0.0,
+          "q99": 2.37,
+          "negative_count": 0
+        },
+        "Toluene (\u00b5g/m\u00b3)": {
+          "null_count": 327,
+          "null_pct": 0.49,
+          "dtype": "float64",
+          "min": 0.0,
+          "max": 14.1,
+          "mean": 0.57,
+          "q01": 0.0,
+          "q99": 4.45,
+          "negative_count": 0
+        },
+        "Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 66245,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "O Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 66245,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "Eth-Benzene (\u00b5g/m\u00b3)": {
+          "null_count": 28365,
+          "null_pct": 42.82,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 6.44,
+          "mean": 0.52,
+          "q01": 0.01,
+          "q99": 2.49,
+          "negative_count": 0
+        },
+        "MP-Xylene (\u00b5g/m\u00b3)": {
+          "null_count": 30549,
+          "null_pct": 46.12,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 4.41,
+          "mean": 0.39,
+          "q01": 0.01,
+          "q99": 1.86,
+          "negative_count": 0
+        },
+        "AT (\u00b0C)": {
+          "null_count": 66245,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "RH (%)": {
+          "null_count": 1702,
+          "null_pct": 2.57,
+          "dtype": "float64",
+          "min": 15.9,
+          "max": 99.98,
+          "mean": 77.83,
+          "q01": 39.79,
+          "q99": 98.71,
+          "negative_count": 0
+        },
+        "WS (m/s)": {
+          "null_count": 76,
+          "null_pct": 0.11,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 3.98,
+          "mean": 0.67,
+          "q01": 0.17,
+          "q99": 2.1,
+          "negative_count": 0
+        },
+        "WD (deg)": {
+          "null_count": 63,
+          "null_pct": 0.1,
+          "dtype": "float64",
+          "min": 0.02,
+          "max": 359.99,
+          "mean": 157.03,
+          "q01": 3.96,
+          "q99": 355.83,
+          "negative_count": 0
+        },
+        "RF (mm)": {
+          "null_count": 66245,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "TOT-RF (mm)": {
+          "null_count": 66245,
+          "null_pct": 100.0,
+          "dtype": "float64"
+        },
+        "SR (W/mt2)": {
+          "null_count": 19019,
+          "null_pct": 28.71,
+          "dtype": "float64",
+          "min": 0.01,
+          "max": 1496.8,
+          "mean": 188.02,
+          "q01": 0.23,
+          "q99": 1479.78,
+          "negative_count": 0
+        },
+        "BP (mmHg)": {
+          "null_count": 67,
+          "null_pct": 0.1,
+          "dtype": "float64",
+          "min": 985.1,
+          "max": 1013.7,
+          "mean": 998.11,
+          "q01": 989.7,
+          "q99": 1006.2,
+          "negative_count": 0
+        },
+        "VWS (m/s)": {
+          "null_count": 106,
+          "null_pct": 0.16,
+          "dtype": "float64",
+          "min": -0.5,
+          "max": -0.42,
+          "mean": -0.49,
+          "q01": -0.5,
+          "q99": -0.46,
+          "negative_count": 66139
+        }
+      }
+    }
+  },
+  "weather": {
+    "rainfall": {
+      "path": "data/raw/chennai_daily_rainfall_1991_2023.csv",
+      "n_rows": 21416,
+      "n_cols": 4,
+      "columns": [
+        "District",
+        "Station",
+        "Rainfall",
+        "Date"
+      ],
+      "dtypes": {
+        "District": "object",
+        "Station": "object",
+        "Rainfall": "float64",
+        "Date": "object"
+      },
+      "exact_duplicates": 1361,
+      "date_min": "1993-03-03 00:00:00",
+      "date_max": "2023-12-26 00:00:00",
+      "null_dates": 0,
+      "stations": [
+        "Chennai port trust",
+        "Sholinganallur",
+        "Chennai nungambakkam",
+        "Alandur",
+        "MYLAPORE-TRIPLICANE TALUK",
+        "Ambathur",
+        "Gov hr sec school MGR Nagar",
+        "Ayanavaram taluk office",
+        "Perambur Corporation park",
+        "DGP Office",
+        "Anna university",
+        "Chennai collectorate building",
+        "Chennai AP",
+        "Pachaiyappa college",
+        "Govt. arts college",
+        "Purasawalkam - Perambur",
+        "CD Hospital Tondiarpet",
+        "Zone 05 Royapuram",
+        "Zone 05 GCC",
+        "Zone 09 Teynampet",
+        "Zone 04 Tondiarpet",
+        "Zone 06 D65 Kolathur",
+        "Zone 06 T.V.K Nagar",
+        "Zone 08 Malar colony",
+        "Zone 10 Kodambakkam",
+        "Zone 08 Anna Nagar",
+        "Zone 03 Madhavaram",
+        "Zone 09 Ice House",
+        "Zone 07 U18 D81 Vanagaram",
+        "Zone 13 Adyar",
+        "Zone 13 U39 Adyar",
+        "Zone 02 Manali",
+        "Zone 14 U41 Perungudi",
+        "Zone 12 Alandhur",
+        "Zone 03 Puzhal",
+        "Zone 02 D15 Manali",
+        "Zone 12 Meenambakkam",
+        "Zone 14 Perungudi",
+        "Zone 11 U32 Maduravoyal",
+        "Zone 11 Valasaravakkam",
+        "Zone 12 D156 Mugalivakkam",
+        "Zone 01 Kathivakkam",
+        "Zone 15 Uthandi",
+        "Zone 15 Sholinganallur",
+        "Zone 07 Ambattur",
+        "Zone 01 Thiruvottiyur",
+        "Zone 13 Adyar Eco Park",
+        "Ezhilgam",
+        "Ambattur",
+        "Puzhal",
+        "Royapuram",
+        "Tondairpet",
+        "Thiru-Vi-Ka Nagar",
+        "Anna Nagar",
+        "Thiruvottiyur",
+        "Adyar",
+        "Perungudi",
+        "Teynampet",
+        "Valasaravakkam",
+        "Kodambakkam",
+        "Manali",
+        "Madhavaram"
+      ],
+      "st_counts": {
+        "Adyar": 93,
+        "Alandur": 568,
+        "Ambathur": 1225,
+        "Ambattur": 85,
+        "Anna Nagar": 93,
+        "Anna university": 1456,
+        "Ayanavaram taluk office": 426,
+        "CD Hospital Tondiarpet": 407,
+        "Chennai AP": 1374,
+        "Chennai collectorate building": 443,
+        "Chennai nungambakkam": 3452,
+        "Chennai port trust": 1496,
+        "DGP Office": 1358,
+        "Ezhilgam": 16,
+        "Gov hr sec school MGR Nagar": 507,
+        "Govt. arts college": 548,
+        "Kodambakkam": 85,
+        "MYLAPORE-TRIPLICANE TALUK": 816,
+        "Madhavaram": 66,
+        "Manali": 93,
+        "Pachaiyappa college": 669,
+        "Perambur Corporation park": 430,
+        "Perungudi": 85,
+        "Purasawalkam - Perambur": 147,
+        "Puzhal": 85,
+        "Royapuram": 130,
+        "Sholinganallur": 905,
+        "Teynampet": 111,
+        "Thiru-Vi-Ka Nagar": 79,
+        "Thiruvottiyur": 93,
+        "Tondairpet": 86,
+        "Valasaravakkam": 100,
+        "Zone 01 Kathivakkam": 127,
+        "Zone 01 Thiruvottiyur": 128,
+        "Zone 02 D15 Manali": 126,
+        "Zone 02 Manali": 138,
+        "Zone 03 Madhavaram": 118,
+        "Zone 03 Puzhal": 134,
+        "Zone 04 Tondiarpet": 130,
+        "Zone 05 GCC": 132,
+        "Zone 05 Royapuram": 130,
+        "Zone 06 D65 Kolathur": 138,
+        "Zone 06 T.V.K Nagar": 133,
+        "Zone 07 Ambattur": 124,
+        "Zone 07 U18 D81 Vanagaram": 134,
+        "Zone 08 Anna Nagar": 139,
+        "Zone 08 Malar colony": 141,
+        "Zone 09 Ice House": 117,
+        "Zone 09 Teynampet": 102,
+        "Zone 10 Kodambakkam": 128,
+        "Zone 11 U32 Maduravoyal": 114,
+        "Zone 11 Valasaravakkam": 135,
+        "Zone 12 Alandhur": 118,
+        "Zone 12 D156 Mugalivakkam": 131,
+        "Zone 12 Meenambakkam": 134,
+        "Zone 13 Adyar": 136,
+        "Zone 13 Adyar Eco Park": 140,
+        "Zone 13 U39 Adyar": 133,
+        "Zone 14 Perungudi": 132,
+        "Zone 14 U41 Perungudi": 136,
+        "Zone 15 Sholinganallur": 136,
+        "Zone 15 Uthandi": 125
+      },
+      "rainfall_stats": {
+        "min": 0.01,
+        "max": 348.3,
+        "mean": 18.28,
+        "null_count": 0,
+        "negative_count": 0,
+        "zero_count": 0
+      }
+    },
+    "temperature": {
+      "path": "data/raw/chennai_daily_temperature_1951_2024.csv",
+      "n_rows": 26837,
+      "n_cols": 4,
+      "columns": [
+        "Date",
+        "Rain",
+        "Temp Max",
+        "Temp Min"
+      ],
+      "dtypes": {
+        "Date": "object",
+        "Rain": "object",
+        "Temp Max": "object",
+        "Temp Min": "object"
+      },
+      "exact_duplicates": 0,
+      "date_min": "1951-01-01 00:00:00",
+      "date_max": "2024-06-22 00:00:00",
+      "null_dates": 0,
+      "Rain": {
+        "null_raw": 25568,
+        "invalid_values": {
+          "Tr": 83,
+          "----": 1
+        },
+        "numeric_valid_count": 1185,
+        "min": 0.0,
+        "max": 215.0,
+        "mean": 5.02
+      },
+      "Temp_Max": {
+        "null_raw": 1,
+        "invalid_values": {
+          "-----": 9
+        },
+        "numeric_valid_count": 26827,
+        "min": 23.54999924,
+        "max": 44.95999908,
+        "mean": 33.68
+      },
+      "Temp_Min": {
+        "null_raw": 1,
+        "invalid_values": {
+          "-----": 28
+        },
+        "numeric_valid_count": 26808,
+        "min": 15.30000019,
+        "max": 92.0,
+        "mean": 23.97
+      }
+    }
+  },
+  "geojson": {
+    "type": "FeatureCollection",
+    "feature_count": 15,
+    "zones": [
+      {
+        "properties": {
+          "name_of_th": "THIRUVOTTRIYUR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "MANALI"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "AMBATTUR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "THIRU-VIKA-NAGAR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "KODAMBAKKAM"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "ALANDUR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "VALASARVAKKAM"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "TONDIARPET"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "ROYAPURAM"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "TEYNAMPET"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "ANNA NAGAR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "ADYAR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "SHOZHANGANALLUR"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "PERUNKUDI"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      },
+      {
+        "properties": {
+          "name_of_th": "MADHAVARAM"
+        },
+        "geom_type": "Polygon",
+        "coord_len": 1
+      }
+    ]
+  }
+}

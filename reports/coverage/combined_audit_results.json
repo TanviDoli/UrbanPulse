@@ -1,0 +1,203 @@
+{
+  "temperature_hmm_eval_vs_open_meteo": {
+    "1": {
+      "n_days": 644,
+      "mae_c": 0.908,
+      "rmse_c": 1.155,
+      "reference_day_to_day_change_mae_c": NaN,
+      "om_tmean_range_c": [
+        22.9,
+        33.9
+      ],
+      "hmm_state_means_c": [
+        26.1,
+        29.5,
+        31.7,
+        34.5
+      ]
+    },
+    "7": {
+      "n_days": 644,
+      "mae_c": 1.067,
+      "rmse_c": 1.339,
+      "reference_day_to_day_change_mae_c": NaN,
+      "om_tmean_range_c": [
+        22.9,
+        34.4
+      ],
+      "hmm_state_means_c": [
+        26.1,
+        29.5,
+        31.7,
+        34.5
+      ]
+    },
+    "12": {
+      "n_days": 644,
+      "mae_c": 1.043,
+      "rmse_c": 1.303,
+      "reference_day_to_day_change_mae_c": NaN,
+      "om_tmean_range_c": [
+        22.9,
+        34.4
+      ],
+      "hmm_state_means_c": [
+        26.1,
+        29.5,
+        31.7,
+        34.5
+      ]
+    }
+  },
+  "aqi_checks": {
+    "2": {
+      "station_location_id": 2586,
+      "overlap_hours_2025": 5916,
+      "mae_vs_master_2025": 8.48,
+      "corr_vs_master_2025": 0.788,
+      "aqi_hours_2026": 5398,
+      "aqi_last_valid_ist": "2026-10-07 19:00:00+05:30",
+      "aqi_2026_mean": 91.3,
+      "aqi_2026_hours_gt_200": 401,
+      "hmm_eval_2026_out_of_sample": {
+        "1h": {
+          "n": 5397,
+          "mae": 17.78,
+          "rmse": 41.58
+        },
+        "24h": {
+          "n": 5374,
+          "mae": 31.93,
+          "rmse": 58.42
+        }
+      }
+    },
+    "4": {
+      "station_location_id": 11579,
+      "overlap_hours_2025": 6112,
+      "mae_vs_master_2025": 3.46,
+      "corr_vs_master_2025": 0.968,
+      "aqi_hours_2026": 5696,
+      "aqi_last_valid_ist": "2026-10-07 19:00:00+05:30",
+      "aqi_2026_mean": 72.3,
+      "aqi_2026_hours_gt_200": 74,
+      "hmm_eval_2026_out_of_sample": {
+        "1h": {
+          "n": 5695,
+          "mae": 9.85,
+          "rmse": 26.53
+        },
+        "24h": {
+          "n": 5672,
+          "mae": 17.48,
+          "rmse": 32.75
+        }
+      }
+    },
+    "5": {
+      "station_location_id": 11578,
+      "overlap_hours_2025": 5788,
+      "mae_vs_master_2025": 2.92,
+      "corr_vs_master_2025": 0.962,
+      "aqi_hours_2026": 5421,
+      "aqi_last_valid_ist": "2026-10-07 19:00:00+05:30",
+      "aqi_2026_mean": 59.6,
+      "aqi_2026_hours_gt_200": 19,
+      "hmm_eval_2026_out_of_sample": {
+        "1h": {
+          "n": 5420,
+          "mae": 5.8,
+          "rmse": 11.48
+        },
+        "24h": {
+          "n": 5397,
+          "mae": 9.45,
+          "rmse": 18.1
+        }
+      }
+    },
+    "10": {
+      "station_location_id": 11581,
+      "overlap_hours_2025": 4911,
+      "mae_vs_master_2025": 5.52,
+      "corr_vs_master_2025": 0.927,
+      "aqi_hours_2026": 5592,
+      "aqi_last_valid_ist": "2026-10-07 19:00:00+05:30",
+      "aqi_2026_mean": 105.3,
+      "aqi_2026_hours_gt_200": 326,
+      "hmm_eval_2026_out_of_sample": {
+        "1h": {
+          "n": 5591,
+          "mae": 18.11,
+          "rmse": 38.85
+        },
+        "24h": {
+          "n": 5568,
+          "mae": 36.77,
+          "rmse": 75.09
+        }
+      }
+    },
+    "12": {
+      "station_location_id": 3409319,
+      "overlap_hours_2025": 4641,
+      "mae_vs_master_2025": 6.7,
+      "corr_vs_master_2025": 0.928,
+      "aqi_hours_2026": 0,
+      "aqi_last_valid_ist": "2025-12-02 16:00:00+05:30",
+      "aqi_2026_mean": null,
+      "aqi_2026_hours_gt_200": 0,
+      "hmm_eval_2026_out_of_sample": {}
+    },
+    "13": {
+      "station_location_id": 5655,
+      "overlap_hours_2025": 6203,
+      "mae_vs_master_2025": 1.0,
+      "corr_vs_master_2025": 0.994,
+      "aqi_hours_2026": 5758,
+      "aqi_last_valid_ist": "2026-10-07 19:00:00+05:30",
+      "aqi_2026_mean": 89.8,
+      "aqi_2026_hours_gt_200": 173,
+      "hmm_eval_2026_out_of_sample": {
+        "1h": {
+          "n": 5757,
+          "mae": 13.89,
+          "rmse": 32.19
+        },
+        "24h": {
+          "n": 5734,
+          "mae": 24.29,
+          "rmse": 47.7
+        }
+      }
+    },
+    "14": {
+      "station_location_id": 12046,
+      "overlap_hours_2025": 6791,
+      "mae_vs_master_2025": 7.89,
+      "corr_vs_master_2025": 0.818,
+      "aqi_hours_2026": 5523,
+      "aqi_last_valid_ist": "2026-09-28 22:00:00+05:30",
+      "aqi_2026_mean": 86.9,
+      "aqi_2026_hours_gt_200": 142,
+      "hmm_eval_2026_out_of_sample": {
+        "1h": {
+          "n": 5522,
+          "mae": 12.12,
+          "rmse": 26.65
+        },
+        "24h": {
+          "n": 5499,
+          "mae": 25.14,
+          "rmse": 41.96
+        }
+      }
+    }
+  },
+  "n_validated_sensors": 44,
+  "unit_verdict_counts": {
+    "native_cpcb_units": 44,
+    "insufficient_overlap": 34,
+    "mismatch": 2
+  }
+}

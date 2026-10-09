@@ -1,0 +1,106 @@
+zone_id_1,zone_label_1,zone_id_2,zone_label_2,shared_boundary_length,adjacent
+1,Thiruvottiyur,2,Manali,0.110485,1
+1,Thiruvottiyur,3,Madhavaram,0.0,0
+1,Thiruvottiyur,4,Tondiarpet,0.04138,1
+1,Thiruvottiyur,5,Royapuram,0.0,0
+1,Thiruvottiyur,6,Thiru-Vi-Ka Nagar,0.0,0
+1,Thiruvottiyur,7,Ambattur,0.0,0
+1,Thiruvottiyur,8,Anna Nagar,0.0,0
+1,Thiruvottiyur,9,Teynampet,0.0,0
+1,Thiruvottiyur,10,Kodambakkam,0.0,0
+1,Thiruvottiyur,11,Valasaravakkam,0.0,0
+1,Thiruvottiyur,12,Alandur,0.0,0
+1,Thiruvottiyur,13,Adyar,0.0,0
+1,Thiruvottiyur,14,Perungudi,0.0,0
+1,Thiruvottiyur,15,Sholinganallur,0.0,0
+2,Manali,3,Madhavaram,0.084227,1
+2,Manali,4,Tondiarpet,0.010776,1
+2,Manali,5,Royapuram,0.0,0
+2,Manali,6,Thiru-Vi-Ka Nagar,0.0,0
+2,Manali,7,Ambattur,0.0,0
+2,Manali,8,Anna Nagar,0.0,0
+2,Manali,9,Teynampet,0.0,0
+2,Manali,10,Kodambakkam,0.0,0
+2,Manali,11,Valasaravakkam,0.0,0
+2,Manali,12,Alandur,0.0,0
+2,Manali,13,Adyar,0.0,0
+2,Manali,14,Perungudi,0.0,0
+2,Manali,15,Sholinganallur,0.0,0
+3,Madhavaram,4,Tondiarpet,0.042964,1
+3,Madhavaram,5,Royapuram,0.0,0
+3,Madhavaram,6,Thiru-Vi-Ka Nagar,0.056943,1
+3,Madhavaram,7,Ambattur,0.045743,1
+3,Madhavaram,8,Anna Nagar,0.0,0
+3,Madhavaram,9,Teynampet,0.0,0
+3,Madhavaram,10,Kodambakkam,0.0,0
+3,Madhavaram,11,Valasaravakkam,0.0,0
+3,Madhavaram,12,Alandur,0.0,0
+3,Madhavaram,13,Adyar,0.0,0
+3,Madhavaram,14,Perungudi,0.0,0
+3,Madhavaram,15,Sholinganallur,0.0,0
+4,Tondiarpet,5,Royapuram,0.060635,1
+4,Tondiarpet,6,Thiru-Vi-Ka Nagar,0.066512,1
+4,Tondiarpet,7,Ambattur,0.0,0
+4,Tondiarpet,8,Anna Nagar,0.0,0
+4,Tondiarpet,9,Teynampet,0.0,0
+4,Tondiarpet,10,Kodambakkam,0.0,0
+4,Tondiarpet,11,Valasaravakkam,0.0,0
+4,Tondiarpet,12,Alandur,0.0,0
+4,Tondiarpet,13,Adyar,0.0,0
+4,Tondiarpet,14,Perungudi,0.0,0
+4,Tondiarpet,15,Sholinganallur,0.0,0
+5,Royapuram,6,Thiru-Vi-Ka Nagar,0.040327,1
+5,Royapuram,7,Ambattur,0.0,0
+5,Royapuram,8,Anna Nagar,0.024822,1
+5,Royapuram,9,Teynampet,0.073703,1
+5,Royapuram,10,Kodambakkam,0.0,0
+5,Royapuram,11,Valasaravakkam,0.0,0
+5,Royapuram,12,Alandur,0.0,0
+5,Royapuram,13,Adyar,0.0,0
+5,Royapuram,14,Perungudi,0.0,0
+5,Royapuram,15,Sholinganallur,0.0,0
+6,Thiru-Vi-Ka Nagar,7,Ambattur,0.010871,1
+6,Thiru-Vi-Ka Nagar,8,Anna Nagar,0.094153,1
+6,Thiru-Vi-Ka Nagar,9,Teynampet,0.0,0
+6,Thiru-Vi-Ka Nagar,10,Kodambakkam,0.0,0
+6,Thiru-Vi-Ka Nagar,11,Valasaravakkam,0.0,0
+6,Thiru-Vi-Ka Nagar,12,Alandur,0.0,0
+6,Thiru-Vi-Ka Nagar,13,Adyar,0.0,0
+6,Thiru-Vi-Ka Nagar,14,Perungudi,0.0,0
+6,Thiru-Vi-Ka Nagar,15,Sholinganallur,0.0,0
+7,Ambattur,8,Anna Nagar,0.051325,1
+7,Ambattur,9,Teynampet,0.0,0
+7,Ambattur,10,Kodambakkam,0.013204,1
+7,Ambattur,11,Valasaravakkam,0.04311,1
+7,Ambattur,12,Alandur,0.0,0
+7,Ambattur,13,Adyar,0.0,0
+7,Ambattur,14,Perungudi,0.0,0
+7,Ambattur,15,Sholinganallur,0.0,0
+8,Anna Nagar,9,Teynampet,0.043156,1
+8,Anna Nagar,10,Kodambakkam,0.041613,1
+8,Anna Nagar,11,Valasaravakkam,0.0,0
+8,Anna Nagar,12,Alandur,0.0,0
+8,Anna Nagar,13,Adyar,0.0,0
+8,Anna Nagar,14,Perungudi,0.0,0
+8,Anna Nagar,15,Sholinganallur,0.0,0
+9,Teynampet,10,Kodambakkam,0.066427,1
+9,Teynampet,11,Valasaravakkam,0.0,0
+9,Teynampet,12,Alandur,0.0,0
+9,Teynampet,13,Adyar,0.054216,1
+9,Teynampet,14,Perungudi,0.0,0
+9,Teynampet,15,Sholinganallur,0.0,0
+10,Kodambakkam,11,Valasaravakkam,0.060406,1
+10,Kodambakkam,12,Alandur,0.011192,1
+10,Kodambakkam,13,Adyar,0.073174,1
+10,Kodambakkam,14,Perungudi,0.0,0
+10,Kodambakkam,15,Sholinganallur,0.0,0
+11,Valasaravakkam,12,Alandur,0.062212,1
+11,Valasaravakkam,13,Adyar,0.0,0
+11,Valasaravakkam,14,Perungudi,0.0,0
+11,Valasaravakkam,15,Sholinganallur,0.0,0
+12,Alandur,13,Adyar,0.07952,1
+12,Alandur,14,Perungudi,0.03832,1
+12,Alandur,15,Sholinganallur,0.0,0
+13,Adyar,14,Perungudi,0.077531,1
+13,Adyar,15,Sholinganallur,0.0,0
+14,Perungudi,15,Sholinganallur,0.113316,1

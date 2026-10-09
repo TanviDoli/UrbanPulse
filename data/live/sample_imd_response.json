@@ -1,0 +1,77 @@
+{
+  "current_wx": {
+    "status": "success",
+    "endpoint": "https://api.imd.gov.in/api/v1/current_wx?id=43279",
+    "data": [
+      {
+        "Station Id": "43279",
+        "Station": "Chennai (Meenambakkam)",
+        "Date of Observation": "2026-10-05",
+        "Time of Observation UTC": "12:00:00",
+        "M.S.L.P hPa": "1010.4",
+        "Wind Direction Code": "90",
+        "Wind Speed KMPH": "14.5",
+        "Temperature deg C": "31.2",
+        "Weather Code": "02",
+        "Nebulosity": "3",
+        "Humidity %": "76",
+        "Last 24 hrs Rainfall mm": "0.0"
+      },
+      {
+        "Station Id": "43278",
+        "Station": "Chennai (Nungambakkam)",
+        "Date of Observation": "2026-10-05",
+        "Time of Observation UTC": "12:00:00",
+        "M.S.L.P hPa": "1010.6",
+        "Wind Direction Code": "90",
+        "Wind Speed KMPH": "12.0",
+        "Temperature deg C": "32.0",
+        "Weather Code": "02",
+        "Nebulosity": "4",
+        "Humidity %": "72",
+        "Last 24 hrs Rainfall mm": "0.0"
+      }
+    ]
+  },
+  "cityforecast": {
+    "status": "success",
+    "endpoint": "https://api.imd.gov.in/api/v1/cityforecast?id=43279",
+    "data": [
+      {
+        "Date": "2026-10-05",
+        "Station_Code": "43279",
+        "Station_Name": "Chennai (Meenambakkam)",
+        "Today_Max_temp": "34.8",
+        "Today_Max_Departure_from_Normal": "+1.8",
+        "Previous_Day_Max_temp": "35.2",
+        "Previous_Day_Max_Departure_from_Normal": "+2.2",
+        "Today_Min_temp": "26.4",
+        "Today_Min_Departure_from_Normal": "+0.5",
+        "Past_24_hrs_Rainfall": "0.0",
+        "Relative_Humidity_at_0830": "82",
+        "Relative_Humidity_at_1730": "74"
+      }
+    ]
+  },
+  "aws_data": {
+    "status": "success",
+    "endpoint": "https://api.imd.gov.in/api/v1/aws_data?sid=25",
+    "data": [
+      {
+        "ID": "B48970CA",
+        "CALL_SIGN": "CHN",
+        "DISTRICT": "CHENNAI",
+        "STATE": "TAMIL_NADU",
+        "STATION": "CHENNAI AP AWS",
+        "DATE": "2026-10-05",
+        "TIME": "12:00:00",
+        "CURR_TEMP": "31.4",
+        "DEW_POINT_TEMP": "26.8",
+        "RH": "76",
+        "WIND_DIREC": "90",
+        "WIND_SPEED": "14",
+        "RAIN_FALL": "0.0"
+      }
+    ]
+  }
+}

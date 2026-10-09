@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DataGovIn_CPCB_RealTime_AQI_Response",
+  "description": "JSON Schema for official CPCB Real-time Air Quality Index records published via data.gov.in (Resource ID: 3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69).",
+  "type": "object",
+  "required": ["index_name", "records"],
+  "properties": {
+    "index_name": { "type": "string" },
+    "title": { "type": "string" },
+    "desc": { "type": "string" },
+    "created": { "type": ["integer", "string"] },
+    "updated": { "type": ["integer", "string"] },
+    "created_date": { "type": "string" },
+    "updated_date": { "type": "string" },
+    "total": { "type": "integer" },
+    "count": { "type": "integer" },
+    "limit": { "type": "integer" },
+    "offset": { "type": "integer" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["country", "state", "city", "station", "last_update", "pollutant_id"],
+        "properties": {
+          "id": { "type": "string" },
+          "country": { "type": "string" },
+          "state": { "type": "string" },
+          "city": { "type": "string" },
+          "station": { "type": "string" },
+          "last_update": {
+            "type": "string",
+            "description": "Timestamp formatted as dd-mm-yyyy hh:mm:ss"
+          },
+          "latitude": { "type": ["string", "number", "null"] },
+          "longitude": { "type": ["string", "number", "null"] },
+          "pollutant_id": {
+            "type": "string",
+            "enum": ["PM2.5", "PM10", "NO2", "NH3", "SO2", "CO", "OZONE"]
+          },
+          "pollutant_min": { "type": ["string", "number", "null"] },
+          "pollutant_max": { "type": ["string", "number", "null"] },
+          "pollutant_avg": { "type": ["string", "number", "null"] },
+          "pollutant_unit": { "type": "string" }
+        }
+      }
+    }
+  }
+}

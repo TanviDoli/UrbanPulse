@@ -1,0 +1,9 @@
+grid_cell,zone_ids,location_ids,series_identity,n_zones
+"12.8998,80.1907",[15],[12],single zone,1
+"12.9701,80.1818","[12, 14]","[5, 13]",identical,2
+"13.0404,80.1729","[10, 11]","[4, 6]",identical,2
+"13.0404,80.2548","[9, 13]","[9, 11]","max abs diff temperature_2m_c=0.10, relative_humidity_2m_pct=1.00",2
+"13.1107,80.1639",[7],[2],single zone,1
+"13.1107,80.2459","[4, 5, 6, 8]","[3, 7, 8, 10]",identical,4
+"13.181,80.237","[2, 3]","[1, 14]",identical,2
+"13.2513,80.3102",[1],[0],single zone,1

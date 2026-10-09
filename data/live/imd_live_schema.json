@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IMD_API_Schemas",
+  "description": "Schemas for official IMD endpoints: Current Weather (api/v1/current_wx), City Forecast (api/v1/cityforecast), and AWS Data (api/v1/aws_data).",
+  "definitions": {
+    "current_wx": {
+      "type": "object",
+      "required": ["Station Id", "Station", "Date of Observation", "Time of Observation UTC", "Temperature deg C"],
+      "properties": {
+        "Station Id": { "type": "string" },
+        "Station": { "type": "string" },
+        "Date of Observation": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "Time of Observation UTC": { "type": "string" },
+        "M.S.L.P hPa": { "type": ["string", "number"] },
+        "Wind Direction Code": { "type": ["string", "number"] },
+        "Wind Speed KMPH": { "type": ["string", "number"] },
+        "Temperature deg C": { "type": ["string", "number"] },
+        "Weather Code": { "type": "string" },
+        "Nebulosity": { "type": ["string", "number"] },
+        "Humidity %": { "type": ["string", "number"] },
+        "Last 24 hrs Rainfall mm": { "type": ["string", "number"] }
+      }
+    },
+    "cityforecast": {
+      "type": "object",
+      "required": ["Date", "Station_Code", "Station_Name", "Today_Max_temp", "Today_Max_Departure_from_Normal", "Past_24_hrs_Rainfall"],
+      "properties": {
+        "Date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "Station_Code": { "type": "string" },
+        "Station_Name": { "type": "string" },
+        "Today_Max_temp": { "type": ["string", "number"] },
+        "Today_Max_Departure_from_Normal": { "type": ["string", "number"] },
+        "Previous_Day_Max_temp": { "type": ["string", "number"] },
+        "Previous_Day_Max_Departure_from_Normal": { "type": ["string", "number"] },
+        "Today_Min_temp": { "type": ["string", "number"] },
+        "Today_Min_Departure_from_Normal": { "type": ["string", "number"] },
+        "Past_24_hrs_Rainfall": { "type": ["string", "number"] },
+        "Relative_Humidity_at_0830": { "type": ["string", "number"] },
+        "Relative_Humidity_at_1730": { "type": ["string", "number"] }
+      }
+    },
+    "aws_data": {
+      "type": "object",
+      "required": ["ID", "STATION", "DATE", "TIME", "CURR_TEMP"],
+      "properties": {
+        "ID": { "type": "string" },
+        "CALL_SIGN": { "type": "string" },
+        "DISTRICT": { "type": "string" },
+        "STATE": { "type": "string" },
+        "STATION": { "type": "string" },
+        "DATE": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "TIME": { "type": "string" },
+        "CURR_TEMP": { "type": ["string", "number"] },
+        "DEW_POINT_TEMP": { "type": ["string", "number"] },
+        "RH": { "type": ["string", "number"] },
+        "WIND_DIREC": { "type": ["string", "number"] },
+        "WIND_SPEED": { "type": ["string", "number"] },
+        "RAIN_FALL": { "type": ["string", "number"] }
+      }
+    }
+  }
+}
