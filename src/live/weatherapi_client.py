@@ -129,6 +129,7 @@ class WeatherAPIClient:
             "pm10_ugm3": None,
             "weatherapi_us_epa_index": None,
             "weatherapi_gb_defra_index": None,
+            "air_quality_available": False,
             "fetch_ok": False,
             "error_msg": None,
         }
@@ -138,15 +139,15 @@ class WeatherAPIClient:
                 data = json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", errors="ignore")
-            base["error_msg"] = f"HTTP {e.code}: {body[:120]}"
+            base["error_msg"] = f"HTTP {e.code}: {body[:120]}".replace(self._key, "***")
             return base
         except Exception as e:
-            base["error_msg"] = str(e)[:120]
+            base["error_msg"] = str(e)[:120].replace(self._key, "***")
             return base
 
         loc = data.get("location", {})
         cur = data.get("current", {})
-        aq  = cur.get("air_quality", {})
+        aq  = cur.get("air_quality") or {}     # absent if aqi=yes is not honoured (e.g. plan/endpoint)
 
         # Timestamp: WeatherAPI provides epoch_utc
         epoch = cur.get("last_updated_epoch")
@@ -173,6 +174,7 @@ class WeatherAPIClient:
             # Index metadata — NEVER label these as CPCB AQI
             "weatherapi_us_epa_index":   aq.get("us-epa-index"),
             "weatherapi_gb_defra_index": aq.get("gb-defra-index"),
+            "air_quality_available": bool(aq),
             "fetch_ok": True,
             "error_msg": None,
         })

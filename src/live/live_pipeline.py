@@ -33,10 +33,12 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 from src.collectors import live_collect
 from src.collectors.open_meteo import daily_mean_temperature
-from src.preprocessing.live_inputs import build_aqi_inputs, weather_current, hourly_series, load_validated_sensors
+from src.preprocessing.live_inputs import (build_aqi_inputs, weather_current, hourly_series, hourly_frame,
+                                          load_validated_sensors)
 from src.forecasting.live_forecaster import (LiveForecaster, AQI_HMM_ZONES, RAIN_HMM_ZONES, RAIN_CONTEXT_HOURS,
                                              RAINFALL_FORECAST_ENABLED)
 from src.alerts.alert_backend import build_alert_records, filter_active_alerts, format_alert_summary
+from src import freshness
 
 OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'live',
                                            'current_predictions.json'))
@@ -47,6 +49,44 @@ ZONE_LABELS = {1: 'Thiruvottiyur', 2: 'Manali', 3: 'Madhavaram', 4: 'Tondiarpet'
                6: 'Thiru-Vi-Ka Nagar', 7: 'Ambattur', 8: 'Anna Nagar', 9: 'Teynampet', 10: 'Kodambakkam',
                11: 'Valasaravakkam', 12: 'Alandur', 13: 'Adyar', 14: 'Perungudi', 15: 'Sholinganallur'}
 
+RAIN_LIMITATION_DISABLED = (
+    'Rainfall forecasts and heavy-rain alerts are disabled: the only rainfall HMMs (zones 4, 5, 10, 14) were '
+    'trained on CAAQMS gauges, no live gauge feed exists, and reanalysis input failed validation. Current '
+    'rainfall is shown from Open-Meteo reanalysis for all zones.')
+
+
+def _rainfall_limitation(rain: Dict[str, Any]) -> str:
+    """Limitation text matching the rainfall path actually used in this run."""
+    sup = rain.get('supported_horizons') or []
+    if rain.get('source') == 'open_meteo_twopart':
+        return ('Rainfall: a two-part model (probability of rain >= 0.1 mm/h, plus expected amount) trained on '
+                'Open-Meteo reanalysis and driven by Open-Meteo precipitation; zones sharing a grid cell get identical '
+                'values. Only horizons that beat climatology/persistence baselines on BOTH validation and test are shown'
+                + (f" ({', '.join(sup)})" if sup else ' (none passed)') + '. Longer horizons and the 24 h total failed '
+                'evaluation and are unavailable. Heavy-rain (>= 64.5 mm/24 h) alerts are NOT evaluated: the test '
+                'period contains no heavy-rain day. Not an official IMD forecast.')
+    if rain.get('source') != 'open_meteo_trained':
+        return RAIN_LIMITATION_DISABLED
+    return ('Rainfall forecasts come from HMMs trained on Open-Meteo reanalysis (one per grid cell; zones sharing '
+            'a cell get identical forecasts) and driven by Open-Meteo precipitation — a reanalysis-driven model '
+            'forecast, not a gauge measurement or an official IMD forecast. Hourly values are the expected rate in '
+            'the target hour; the 24 h total is the expected accumulation over the next 24 h. Only horizons that beat '
+            'a persistence/climatology baseline on validation and test data are shown'
+            + (f" (enabled: {', '.join(sup)})." if sup else ' — none passed, so no rainfall forecast is shown.'))
+
+
+def _temperature_limitation(temp: Dict[str, Any]) -> str:
+    """Limitation text matching the temperature path actually used in this run."""
+    if temp.get('source') != 'open_meteo_hourly_regression':
+        return LIMITATIONS[-1]
+    sup = temp.get('supported_horizons') or []
+    return ('Temperature: hourly 2 m temperature from per-horizon regressions trained on Open-Meteo reanalysis and '
+            'driven by Open-Meteo temperature (9 distinct grid cells for 15 zones). Only horizons that beat persistence, '
+            'same-hour-yesterday and diurnal climatology on BOTH validation and test are shown'
+            + (f" ({', '.join(sup)})" if sup else ' (none)') + '; 6 h and 24 h failed validation and are unavailable. '
+            'The IMD heatwave criterion (Tmax + verified normal) is not evaluated.')
+
+
 LIMITATIONS = [
     'AQI values are computed by UrbanPulse with the CPCB NAQI sub-index method (24 h / 8 h rolling '
     'means, >=3 pollutants incl. PM) from OpenAQ hourly station data; they are not official CPCB bulletins.',
@@ -56,9 +96,7 @@ LIMITATIONS = [
     'the latest measured hour, which may already be in the past.',
     'Weather is Open-Meteo reanalysis/model analysis, not station measurement; the 15 zones map to only '
     '8 distinct model grid cells, so several zones share identical weather.',
-    'Rainfall forecasts and heavy-rain alerts are disabled: the only rainfall HMMs (zones 4, 5, 10, 14) were '
-    'trained on CAAQMS gauges, no live gauge feed exists, and reanalysis input failed validation. Current '
-    'rainfall is shown from Open-Meteo reanalysis for all zones.',
+    RAIN_LIMITATION_DISABLED,
     'Temperature forecast is the next-day DAILY MEAN; no sub-daily temperature forecast and no Tmax '
     'forecast exist, so the IMD heatwave criterion is not evaluated. The frozen temperature HMM (171 '
     'training days, Jan-Jun 2024) has low skill: next-day MAE ~1.0 °C vs ~0.5 °C typical day-to-day change.',
@@ -106,7 +144,7 @@ def _iso(t) -> Optional[str]:
 
 def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
              now_utc: Optional[pd.Timestamp] = None, output_path: str = OUTPUT_PATH,
-             verbose: bool = True) -> Dict[str, Any]:
+             verbose: bool = True, scheduled: bool = False) -> Dict[str, Any]:
     now = now_utc or pd.Timestamp.now(tz='UTC')
     log = print if verbose else (lambda *a, **k: None)
     log(f"\n{'=' * 65}\nUrbanPulse live pipeline v3 — {now.isoformat()}\n{'=' * 65}")
@@ -145,10 +183,33 @@ def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
         if len(complete):
             rain_origin = complete.index.max()
             precip = {z: hourly_series(om, z, 'precipitation_mm', rain_origin, RAIN_CONTEXT_HOURS)
-                      for z in RAIN_HMM_ZONES}
-    rain = fc.run_rainfall(precip, rain_origin, enabled=RAINFALL_FORECAST_ENABLED)
-    temp = fc.run_temperature(daily_mean_temperature(om) if len(om) else
-                              pd.DataFrame(columns=['zone_id', 'date_ist', 'tmean_c']))
+                      for z in fc.rainfall_zones}
+    # Per-zone weather windows for promoted models (representative-zone inputs, same as training)
+    from src.forecasting.live_forecaster import WEATHER_COLUMNS, WEATHER_CONTEXT_HOURS
+    rain_weather = ({z: hourly_frame(om, z, WEATHER_COLUMNS, rain_origin, WEATHER_CONTEXT_HOURS) for z in range(1, 16)}
+                    if rain_origin is not None else {})
+    # Longer windows only for the optional experimental rainfall package (C2 needs >= 721 h); not built otherwise
+    long_weather = {}
+    if rain_origin is not None and getattr(fc, 'rain_history', None) is not None:
+        from src.forecasting.live_forecaster import RAIN_HISTORY_CONTEXT_HOURS
+        long_weather = {z: hourly_frame(om, z, WEATHER_COLUMNS, rain_origin, RAIN_HISTORY_CONTEXT_HOURS) for z in range(1, 16)}
+    rain = fc.run_rainfall(precip, rain_origin, enabled=fc.rainfall_enabled, weather_by_zone=rain_weather,
+                           long_weather_by_zone=long_weather)
+    temp_origin = None
+    if getattr(fc, 'temp_hourly', None) is not None:
+        temps = {}
+        if len(om):
+            complete_t = om.dropna(subset=['temperature_2m_c']).groupby('time_utc')['zone_id'].nunique()
+            complete_t = complete_t[complete_t == 15]
+            if len(complete_t):
+                temp_origin = complete_t.index.max()
+                temps = {z: hourly_series(om, z, 'temperature_2m_c', temp_origin, 48) for z in range(1, 16)}
+        temp_weather = ({z: hourly_frame(om, z, WEATHER_COLUMNS, temp_origin, WEATHER_CONTEXT_HOURS) for z in range(1, 16)}
+                        if temp_origin is not None else {})
+        temp = fc.run_temperature_hourly(temps, temp_origin, weather_by_zone=temp_weather)
+    else:
+        temp = fc.run_temperature(daily_mean_temperature(om) if len(om) else
+                                  pd.DataFrame(columns=['zone_id', 'date_ist', 'tmean_c']))
 
     # zone_meta: current conditions with provenance
     shared = {}
@@ -166,7 +227,8 @@ def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
             aqi_state = 'NO_STATION' if z not in AQI_HMM_ZONES and z != 1 else 'NO_LIVE_DATA'
         elif prim['latest_valid_utc'] is None:
             aqi_state = 'NO_LIVE_DATA'
-        elif zin.get(z, {}).get('reason') == 'UNAVAILABLE_STALE_INPUT':
+        elif not freshness.is_observation_current(prim['latest_valid_utc'], now):
+            # Age relative to NOW (rule R1), not relative to the newest station.
             aqi_state = 'MEASURED_STALE'
         else:
             aqi_state = 'MEASURED'
@@ -196,23 +258,38 @@ def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
             'weather_provenance': 'Open-Meteo reanalysis/model analysis (not a station measurement)' if w else None,
             'weather_grid_cell': w.get('grid_cell'),
             'weather_shared_with_zones': [x for x in shared.get(w.get('grid_cell'), []) if x != z] if w else [],
-            'has_rainfall_model': z in RAIN_HMM_ZONES,
-            'rainfall_forecast_enabled': bool(RAINFALL_FORECAST_ENABLED and z in RAIN_HMM_ZONES),
+            'has_rainfall_model': z in fc.rainfall_zones,
+            'rainfall_forecast_enabled': bool(rain.get('enabled') and z in precip),
             'is_rainfall_monitored': False,      # no live rain gauge for any zone
         })
 
     predictions = {'AQI': aqi.get('horizons', {}), 'rainfall': rain['horizons'], 'temperature': temp['horizons']}
     supported = {
         'AQI': list(aqi.get('horizons', {}).keys()),
-        'rainfall': list(rain['horizons'].keys()) if rain['n_active'] else [],
-        'temperature': ['24h'] if any(r['availability'] != 'UNAVAILABLE' for r in temp['horizons']['24h']) else [],
+        'rainfall': rain.get('supported_horizons', list(rain['horizons'].keys()) if rain['n_active'] else []),
+        'temperature': temp.get('supported_horizons',
+                                ['24h'] if any(r['availability'] != 'UNAVAILABLE' for r in temp['horizons']['24h']) else []),
     }
     data_time = aqi.get('origin_utc')
 
     # 4. Alerts
     alerts = build_alert_records(predictions, zone_meta, _iso(data_time) or now.isoformat())
-    active = filter_active_alerts(alerts)
-    log(format_alert_summary(alerts))
+    for a in alerts:
+        if a['variable'] == 'AQI':
+            src_time = freshness.aqi_forecast_input_time(a['zone_id'], a.get('availability'), zin, data_time)
+        elif a['variable'] == 'rainfall':
+            src_time = rain_origin
+        elif a['variable'] == 'temperature':
+            src_time = temp_origin
+        else:
+            src_time = None
+        a['forecast_freshness'] = freshness.forecast_freshness(a.get('target_time_utc'), src_time, now)
+    # Only CURRENT forecasts are active alerts; stale/expired WATCH/WARNING are kept for review.
+    active = [a for a in filter_active_alerts(alerts) if a['forecast_freshness'] == freshness.CURRENT]
+    stale_warnings = [a for a in filter_active_alerts(alerts) if a['forecast_freshness'] != freshness.CURRENT]
+    log(format_alert_summary(active))
+    if stale_warnings:
+        log(f'[STALE] {len(stale_warnings)} WATCH/WARNING record(s) from stale or expired forecasts (not active).')
 
     gen = pd.Timestamp.now(tz='UTC')
     output = {
@@ -221,12 +298,17 @@ def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
             'timestamp_utc': _iso(data_time),
             'generated_at_utc': gen.isoformat(),
             'last_successful_update_utc': gen.isoformat(),
-            'next_update_utc': (gen + pd.Timedelta(seconds=REFRESH_INTERVAL_SECONDS)).isoformat(),
+            # A one-off run has no scheduled successor, so no next update is advertised.
+            'next_update_utc': ((gen + pd.Timedelta(seconds=REFRESH_INTERVAL_SECONDS)).isoformat()
+                                if scheduled else None),
+            'run_mode': 'scheduler' if scheduled else 'once',
             'refresh_interval_seconds': REFRESH_INTERVAL_SECONDS,
+            'freshness_rules': freshness.rules_summary(),
             'data_times': {
                 'aqi_forecast_origin_utc': _iso(data_time),
                 'rainfall_forecast_origin_utc': _iso(rain_origin),
                 'temperature_last_input_day_ist': temp['last_input_day_ist'],
+                'temperature_forecast_origin_utc': _iso(temp_origin),
             },
             'sources': {'openaq': src_openaq, 'open_meteo': src_om},
             'aqi_active_zones': aqi.get('n_active', 0),
@@ -234,14 +316,17 @@ def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
             'rainfall_forecast_enabled': rain.get('enabled', False),
             'supported_horizons': supported,
             'model_artifacts': fc.artifacts_summary(),
-            'temperature_limitation': LIMITATIONS[-1],
-            'limitations': LIMITATIONS,
+            'temperature_limitation': _temperature_limitation(temp),
+            'limitations': [_rainfall_limitation(rain) if lim is RAIN_LIMITATION_DISABLED else
+                            _temperature_limitation(temp) if lim is LIMITATIONS[-1] else lim
+                            for lim in LIMITATIONS],
         },
         'predictions': predictions,
         'zone_meta': zone_meta,
         'aqi_zone_inputs': aqi.get('zone_inputs', {}),
         'alerts': alerts,
         'active_alerts': active,
+        'stale_warnings': stale_warnings,
     }
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     tmp = output_path + '.tmp'
@@ -252,11 +337,12 @@ def run_once(fetch: bool = True, forecaster: Optional[LiveForecaster] = None,
     return output
 
 
-def run_scheduler(interval_seconds: int = REFRESH_INTERVAL_SECONDS):
+def run_scheduler(interval_seconds: int = REFRESH_INTERVAL_SECONDS, output_path: str = OUTPUT_PATH):
+    """Hourly loop; every cycle writes to `output_path` (e.g. a demo file, never implicitly the default)."""
     fc = LiveForecaster()
     while True:
         try:
-            run_once(fetch=True, forecaster=fc)
+            run_once(fetch=True, forecaster=fc, scheduled=True, output_path=output_path)
         except Exception as e:
             # Previous output is left in place; the dashboard shows its age.
             print(f'[ERROR] pipeline cycle failed: {e}')
@@ -264,13 +350,21 @@ def run_scheduler(interval_seconds: int = REFRESH_INTERVAL_SECONDS):
         time.sleep(interval_seconds)
 
 
-if __name__ == '__main__':
+def main(argv=None):
     ap = argparse.ArgumentParser(description='UrbanPulse live pipeline v3')
     ap.add_argument('--once', action='store_true', help='Run one cycle and exit')
     ap.add_argument('--no-fetch', action='store_true', help='Skip collection; use last collected files')
     ap.add_argument('--interval', type=int, default=REFRESH_INTERVAL_SECONDS)
-    args = ap.parse_args()
+    ap.add_argument('--output', default=OUTPUT_PATH,
+                    help='Prediction JSON to write (default data/live/current_predictions.json); '
+                         'used by --once and by every scheduled cycle')
+    args = ap.parse_args(argv)
+    output_path = os.path.abspath(args.output)
     if args.once:
-        run_once(fetch=not args.no_fetch)
+        run_once(fetch=not args.no_fetch, output_path=output_path)
     else:
-        run_scheduler(args.interval)
+        run_scheduler(args.interval, output_path=output_path)
+
+
+if __name__ == '__main__':
+    main()

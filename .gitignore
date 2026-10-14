@@ -6,9 +6,33 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+.venv/
 
 # Downloaded / regenerated data (reproducible via the audit and collector scripts)
 data/external/openaq/
 data/live/raw/
 data/live/*.tmp
 backups/
+# Open-Meteo 2017-2024 history (re-creatable; the tracked manifest records parameters and SHA-256)
+data/external/open_meteo_chennai_hourly_2017_2023.csv.gz
+data/external/open_meteo_chennai_hourly_2024_SEALED.csv.gz
+data/external/*.csv.gz.tmp
+
+# Local prediction outputs
+data/live/current_predictions.json
+data/live/demo_predictions.json
+data/live/dashboard_predictions.json
+
+# Local collection status and caches
+data/live/collection_status.json
+
+# Experimental model artifacts and generated results
+models/candidates/
+models/experiments/
+models/rainfall/
+models/temperature/
+results/experiments/
+
+# Local experiment outputs
+results/metrics/rainfall_twopart_evaluation.csv
+results/metrics/temperature_hourly_evaluation.csv

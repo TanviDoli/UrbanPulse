@@ -122,8 +122,10 @@ def collect_openaq(client: Optional[OpenAQClient] = None, now_utc: Optional[pd.T
                                            'error': str(e)})
                 continue
             df = pd.DataFrame([flatten_hour_record(r) for r in recs])
+            last = s['last_utc'].isoformat()               # upstream datetimeLast (latest raw measurement)
             if df.empty:
-                st_status['sensors'][pol] = {'sensor_id': s['sensor_id'], 'units': s['units'], 'records': 0}
+                st_status['sensors'][pol] = {'sensor_id': s['sensor_id'], 'units': s['units'], 'records': 0,
+                                             'datetime_last_utc': last}
                 continue
             df['location_id'] = st['location_id']
             df['station_name'] = st['station_name']
@@ -132,13 +134,20 @@ def collect_openaq(client: Optional[OpenAQClient] = None, now_utc: Optional[pd.T
             df['sensor_id'] = s['sensor_id']
             df['cpcb_pollutant'] = pol
             frames.append(df)
-            st_status['sensors'][pol] = {'sensor_id': s['sensor_id'], 'units': s['units'], 'records': len(df)}
+            st_status['sensors'][pol] = {'sensor_id': s['sensor_id'], 'units': s['units'], 'records': len(df),
+                                         'datetime_last_utc': last}
         status['stations'].append(st_status)
     data = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
     status['n_requests'] = len(client.request_log)
     status['n_records'] = int(len(data))
     status['latest_record_utc'] = (pd.to_datetime(data['hour_start_utc'], utc=True).max().isoformat()
                                    if len(data) else None)
+    # Upstream freshness diagnostic: newest raw measurement OpenAQ reports for the chosen sensors. If it is
+    # also old, the stations stopped reporting to OpenAQ (not a collection bug); if it is recent while the
+    # hourly records are old, OpenAQ's hourly aggregates lag behind.
+    lasts = [pd.Timestamp(v['datetime_last_utc']) for st_ in status['stations'] for v in st_['sensors'].values()
+             if v.get('datetime_last_utc')]
+    status['latest_sensor_datetime_last_utc'] = max(lasts).isoformat() if lasts else None
     # Partial station failures are tolerated; total failure is not.
     status['ok'] = len(data) > 0
     if not status['ok']:

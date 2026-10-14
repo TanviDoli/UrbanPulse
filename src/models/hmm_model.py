@@ -262,6 +262,32 @@ class TemporalHMM:
             
         return y_hat, var_pred
 
+    def forecast_accumulation_sequence(self, seq: np.ndarray, n_steps: int = 24) -> Tuple[np.ndarray, np.ndarray]:
+        """
+        Causal forecast of the accumulated total S = Y_{t+1} + ... + Y_{t+n_steps} at every step t
+        (vectorised form of src.alerts.alert_engine.compute_24h_rainfall_accumulation):
+          E[S]   = sum_k gamma_t A^k mu
+          Var(S) = sum_k Var(Y_{t+k}) + 2 sum_{j<k} Cov(Y_{t+j}, Y_{t+k}),
+          E[Y_{t+j} Y_{t+k}] = gamma_t A^j diag(mu) A^(k-j) mu.
+        Returns (mean_series, var_series), each of shape (len(seq),).
+        """
+        gamma_hist = self.filter_sequence(seq)
+        powers = [np.linalg.matrix_power(self.transmat_, k) for k in range(1, n_steps + 1)]
+        p = np.stack([gamma_hist @ P for P in powers], axis=1)              # (T, n_steps, K)
+        m_k = p @ self.means_                                               # (T, n_steps)
+        var_single = p @ (self.variances_ + self.means_ ** 2) - m_k ** 2
+        diag_mu = np.diag(self.means_)
+        cov = np.zeros(len(gamma_hist))
+        for j in range(n_steps):
+            for k in range(j + 1, n_steps):
+                w = powers[j] @ diag_mu @ powers[k - j - 1] @ self.means_
+                cov += gamma_hist @ w - m_k[:, j] * m_k[:, k]
+        mean = m_k.sum(axis=1)
+        var = np.maximum(1e-4, var_single.sum(axis=1) + 2.0 * cov)
+        if self.variable in ['AQI', 'rainfall']:
+            mean = np.maximum(0.0, mean)
+        return mean, var
+
     def forecast(self, seq: np.ndarray, horizon: int = 1) -> Tuple[float, float, np.ndarray]:
         """
         Compute probabilistic forecast at horizon h:

@@ -50,11 +50,24 @@ from dashboard.data_loader import (
     zone_aqi_basis,
     get_source_status,
     data_is_stale,
+    aqi_observation,
+    forecast_view,
+    get_stale_warnings,
+    get_pipeline_status,
+    format_age,
     STATUS_EXPLANATION,
+    FORECAST_FRESHNESS_LABEL,
     ZONE_MAP,
     RISK_LEVEL_COLOR,
     RISK_LEVEL_BG,
 )
+from src import freshness as fr
+import dashboard.data_loader as _dl
+
+
+def dl_predictions_path() -> str:
+    """Same file the data loader reads (honours URBANPULSE_PREDICTIONS_PATH)."""
+    return _dl.PREDICTIONS_PATH
 
 GEOJSON_PATH = os.path.join(PROJECT_ROOT, "data", "raw", "chennai_zones_2025.geojson")
 
@@ -364,6 +377,12 @@ if "selected_zone" not in st.session_state:
     st.session_state.selected_zone = 14   # default: Perungudi
 if "horizon" not in st.session_state:
     st.session_state.horizon = "Current"
+# Keyed dropdowns hold their own value; initialise them from (and keep them synced with)
+# selected_zone / horizon so map clicks and quick buttons are not reverted by the dropdowns.
+if "zone_dropdown" not in st.session_state:
+    st.session_state.zone_dropdown = st.session_state.selected_zone
+if "horizon_dropdown" not in st.session_state:
+    st.session_state.horizon_dropdown = st.session_state.horizon
 if "page" not in st.session_state:
     st.session_state.page = "Risk Map"
 if "last_data_mtime" not in st.session_state:
@@ -372,7 +391,7 @@ if "last_data_mtime" not in st.session_state:
 # ══════════════════════════════════════════════════════════════════════════
 # DATA LOADING (with file-modification-time cache invalidation)
 # ══════════════════════════════════════════════════════════════════════════
-PREDICTIONS_PATH = os.path.join(PROJECT_ROOT, "data", "live", "current_predictions.json")
+PREDICTIONS_PATH = dl_predictions_path()
 
 @st.cache_data(ttl=60, show_spinner=False)
 def _load_cached(mtime: float):
@@ -386,6 +405,9 @@ def get_data():
     return _load_cached(mtime), mtime
 
 data, data_mtime = get_data()
+# One view-time clock per render: freshness (src/freshness.py) is re-evaluated against it,
+# because the predictions file keeps ageing after the pipeline writes it.
+NOW = pd.Timestamp.now(tz="UTC")
 
 # ══════════════════════════════════════════════════════════════════════════
 # HELPERS
@@ -434,22 +456,35 @@ def _rf_label(v: Optional[float]) -> str:
     if v < 64.5:  return "Heavy rain"
     return "Very heavy rain"
 
+def _aqi_missing_note() -> str:
+    """Why there is no current AQI: newest OpenAQ station record and its age vs the freshness limit."""
+    t = _parse_ts(get_source_status(data).get("openaq", {}).get("latest_record_utc")) if data else None
+    if t is None:
+        return "No live station data"
+    return (f"No current station data · newest OpenAQ record {format_ist_timestamp(t)} "
+            f"({format_age(fr.age_hours(t.isoformat(), NOW))} old; limit {fr.AQI_OBS_MAX_AGE_HOURS:g} h)")
+
+
 def _var_pred_display(data, zone_id, hz_key, variable) -> tuple:
     """Return (value_str, unit_str, risk_level, note) for display. Missing data is never shown as a value."""
     if hz_key == "current":
         zm = get_zone_meta_map(data).get(zone_id, {})
         if variable == "AQI":
-            v = _safe_float(zm.get("cpcb_aqi_computed"))
-            if v is not None:
-                age = _safe_float(zm.get("aqi_age_hours"))
-                when = f" {age:.0f} h ago" if age is not None and age >= 2 else ""
-                return (f"{v:.0f}", "AQI", "", f"{_aqi_label(v)} · measured{when}")
-            state = zm.get("aqi_state")
-            if state == "MEASURED_STALE":
-                last = _safe_float(zm.get("last_measured_aqi"))
-                return (None, None, None, f"Station data stale (last {last:.0f} AQI, {zm.get('aqi_age_hours')} h ago)"
-                        if last is not None else "Station data stale")
-            return (None, None, None, "No air-quality station" if state == "NO_STATION" else "No live station data")
+            # Freshness rule R1 re-applied at view time; a stale reading keeps its value and
+            # timestamp but never gets a current label or a category colour.
+            obs = aqi_observation(data, zone_id, NOW)
+            v = _safe_float(obs["value"])
+            age = format_age(obs["age_hours"])
+            if obs["state"] == "MEASURED" and v is not None:
+                return (f"{v:.0f}", "AQI", "", f"{_aqi_label(v)} · measured {age} ago")
+            if obs["state"] == "MEASURED_STALE" and v is not None:
+                when = format_ist_timestamp(_parse_ts(obs["observed_at_utc"]))
+                return (f"{v:.0f}", "AQI", fr.LEVEL_STALE, f"STALE · measured {when} ({age} ago)")
+            if obs["state"] == "MEASURED_STALE":
+                return (None, None, None, "Station data stale")
+            if obs["state"] == "NO_STATION":
+                return (None, None, None, "No air-quality station")
+            return (None, None, None, _aqi_missing_note())
         if variable == "rainfall":
             v = _safe_float(zm.get("rainfall_mm"))
             if v is None:
@@ -461,9 +496,11 @@ def _var_pred_display(data, zone_id, hz_key, variable) -> tuple:
                 return (None, None, None, "Weather data unavailable")
             return (f"{v:.1f}", "°C", "", "2 m air · reanalysis")
     else:
-        if variable == "temperature" and hz_key in ("1h", "3h", "6h"):
-            return (None, None, None, "No sub-daily temperature model")
         zp = get_predictions_for_zone(data, zone_id, variable, hz_key)
+        if variable == "AQI" and zp is None:
+            return (None, None, None, "Not available: no current measured AQI to forecast from")
+        if variable == "temperature" and zp is None and hz_key in ("1h", "3h", "6h"):
+            return (None, None, None, "No sub-daily temperature model")
         if zp is None:
             return (None, None, None, "Not produced")
         status = zp.get("alert_status", "")
@@ -471,15 +508,57 @@ def _var_pred_display(data, zone_id, hz_key, variable) -> tuple:
             return (None, None, None, STATUS_EXPLANATION.get(status, "Unavailable"))
         level = get_risk_level(status) if status in ("NORMAL", "WATCH", "WARNING") else ""
         if variable == "AQI":
-            v = _safe_float(zp.get("mrf_pred"))
-            basis = "estimate" if zp.get("availability") == "MODEL_ESTIMATE" else "forecast"
-            return (f"{v:.0f}" if v is not None else "—", "AQI", level, f"{_aqi_label(v)} · {basis}")
+            # Show the actual target timestamp; stale-input / expired forecasts keep their value
+            # but are labelled not evaluated and are never coloured as low risk.
+            fv = forecast_view(data, zone_id, "AQI", hz_key, NOW)
+            v = _safe_float(fv.get("mrf_pred"))
+            tgt = format_ist_timestamp(_parse_ts(fv.get("target_time_utc")))
+            f = fv["forecast_freshness"]
+            if f == fr.CURRENT:
+                basis = "MRF estimate (uncertain)" if fv["is_estimate"] else "forecast"
+                std = _safe_float(fv.get("mrf_std"))
+                note = f"{_aqi_label(v)} · {basis} for {tgt}" + (f" · ±{std:.0f}" if fv["is_estimate"] and std else "")
+            elif f == fr.EXPIRED:
+                note = f"EXPIRED · target {tgt} has passed · not evaluated"
+            elif f == fr.STALE_INPUT:
+                note = f"STALE INPUT · data {format_age(fv['input_age_hours'])} old · for {tgt} · not evaluated"
+            else:
+                note = "Forecast time unknown · not evaluated"
+            if fv["stale_warning"]:
+                note += f" · old {status} kept for review"
+            lvl = fv["level"] if fv["level"] != fr.LEVEL_UNAVAILABLE else ""
+            return (f"{v:.0f}" if v is not None else "—", "AQI", lvl, note)
         if variable == "rainfall":
-            if hz_key == "24h":
-                v = _safe_float(zp.get("accum_24h_mm"))
-                return (f"{v:.1f}" if v is not None else "—", "mm/24h", level, "24 h total · reanalysis-driven")
-            v = _safe_float(zp.get("mrf_pred"))
-            return (f"{v:.1f}" if v is not None else "—", "mm/h", "", "hourly · reanalysis-driven")
+            # Hourly horizons = expected rate in the target hour; 24 Hours = expected TOTAL over the
+            # next 24 h (falls back to the +24 h hourly rate only if the total is not published).
+            fv = forecast_view(data, zone_id, "rainfall", hz_key, NOW)
+            tgt = format_ist_timestamp(_parse_ts(fv.get("target_time_utc")))
+            f = fv["forecast_freshness"]
+            when = {fr.CURRENT: "", fr.EXPIRED: "EXPIRED · ", fr.STALE_INPUT: "STALE INPUT · "}.get(f, "time unknown · ")
+            lvl = fv["level"] if fv["level"] != fr.LEVEL_UNAVAILABLE else ""
+            total = _safe_float(fv.get("accum_24h_mm"))
+            if hz_key == "24h" and total is not None:
+                std = _safe_float(fv.get("accum_24h_std"))
+                return (f"{total:.1f}", "mm total", lvl,
+                        f"{when}expected total over next 24 h (to {tgt})" + (f" · ±{std:.1f}" if std else "")
+                        + " · reanalysis-driven")
+            v = _safe_float(fv.get("mrf_pred"))
+            p_rain = _safe_float(fv.get("prob_rain"))
+            prob_txt = f"P(rain ≥0.1 mm) {p_rain:.0%} · " if p_rain is not None else ""
+            return (f"{v:.2f}" if v is not None else "—", "mm/h", "",
+                    f"{when}{prob_txt}expected rate in hour ending {tgt} · reanalysis-driven")
+        if variable == "temperature" and "temp_pred_c" in zp:
+            # Hourly temperature forecast (validated horizons only; failed ones returned above as unavailable)
+            fv = forecast_view(data, zone_id, "temperature", hz_key, NOW)
+            v = _safe_float(fv.get("temp_pred_c"))
+            std = _safe_float(fv.get("pred_std"))
+            when = {fr.CURRENT: "", fr.EXPIRED: "EXPIRED · ", fr.STALE_INPUT: "STALE INPUT · "}.get(
+                fv["forecast_freshness"], "time unknown · ")
+            if zp.get("model_package"):           # history-trained package: passed the 2024 test, not promoted
+                when = "EXPERIMENTAL · " + when
+            return (f"{v:.1f}" if v is not None else "—", "°C", "",
+                    f"{when}2 m air at {format_ist_timestamp(_parse_ts(fv.get('target_time_utc')))}"
+                    + (f" · ±{std:.1f}" if std else "") + " · reanalysis-driven")
         if variable == "temperature":
             v = _safe_float(zp.get("next_day_tmean_pred_c"))
             return (f"{v:.1f}" if v is not None else "—", "°C", "", f"Daily mean {zp.get('target_day_ist', '')} · low skill")
@@ -548,11 +627,9 @@ with st.sidebar:
         stale = data_is_stale(data)
         ts_gen = format_ist_timestamp(meta.get("generated_at_utc_parsed"))
         ts_ok  = format_ist_timestamp(_parse_ts(meta.get("last_successful_update_utc")))
-        mins   = get_countdown_minutes(data)
-        gen_age_h = None
-        if meta.get("generated_at_utc_parsed") is not None:
-            gen_age_h = (pd.Timestamp.now(tz="UTC") - meta["generated_at_utc_parsed"]).total_seconds() / 3600
-        dot = "#ef4444" if stale else "#22c55e"
+        pstat  = get_pipeline_status(data, NOW)
+        gen_age_h = pstat["output_age_hours"]
+        dot = "#ef4444" if stale or pstat["state"] == fr.OVERDUE else "#22c55e"
         src_lines = ""
         for name, label in (("openaq", "Air quality (OpenAQ, measured)"), ("open_meteo", "Weather (Open-Meteo, reanalysis)")):
             sinfo = srcs.get(name, {})
@@ -564,21 +641,32 @@ with st.sidebar:
                    if sinfo.get("ok") is False else "")
             src_lines += (f"<br><strong>{label}</strong><br>latest data: {latest}"
                           f"{f' ({age:.0f} h old)' if age is not None else ''} · {flag}{err}")
-        overdue = (f"<br><span style='color:#f87171;'>Pipeline output is {gen_age_h:.1f} h old (overdue)</span>"
-                   if gen_age_h is not None and gen_age_h > 2 * (meta.get("refresh_interval_seconds") or 3600) / 3600 else "")
+        out_age = (f"<br><span style='color:{'#f87171' if pstat['state'] == fr.OVERDUE else '#6b7280'};'>"
+                   f"Pipeline output is {format_age(gen_age_h)} old</span>" if gen_age_h is not None else "")
         st.markdown(f"""
 <div class="ts-block">
-  <span class="live-dot" style="background:{dot};"></span><strong>{'Data partly stale' if stale else 'Live'}</strong><br>
+  <span class="live-dot" style="background:{dot};"></span><strong>{'Data partly stale' if stale else ('Output overdue' if pstat['state'] == fr.OVERDUE else 'Live')}</strong><br>
   <strong>Last successful update:</strong> {ts_ok}<br>
-  <strong>Generated:</strong> {ts_gen}{overdue}
+  <strong>Generated:</strong> {ts_gen}{out_age}
   {src_lines}
 </div>
 """, unsafe_allow_html=True)
+        # R4: overdue is shown as overdue, never as "0 min"; a one-off run advertises no next update.
+        if pstat["state"] == fr.OVERDUE:
+            cd_title, cd_main = "UPDATE OVERDUE", f"by {format_age(pstat['overdue_minutes'] / 60)}"
+            cd_sub = f"expected {format_ist_timestamp(meta.get('next_update_utc_parsed'))}"
+            cd_color = "#f87171"
+        elif pstat["state"] == fr.ON_SCHEDULE:
+            cd_title, cd_main = "NEXT SCHEDULED UPDATE", format_ist_timestamp(meta.get("next_update_utc_parsed"))
+            cd_sub, cd_color = f"in {pstat['minutes_to_next']} min · hourly cycle", "#60a5fa"
+        else:
+            cd_title, cd_main = "NO SCHEDULED UPDATE", "one-off run"
+            cd_sub, cd_color = "start the scheduler for hourly updates", "#9ca3af"
         st.markdown(f"""
 <div class="countdown-box" style="margin-top:0.6rem;">
-  <div style="font-size:0.6rem;color:#4b5563;margin-bottom:0.15rem;">NEXT SCHEDULED UPDATE</div>
-  <div class="mins">{format_ist_timestamp(meta.get("next_update_utc_parsed"))}</div>
-  <div style="font-size:0.58rem;color:#374151;">in {mins if mins is not None else '--'} min · hourly cycle</div>
+  <div style="font-size:0.6rem;color:#4b5563;margin-bottom:0.15rem;">{cd_title}</div>
+  <div class="mins" style="color:{cd_color};font-size:1.0rem;">{cd_main}</div>
+  <div style="font-size:0.58rem;color:#374151;">{cd_sub}<br>status as of {format_ist_timestamp(NOW)} — click Refresh to recheck</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -598,12 +686,23 @@ with st.sidebar:
             f'<span class="leg-dot" style="background:{col};"></span>{lvl}</div>',
             unsafe_allow_html=True,
         )
+    for lvl, desc in [("Stale warning", "Stale warning (old WATCH/WARNING, not a current alert)"),
+                      ("Estimate", "Estimate (uncertain, no elevated risk)"),
+                      ("Stale", "Stale (input too old or target passed)")]:
+        st.markdown(
+            f'<div style="font-size:0.75rem;color:#9ca3af;padding:3px 0;">'
+            f'<span class="leg-dot" style="background:{RISK_LEVEL_COLOR[lvl]};"></span>{desc}</div>',
+            unsafe_allow_html=True,
+        )
     st.markdown(
         '<div style="font-size:0.75rem;color:#9ca3af;padding:3px 0;">'
-        '<span class="leg-dot" style="background:#374151;"></span>Unavailable (no evaluated forecast)</div>'
+        '<span class="leg-dot" style="background:#374151;"></span>Unavailable (no forecast)</div>'
         '<div style="font-size:0.75rem;color:#9ca3af;padding:3px 0;">'
         '<span class="leg-dot" style="background:transparent;border:2px dashed #e5e7eb;"></span>'
         'Dashed outline = AQI is an MRF estimate (no usable monitor)</div>'
+        f'<div style="font-size:0.62rem;color:#4b5563;padding-top:4px;">Green only for a current forecast from '
+        f'measured input. AQI readings older than {fr.AQI_OBS_MAX_AGE_HOURS:g} h are stale; forecasts from them, '
+        f'or whose target time has passed, are not evaluated.</div>'
         '<div style="font-size:0.62rem;color:#4b5563;padding-top:4px;">Low/Moderate/High = UrbanPulse decision '
         'rule on P(threshold crossed): &lt;20%, 20–60%, ≥60%. Thresholds: CPCB AQI &gt; 200; IMD heavy rain ≥ 64.5 mm/24 h.</div>',
         unsafe_allow_html=True,
@@ -630,11 +729,20 @@ if data is None:
     st.stop()
 
 # ── Derived data ──────────────────────────────────────────────────────────────
-zone_risks     = get_zone_risk_map(data)
+zone_risks     = get_zone_risk_map(data, NOW)
 zone_meta_map  = get_zone_meta_map(data)
-summary_stats  = get_summary_stats(data)
-active_alerts  = get_alerts(data, active_only=True)
+summary_stats  = get_summary_stats(data, NOW)
+active_alerts  = get_alerts(data, active_only=True, now=NOW)
+stale_warnings = get_stale_warnings(data, NOW)
+eval_counts    = summary_stats["evaluation"]
 meta           = get_meta(data)
+aqi_data_age   = fr.age_hours(meta.get("timestamp_utc"), NOW)
+aqi_data_asof  = (f"{format_ist_timestamp(meta.get('timestamp_utc_parsed'))} ({format_age(aqi_data_age)} old)"
+                  if meta.get("timestamp_utc_parsed") is not None else "N/A")
+not_eval_note  = (f"{eval_counts['evaluated']} of 15 zones evaluated with current input · "
+                  f"{eval_counts['estimate_uncertain']} spatial estimate only (uncertain) · "
+                  f"{eval_counts['stale']} stale/expired (not evaluated) · "
+                  f"{eval_counts['unavailable']} unavailable (not evaluated)")
 sel_zone       = st.session_state.selected_zone
 sel_horizon    = st.session_state.horizon
 hz_key         = HORIZON_KEY_MAP[sel_horizon]
@@ -654,12 +762,11 @@ if st.session_state.page == "Risk Map":
     if any(a.get("severity") == "CRITICAL" for a in active_alerts):
         dominant_sev_color = "#ef4444"
 
-    ts_display = format_ist_timestamp(meta.get("timestamp_utc_parsed"))
     st.markdown(f"""
 <div class="dash-header">
   <div>
     <div class="dash-title">Chennai Environmental Intelligence</div>
-    <div class="dash-sub">HMM + MRF &nbsp;|&nbsp; AQI data as of {ts_display}{' &nbsp;|&nbsp; <span style="color:#f87171;">some sources stale</span>' if data_is_stale(data) else ''}</div>
+    <div class="dash-sub">HMM + MRF &nbsp;|&nbsp; AQI data as of {aqi_data_asof}{' &nbsp;|&nbsp; <span style="color:#f87171;">some sources stale</span>' if data_is_stale(data) else ''}</div>
   </div>
   <div style="display:flex;align-items:center;gap:0.75rem;">
     <div style="background:rgba(249,115,22,0.12);border:1px solid {dominant_sev_color}44;
@@ -710,16 +817,21 @@ if st.session_state.page == "Risk Map":
             is_sel   = (zid == sel_zone)
 
             zm = zone_meta_map.get(zid, {})
-            cur_aqi  = _safe_float(zm.get("cpcb_aqi_computed"))
+            obs      = aqi_observation(data, zid, NOW)
+            cur_aqi  = _safe_float(obs["value"])
             cur_rf   = _safe_float(zm.get("rainfall_mm"))
             cur_temp = _safe_float(zm.get("temp_c_current"))
 
-            aqi_str  = (f"{cur_aqi:.0f}" if cur_aqi is not None else
-                        {"MEASURED_STALE": "stale", "NO_STATION": "no station"}.get(zm.get("aqi_state"), "N/A"))
+            if cur_aqi is not None and obs["state"] == "MEASURED":
+                aqi_str = f"{cur_aqi:.0f} ({format_age(obs['age_hours'])} ago)"
+            elif cur_aqi is not None:
+                aqi_str = f"{cur_aqi:.0f} STALE ({format_age(obs['age_hours'])} old)"
+            else:
+                aqi_str = {"MEASURED_STALE": "stale", "NO_STATION": "no station"}.get(obs["state"], "N/A")
             rf_str   = f"{cur_rf:.1f} mm/h" if cur_rf is not None else "N/A"
             temp_str = f"{cur_temp:.1f} °C" if cur_temp is not None else "N/A"
             est_note = ("<div style='margin-top:4px;font-size:10px;color:#9ca3af;'>AQI risk is an MRF estimate "
-                        "(no usable monitor)</div>" if is_est else "")
+                        "(no usable monitor) — uncertain</div>" if is_est else "")
 
             popup_html = f"""
 <div style="font-family:Inter,sans-serif;padding:8px;min-width:190px;
@@ -784,7 +896,7 @@ if st.session_state.page == "Risk Map":
             m,
             width=None,
             height=460,
-            returned_objects=["last_object_clicked_tooltip", "last_active_drawing"],
+            returned_objects=["last_object_clicked_tooltip", "last_active_drawing", "last_object_clicked"],
             use_container_width=True,
             key="main_map",
         )
@@ -807,10 +919,18 @@ if st.session_state.page == "Risk Map":
                 if raw_name in GEOJSON_NAME_MAP:
                     clicked_id = GEOJSON_NAME_MAP[raw_name]
 
-            if clicked_id and clicked_id != st.session_state.selected_zone:
-                st.session_state.selected_zone = clicked_id
-                sel_zone = clicked_id
-                st.rerun()
+            # st_folium keeps returning the LAST click on every rerun (its component key does not
+            # change), so only a NEW click may change the selection; re-applying a stale click
+            # fought the zone dropdown and reran forever. The click position makes a repeat click
+            # on the same zone a new click. The keyed dropdown is synced so both agree.
+            click_sig = json.dumps([map_output.get("last_object_clicked_tooltip"),
+                                    map_output.get("last_object_clicked"), clicked_id], default=str)
+            if clicked_id and click_sig != st.session_state.get("last_map_click"):
+                st.session_state.last_map_click = click_sig
+                if clicked_id != st.session_state.selected_zone:
+                    st.session_state.selected_zone = clicked_id
+                    st.session_state.zone_dropdown = clicked_id
+                    st.rerun()
 
         # Horizon quick buttons below the map (synced with session state)
         st.markdown(
@@ -832,6 +952,7 @@ if st.session_state.page == "Risk Map":
                     use_container_width=True,
                 ):
                     st.session_state.horizon = hz_opt
+                    st.session_state.horizon_dropdown = hz_opt   # keep the keyed dropdown in sync
                     st.rerun()
 
     # ════════════════════════════════════════════════════
@@ -840,13 +961,13 @@ if st.session_state.page == "Risk Map":
     with col_detail:
         # Zone dropdown selector
         zone_opts = list(ZONE_MAP.keys())
-        cur_z_idx = zone_opts.index(sel_zone) if sel_zone in zone_opts else 13
         st.markdown('<div class="sec-label" style="margin:0 0 0.2rem 0;">Selected Zone</div>', unsafe_allow_html=True)
+        # Value comes from st.session_state.zone_dropdown (initialised and kept in sync above);
+        # passing index= as well would be ignored by a keyed widget and warn when state is set.
         chosen_z = st.selectbox(
             "Select Zone",
             options=zone_opts,
             format_func=lambda z: f"Zone {z}: {ZONE_MAP[z]}",
-            index=cur_z_idx,
             key="zone_dropdown",
             label_visibility="collapsed",
         )
@@ -856,7 +977,7 @@ if st.session_state.page == "Risk Map":
 
         zm_sel  = zone_meta_map.get(sel_zone, {})
         zlabel  = ZONE_MAP.get(sel_zone, f"Zone {sel_zone}")
-        dom_risk = get_dominant_risk_for_zone(data, sel_zone)
+        dom_risk = zone_risks.get(sel_zone, "Unavailable")
         dom_color = RISK_LEVEL_COLOR.get(dom_risk, "#6b7280")
         dom_bg    = RISK_LEVEL_BG.get(dom_risk, "transparent")
 
@@ -873,7 +994,7 @@ if st.session_state.page == "Risk Map":
     </div>
   </div>
   <div style="margin-top:0.5rem;font-size:0.68rem;color:#4b5563;">
-    Last updated: {format_ist_timestamp(meta.get('timestamp_utc_parsed'))}
+    AQI data as of: {aqi_data_asof}
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -882,13 +1003,14 @@ if st.session_state.page == "Risk Map":
         st.markdown('<div class="sec-label" style="margin:0.2rem 0 0.3rem 0;">Current Conditions</div>', unsafe_allow_html=True)
         cur_cards = ""
         for icon, label, var in (("🍃", "AQI", "AQI"), ("🌧️", "Rain", "rainfall"), ("🌡️", "Temp", "temperature")):
-            v_str, u_str, _, note = _var_pred_display(data, sel_zone, "current", var)
+            v_str, u_str, lvl, note = _var_pred_display(data, sel_zone, "current", var)
+            is_stale = lvl == fr.LEVEL_STALE
             cur_cards += f"""
   <div class="env-card">
     <div class="env-icon">{icon}</div>
-    <div class="env-val">{v_str if v_str is not None else "N/A"}</div>
+    <div class="env-val" style="{'color:#a8a29e;' if is_stale else ''}">{v_str if v_str is not None else "N/A"}</div>
     <div class="env-lbl">{label}{f" {u_str}" if u_str and v_str is not None else ""}</div>
-    <div style="font-size:0.55rem;color:#4b5563;margin-top:2px;">{note}</div>
+    <div style="font-size:0.55rem;color:{'#d6a35c' if is_stale else '#4b5563'};margin-top:2px;">{note}</div>
   </div>"""
         st.markdown(f'<div class="env-cards">{cur_cards}</div>', unsafe_allow_html=True)
         src_bits = []
@@ -908,11 +1030,9 @@ if st.session_state.page == "Risk Map":
 
         # Prediction Horizon Dropdown
         st.markdown('<div class="sec-label" style="margin:0.4rem 0 0.2rem 0;">Prediction Horizon</div>', unsafe_allow_html=True)
-        cur_hz_idx = HORIZON_OPTIONS.index(sel_horizon) if sel_horizon in HORIZON_OPTIONS else 0
         chosen_hz = st.selectbox(
             "Select Prediction Horizon",
             options=HORIZON_OPTIONS,
-            index=cur_hz_idx,
             key="horizon_dropdown",
             label_visibility="collapsed",
         )
@@ -920,7 +1040,9 @@ if st.session_state.page == "Risk Map":
             st.session_state.horizon = chosen_hz
             st.rerun()
 
-        hz_display = "Current Environmental Conditions" if hz_key == "current" else f"Prediction for Selected Time: {sel_horizon}"
+        # Horizons are relative to the AQI data time (forecast origin), not to now; each card shows its target time.
+        hz_display = ("Current Environmental Conditions" if hz_key == "current"
+                      else f"Forecast: data time + {sel_horizon.lower()} (target shown on each card)")
         st.markdown(
             f'<div class="sec-label" style="margin:0.3rem 0 0.2rem 0;">{hz_display}</div>',
             unsafe_allow_html=True,
@@ -936,22 +1058,94 @@ if st.session_state.page == "Risk Map":
 
         st.markdown(f'<div class="pred-cards">{aqi_card}{rf_card}{temp_card}</div>', unsafe_allow_html=True)
 
+        # All forecast horizons side by side (same values/notes as the cards; missing = "Not available yet")
+        def _hz_cell(var, hk):
+            v, u, _, n = _var_pred_display(data, sel_zone, hk, var)
+            if v is None or v == "—":
+                return '<span style="color:#6b7280;">Not available yet</span>'
+            tag = (' <span style="color:#f59e0b;font-weight:700;">EXPERIMENTAL</span>'
+                   if "EXPERIMENTAL" in (n or "") else "")
+            return f'<b style="color:#e5e7eb;">{v}</b> <span style="color:#9ca3af;">{u}</span>{tag}'
+        hz_cols = [("1h", "1 h"), ("3h", "3 h"), ("6h", "6 h"), ("24h", "24 h")]
+        hz_rows = "".join(
+            f'<tr><td style="color:#9ca3af;padding:3px 6px;">{lbl}</td>'
+            + "".join(f'<td style="padding:3px 6px;">{_hz_cell(var, hk)}</td>' for hk, _ in hz_cols) + "</tr>"
+            for var, lbl in (("AQI", "AQI"), ("rainfall", "Rainfall"), ("temperature", "Temperature")))
+        st.markdown(
+            '<div class="sec-label" style="margin:0.4rem 0 0.2rem 0;">All Forecast Horizons</div>'
+            '<table style="width:100%;font-size:0.72rem;border-collapse:collapse;"><tr>'
+            '<th style="text-align:left;padding:3px 6px;color:#6b7280;"></th>'
+            + "".join(f'<th style="text-align:left;padding:3px 6px;color:#6b7280;">{h}</th>' for _, h in hz_cols)
+            + f'</tr>{hz_rows}</table>'
+            '<div style="font-size:0.6rem;color:#4b5563;margin-top:0.2rem;">Rainfall: 1–6 h = mm/h in the target hour; '
+            '24 h = total if published. EXPERIMENTAL = history-trained model that passed the 2024 test but is not '
+            'promoted to production.</div>',
+            unsafe_allow_html=True)
+
+        # Rainfall forecast: probability and amount kept separate; missing inputs -> "Not available"
+        def _rf_row(hk, label):
+            zp = get_predictions_for_zone(data, sel_zone, "rainfall", hk) or {}
+            ok = zp.get("availability") == "MODEL_FORECAST"
+            fv = forecast_view(data, sel_zone, "rainfall", hk, NOW) or {}
+            stale = "" if fv.get("forecast_freshness") in (None, fr.CURRENT) else " (stale)"
+            na = '<span style="color:#6b7280;">Not available</span>'
+            p, a, med = (_safe_float(zp.get(k)) for k in ("prob_rain", "mrf_pred", "median_mm"))
+            tot, q10, q90, p25 = (_safe_float(zp.get(k)) for k in ("accum_24h_mm", "accum_24h_q10", "accum_24h_q90",
+                                                                    "prob_total_ge_2_5mm"))
+            src = ('<span style="color:#f59e0b;font-weight:700;">EXPERIMENTAL</span>' if zp.get("model_package")
+                   else ('Production' if ok else na))
+            cells = [f'{p:.0%}' if ok and p is not None else na,
+                     f'{a:.2f} mm/h' if ok and a is not None else na,
+                     (f'{tot:.1f} mm ({q10:.1f}–{q90:.1f})' if tot is not None and q10 is not None else
+                      (f'{tot:.1f} mm' if tot is not None else '—')),
+                     f'{p25:.0%}' if p25 is not None else '—']
+            return (f'<tr><td style="color:#9ca3af;padding:3px 6px;">{label}{stale}</td>'
+                    + "".join(f'<td style="padding:3px 6px;color:#e5e7eb;">{c}</td>' for c in cells)
+                    + f'<td style="padding:3px 6px;">{src}</td></tr>')
+        hdr = ["Horizon", "P(rain ≥ 0.1 mm in hour)", "Expected rain (mm/h)", "24 h total (10–90 %)", "P(24 h total ≥ 2.5 mm)", "Source"]
+        st.markdown(
+            '<div class="sec-label" style="margin:0.5rem 0 0.2rem 0;">Rainfall Forecast</div>'
+            '<table style="width:100%;font-size:0.7rem;border-collapse:collapse;"><tr>'
+            + "".join(f'<th style="text-align:left;padding:3px 6px;color:#6b7280;">{h}</th>' for h in hdr) + '</tr>'
+            + "".join(_rf_row(hk, lbl) for hk, lbl in (("1h", "+1 h"), ("3h", "+3 h"), ("6h", "+6 h"), ("24h", "+24 h")))
+            + '</table><div style="font-size:0.6rem;color:#4b5563;margin-top:0.2rem;">Probability = chance of ≥ 0.1 mm '
+            'in the target hour; amount = expected mm in that hour. 24 h total = expected rain over the next 24 h with '
+            'a 10–90 % range. Heavy-rain alerts are not evaluated. Driven by Open-Meteo reanalysis; not an IMD forecast.</div>',
+            unsafe_allow_html=True)
+
 
         # Notices for what is not supported (never hidden behind a zero)
         notices = []
-        if hz_key in ("1h", "3h", "6h"):
+        temp_sup = meta.get("supported_horizons", {}).get("temperature", [])
+        hourly_temp = any("temp_pred_c" in r for r in data.get("predictions", {}).get("temperature", {}).get("1h", []))
+        if hz_key in ("1h", "3h", "6h") and not hourly_temp:
             notices.append("Temperature: only a next-day daily-mean model exists — switch to <b>24 Hours</b>.")
+        elif hz_key != "current" and hourly_temp and hz_key not in temp_sup:
+            notices.append(f"Temperature: the {sel_horizon.lower()} horizon did not beat simple baselines in "
+                           "evaluation, so it is not shown.")
         if hz_key != "current" and not zm_sel.get("rainfall_forecast_enabled", False):
-            notices.append("Rainfall: no rainfall forecast (models are gauge-trained and no validated live "
-                           "input exists). Current rainfall is reanalysis — see <b>Current</b>.")
+            notices.append("Rainfall: no evaluated rainfall forecast is available. Current rainfall is "
+                           "reanalysis — see <b>Current</b>.")
+        elif hz_key != "current":
+            rf_sel = get_predictions_for_zone(data, sel_zone, "rainfall", hz_key) or {}
+            if rf_sel.get("alert_status") == "NOT_SUPPORTED_FAILED_EVALUATION":
+                notices.append(f"Rainfall: the {sel_horizon.lower()} horizon did not beat a simple baseline "
+                               "in evaluation, so it is not shown.")
         if hz_key != "current" and zone_aqi_basis(data, sel_zone) == "MODEL_ESTIMATE":
             notices.append("AQI: MRF spatial estimate from neighbouring zones — not a measurement.")
+        if hz_key != "current":
+            fv_sel = forecast_view(data, sel_zone, "AQI", hz_key, NOW)
+            if fv_sel and fv_sel["forecast_freshness"] == fr.EXPIRED:
+                notices.append("AQI: this forecast's target time has already passed — shown for transparency, "
+                               "not as an upcoming prediction, and not evaluated for alerts.")
+            elif fv_sel and fv_sel["forecast_freshness"] == fr.STALE_INPUT:
+                notices.append(f"AQI: input data is older than {fr.AQI_OBS_MAX_AGE_HOURS:g} h — forecast not evaluated for alerts.")
         for n in notices:
             st.markdown(f'<div class="unavail-notice" style="margin-top:0.25rem;">{n}</div>', unsafe_allow_html=True)
 
         # Key Insights
         st.markdown('<div class="sec-label" style="margin:0.5rem 0 0.3rem 0;">Key Insights</div>', unsafe_allow_html=True)
-        insights = generate_zone_insights(data, sel_zone)
+        insights = generate_zone_insights(data, sel_zone, NOW)
         for ins in insights:
             st.markdown(f'<div class="insight-item">&#8227; {ins}</div>', unsafe_allow_html=True)
 
@@ -970,11 +1164,19 @@ if st.session_state.page == "Risk Map":
 </div>
 """, unsafe_allow_html=True)
 
+        # Zero active alerts is only reassuring for zones that were actually evaluated.
+        n_not_eval = eval_counts["stale"] + eval_counts["unavailable"]
         if n_act == 0:
-            st.markdown("""
-<div class="up-card-sm" style="text-align:center;padding:1.5rem 0.8rem;">
-  <div style="font-size:1.4rem;margin-bottom:0.4rem;">&#9989;</div>
-  <div style="font-size:0.75rem;color:#4b5563;">No WATCH/WARNING among evaluated forecasts.<br>Zones shown grey were not evaluated.</div>
+            icon0 = "&#9989;" if n_not_eval == 0 and eval_counts["estimate_uncertain"] == 0 else "&#9888;"
+            st.markdown(f"""
+<div class="up-card-sm" style="text-align:center;padding:1.1rem 0.8rem;">
+  <div style="font-size:1.4rem;margin-bottom:0.4rem;">{icon0}</div>
+  <div style="font-size:0.75rem;color:#9ca3af;">No current WATCH/WARNING among the
+  <b>{eval_counts['evaluated']}</b> zone(s) evaluated with current input.</div>
+  <div style="font-size:0.68rem;color:{'#f87171' if n_not_eval else '#4b5563'};margin-top:0.4rem;">
+  {n_not_eval} of 15 zones could not be evaluated ({eval_counts['stale']} stale/expired,
+  {eval_counts['unavailable']} unavailable); {eval_counts['estimate_uncertain']} rely on an uncertain spatial estimate.
+  This is not evidence that conditions are safe there.</div>
 </div>
 """, unsafe_allow_html=True)
         else:
@@ -1014,11 +1216,10 @@ if st.session_state.page == "Risk Map":
                 pred_str = f"{pred:.1f} {unit}" if pred is not None else ""
                 prob_str = f"P={exc:.0%}" if exc is not None else ""
 
-                ts_utc = a.get("timestamp_utc", "")
-                try:
-                    ts_fmt = format_ist_timestamp(pd.Timestamp(ts_utc, tz="UTC") if ts_utc else None)
-                except Exception:
-                    ts_fmt = ts_utc
+                ts_fmt = (f"Target {format_ist_timestamp(_parse_ts(a.get('target_time_utc')))} · "
+                          f"data as of {format_ist_timestamp(_parse_ts(a.get('timestamp_utc')))}")
+                if a.get("availability") == "MODEL_ESTIMATE":
+                    ts_fmt += " · MRF estimate (uncertain)"
 
                 html_parts.append(f"""
 <div class="alert-card {bc}">
@@ -1035,6 +1236,25 @@ if st.session_state.page == "Risk Map":
 
             html_parts.append("</div>")
             st.markdown("".join(html_parts), unsafe_allow_html=True)
+            if n_not_eval:
+                st.markdown(f'<div style="font-size:0.62rem;color:#f87171;margin:0.3rem 0;">'
+                            f'{n_not_eval} of 15 zones could not be evaluated (stale or unavailable data).</div>',
+                            unsafe_allow_html=True)
+
+        # Stale warnings: WATCH/WARNING from stale-input or expired forecasts — for review only.
+        if stale_warnings:
+            sw_rows = "".join(
+                f"<div style='font-size:0.64rem;color:#d6a35c;margin-bottom:0.25rem;'>"
+                f"Zone {a.get('zone_id')} {a.get('zone_label', '')} · {a.get('variable')} {a.get('horizon')} · "
+                f"{a.get('alert_status')} · {FORECAST_FRESHNESS_LABEL.get(a['forecast_freshness'], a['forecast_freshness'])} · "
+                f"target {format_ist_timestamp(_parse_ts(a.get('target_time_utc')))}</div>"
+                for a in stale_warnings)
+            st.markdown(f"""
+<div class="up-card-sm" style="border-left:3px solid {RISK_LEVEL_COLOR['Stale warning']};">
+  <div style="font-size:0.72rem;font-weight:700;color:#e5e7eb;margin-bottom:0.3rem;">
+    Stale warnings ({len(stale_warnings)}) — for review, not current alerts</div>
+  {sw_rows}
+</div>""", unsafe_allow_html=True)
 
     # ════════════════════════════════════════════════════
     # BOTTOM OVERVIEW STRIP
@@ -1045,20 +1265,28 @@ if st.session_state.page == "Risk Map":
     est_zones  = summary_stats.get("aqi_estimate_zones", 0)
     unav_zones = summary_stats.get("unavailable_zones", 0)
     mon_aqi    = summary_stats.get("monitored_aqi", 0)
-    mins       = get_countdown_minutes(data)
+    stale_aqi  = summary_stats.get("stale_aqi", 0)
+    pstat      = get_pipeline_status(data, NOW)
 
-    aqi_color = "#22c55e"
+    aqi_color = "#9ca3af"          # no current reading -> neutral, never green
     if avg_aqi:
+        aqi_color = "#22c55e"
         if avg_aqi > 200: aqi_color = "#f97316"
         elif avg_aqi > 100: aqi_color = "#f59e0b"
 
-    countdown_disp = f"{mins // 60:d}h {mins % 60:02d}m" if mins is not None else "--"
+    if pstat["state"] == fr.OVERDUE:
+        countdown_disp, countdown_lbl, cd_col = "Overdue", f"by {format_age(pstat['overdue_minutes'] / 60)}", "#f87171"
+    elif pstat["state"] == fr.ON_SCHEDULE:
+        m_ = pstat["minutes_to_next"]
+        countdown_disp, countdown_lbl, cd_col = f"{m_ // 60:d}h {m_ % 60:02d}m", f"~{m_} min", "#60a5fa"
+    else:
+        countdown_disp, countdown_lbl, cd_col = "--", "no scheduled update", "#9ca3af"
 
     st.markdown(f"""
 <div class="overview-strip">
   <div class="ov-card">
     <div class="ov-val" style="color:{aqi_color};">{f"{avg_aqi:.0f}" if avg_aqi else "--"}</div>
-    <div class="ov-lbl">Avg measured AQI<br><span style="color:#374151;">{mon_aqi} zones with current station data</span></div>
+    <div class="ov-lbl">Avg current measured AQI<br><span style="color:#374151;">{mon_aqi} zones current · {stale_aqi} stale (excluded)</span></div>
   </div>
   <div class="ov-card">
     <div class="ov-val" style="color:{'#f97316' if high_zones > 0 else '#22c55e'};">{high_zones}/15</div>
@@ -1069,16 +1297,16 @@ if st.session_state.page == "Risk Map":
     <div class="ov-lbl">Zones with heavy-rain<br>risk {"" if meta.get("rainfall_forecast_enabled") else "(forecast disabled)"}</div>
   </div>
   <div class="ov-card">
-    <div class="ov-val" style="color:#9ca3af;">{unav_zones}/15</div>
-    <div class="ov-lbl">Zones without an<br>evaluated forecast</div>
+    <div class="ov-val" style="color:#9ca3af;">{eval_counts['stale'] + eval_counts['unavailable']}/15</div>
+    <div class="ov-lbl">Zones not evaluated<br><span style="color:#374151;">{eval_counts['stale']} stale · {eval_counts['unavailable']} unavailable · {eval_counts['estimate_uncertain']} estimate only</span></div>
   </div>
   <div class="ov-card">
     <div class="ov-val" style="color:#60a5fa;">{n_act}</div>
-    <div class="ov-lbl">Active<br>Alerts</div>
+    <div class="ov-lbl">Active<br>Alerts<br><span style="color:#374151;">{len(stale_warnings)} stale warning(s)</span></div>
   </div>
   <div class="ov-card">
-    <div class="ov-val" style="font-size:1.2rem;color:#60a5fa;">{countdown_disp}</div>
-    <div class="ov-lbl">Next Update In<br><span style="color:#374151;">~{mins if mins is not None else '--'} min</span></div>
+    <div class="ov-val" style="font-size:1.2rem;color:{cd_col};">{countdown_disp}</div>
+    <div class="ov-lbl">Next Update<br><span style="color:#374151;">{countdown_lbl}</span></div>
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -1089,21 +1317,25 @@ if st.session_state.page == "Risk Map":
 # ══════════════════════════════════════════════════════════════════════════
 elif st.session_state.page == "Alert Center":
 
-    all_alerts = get_alerts(data, active_only=False)
-    active     = [a for a in all_alerts if a.get("alert_status") in ("WATCH", "WARNING")]
+    all_alerts = get_alerts(data, active_only=False, now=NOW)
+    active     = active_alerts       # WATCH/WARNING from CURRENT forecasts only (view time)
 
     st.markdown(f"""
 <div class="dash-header">
   <div>
     <div class="dash-title">Alert Center</div>
-    <div class="dash-sub">Live alerts from HMM+MRF pipeline &nbsp;|&nbsp;
-    {format_ist_timestamp(meta.get('timestamp_utc_parsed'))}</div>
+    <div class="dash-sub">Alerts from HMM+MRF pipeline &nbsp;|&nbsp; AQI data as of {aqi_data_asof}</div>
   </div>
-  <div style="font-size:0.7rem;color:#f97316;font-weight:700;">
-    {len(active)} Active Alert{'s' if len(active) != 1 else ''}
+  <div style="font-size:0.7rem;color:#f97316;font-weight:700;text-align:right;">
+    {len(active)} Active Alert{'s' if len(active) != 1 else ''}<br>
+    <span style="color:#d6a35c;font-weight:600;">{len(stale_warnings)} stale warning(s), not active</span>
   </div>
 </div>
 """, unsafe_allow_html=True)
+    st.markdown(f'<div class="unavail-notice" style="margin-bottom:0.5rem;">{not_eval_note}. '
+                f'Only forecasts with a future target time and input data no older than '
+                f'{fr.AQI_OBS_MAX_AGE_HOURS:g} h are evaluated; missing or stale data is not evidence of safety.</div>',
+                unsafe_allow_html=True)
 
     # Filters
     fc1, fc2, fc3 = st.columns(3)
@@ -1142,6 +1374,8 @@ elif st.session_state.page == "Alert Center":
                 "P(Exceed)":   f"{exc:.1%}" if exc is not None else "N/A",
                 "Threshold":   a.get("threshold"),
                 "Status":      a.get("alert_status"),
+                "Forecast":    FORECAST_FRESHNESS_LABEL.get(a.get("forecast_freshness"), a.get("forecast_freshness")),
+                "Active now":  a.get("alert_status") in ("WATCH", "WARNING") and a.get("forecast_freshness") == fr.CURRENT,
                 "Severity":    a.get("severity"),
                 "Basis":       a.get("basis") or "",
                 "Target time": a.get("target_time_utc") or "",
@@ -1163,7 +1397,7 @@ elif st.session_state.page == "Data & Coverage":
 
     sup = meta.get("supported_horizons", {})
     zm_all = get_zone_meta_map(data)
-    n_meas = sum(1 for z in zm_all.values() if z.get("aqi_state") == "MEASURED")
+    n_meas = sum(1 for z in range(1, 16) if aqi_observation(data, z, NOW)["state"] == "MEASURED")
     n_fc = summary_stats.get("aqi_forecast_zones", 0)
     n_est = summary_stats.get("aqi_estimate_zones", 0)
     rain_active = meta.get("rainfall_active_zones", 0)
@@ -1177,10 +1411,13 @@ elif st.session_state.page == "Data & Coverage":
         {"Variable": "Rainfall", "Source": "Open-Meteo Historical Weather API",
          "Provenance": "Reanalysis / model analysis", "Current value": "15/15 zones (8 distinct grid cells)",
          "Forecast horizons": ", ".join(sup.get("rainfall", [])) or "none (disabled)",
-         "Forecast zones": f"{rain_active}" if meta.get("rainfall_forecast_enabled") else "0 — gauge-trained models, input not validated"},
+         "Forecast zones": (f"{rain_active} (Open-Meteo-trained HMM, horizons passing evaluation only)"
+                            if meta.get("rainfall_forecast_enabled") else "0 — no evaluated rainfall model")},
         {"Variable": "Temperature", "Source": "Open-Meteo Historical Weather API",
          "Provenance": "Reanalysis / model analysis", "Current value": "15/15 zones (8 distinct grid cells)",
-         "Forecast horizons": "next-day daily mean" if sup.get("temperature") else "none",
+         "Forecast horizons": (", ".join(sup.get("temperature", [])) + " (hourly, validated)"
+                               if any(h in sup.get("temperature", []) for h in ("1h", "3h", "6h"))
+                               else "next-day daily mean" if sup.get("temperature") else "none"),
          "Forecast zones": f"{temp_ok}"},
     ]), use_container_width=True, hide_index=True)
 
@@ -1200,17 +1437,19 @@ elif st.session_state.page == "Data & Coverage":
         zm = zm_all.get(z, {})
         aq1 = get_predictions_for_zone(data, z, "AQI", "1h") or {}
         r24 = get_predictions_for_zone(data, z, "rainfall", "24h") or {}
+        obs_z = aqi_observation(data, z, NOW)
         zrows.append({
             "Zone": f"{z} {ZONE_MAP[z]}",
             "AQ station": zm.get("aqi_station") or "—",
-            "AQI (latest measured)": (f"{zm['cpcb_aqi_computed']:.0f}" if zm.get("cpcb_aqi_computed") is not None
-                                      else str(zm.get("aqi_state") or "—").replace("_", " ").lower()),
+            "AQI (latest measured)": (f"{obs_z['value']:.0f}" + ("" if obs_z["state"] == "MEASURED" else " (stale)")
+                                      + f", {format_age(obs_z['age_hours'])} old" if obs_z["value"] is not None
+                                      else str(obs_z["state"] or "—").replace("_", " ").lower()),
             "AQI forecast": {"MODEL_FORECAST": "HMM+MRF", "MODEL_ESTIMATE": "MRF estimate"}.get(aq1.get("availability"),
                              STATUS_EXPLANATION.get(aq1.get("alert_status"), "unavailable")),
             "Rain now (mm/h, reanalysis)": zm.get("rainfall_mm"),
             "Rain last 24 h (mm, reanalysis)": zm.get("precip_24h_mm"),
             "Rain forecast": "HMM (reanalysis-driven)" if r24.get("availability") == "MODEL_FORECAST" else
-                             ("disabled" if r24.get("alert_status") == "DISABLED_INPUT_NOT_VALIDATED" else "no model"),
+                             STATUS_EXPLANATION.get(r24.get("alert_status"), "no model"),
             "Weather grid shared with": ", ".join(map(str, zm.get("weather_shared_with_zones") or [])) or "—",
         })
     st.dataframe(pd.DataFrame(zrows), use_container_width=True, hide_index=True)

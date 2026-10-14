@@ -266,11 +266,13 @@ def test_temperature_output_is_daily_mean_and_heatwave_not_evaluated(forecaster)
         assert r['alert_status'] == 'NOT_EVALUATED_MODEL_IS_DAILY_MEAN' and r['exceedance_prob'] is None
 
 
-def test_rainfall_only_for_trained_zones(forecaster):
+def test_rainfall_only_for_trained_zones():
+    gauge_fc = LiveForecaster()
+    gauge_fc.rain_om = gauge_fc.rain_twopart = None   # exercise the gauge-trained path explicitly
     origin = pd.Timestamp('2026-10-05 00:00', tz='UTC')
     idx = pd.date_range(origin - pd.Timedelta(hours=71), origin, freq='h')
     precip = {z: pd.Series(0.0, index=idx) for z in (4, 5, 10, 14)}
-    out = forecaster.run_rainfall(precip, origin)
+    out = gauge_fc.run_rainfall(precip, origin)
     rows24 = {r['zone_id']: r for r in out['horizons']['24h']}
     assert rows24[4]['accum_24h_mm'] is not None and rows24[4]['alert_status'] in ('NORMAL', 'WATCH', 'WARNING')
     assert rows24[1]['alert_status'] == 'NOT_SUPPORTED_NO_MODEL' and rows24[1]['mrf_pred'] is None
@@ -301,7 +303,10 @@ def test_end_to_end_output_is_strict_json(tmp_path, monkeypatch):
     assert 'NaN' not in text
     d = json.loads(text)
     assert len(d['zone_meta']) == 15
-    assert d['meta']['supported_horizons']['temperature'] == ['24h']
+    fc_t = LiveForecaster()
+    expected_t = ([k for k, g in fc_t.temp_hourly['gate'].items() if g['passed']]   # hourly model, passing horizons
+                  if fc_t.temp_hourly is not None else ['24h'])                     # else the daily-mean HMM
+    assert d['meta']['supported_horizons']['temperature'] == expected_t
     zm = {z['zone_id']: z for z in d['zone_meta']}
     assert zm[2]['aqi_state'] == 'MEASURED' and zm[2]['cpcb_aqi_computed'] is not None
     assert zm[3]['cpcb_aqi_computed'] is None                     # no station -> no observed value

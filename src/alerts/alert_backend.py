@@ -125,7 +125,7 @@ def build_alert_records(
                 elif variable == "rainfall":
                     pred_val = zp.get("accum_24h_mm") if horizon_key == "24h" else zp.get("mrf_pred")
                 elif variable == "temperature":
-                    pred_val = zp.get("next_day_tmean_pred_c", zp.get("next_day_tmax_pred_c"))
+                    pred_val = zp.get("temp_pred_c", zp.get("next_day_tmean_pred_c", zp.get("next_day_tmax_pred_c")))
                 else:
                     pred_val = zp.get("mrf_pred")
 

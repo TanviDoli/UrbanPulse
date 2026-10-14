@@ -153,6 +153,14 @@ def hourly_series(om: pd.DataFrame, zone_id: int, column: str, end_utc: pd.Times
     return s.reindex(idx)
 
 
+def hourly_frame(om: pd.DataFrame, zone_id: int, columns, end_utc: pd.Timestamp, hours: int) -> pd.DataFrame:
+    """Gap-preserving hourly frame of `columns` for one zone ending at end_utc (inclusive); nothing filled."""
+    idx = pd.date_range(end_utc - pd.Timedelta(hours=hours - 1), end_utc, freq='h')
+    g = om[om['zone_id'] == zone_id].copy()
+    g['time_utc'] = pd.to_datetime(g['time_utc'], utc=True)
+    return g.drop_duplicates('time_utc').set_index('time_utc').reindex(idx)[list(columns)]
+
+
 def _f(v) -> Optional[float]:
     try:
         f = float(v)

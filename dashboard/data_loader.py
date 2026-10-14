@@ -20,7 +20,11 @@ from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
 import pandas as pd
 
-PREDICTIONS_PATH = os.path.abspath(
+from src import freshness as fr
+
+# URBANPULSE_PREDICTIONS_PATH lets the dashboard read a separately written pipeline output
+# (e.g. a demo run with --output) without touching data/live/current_predictions.json.
+PREDICTIONS_PATH = os.path.abspath(os.environ.get("URBANPULSE_PREDICTIONS_PATH") or
     os.path.join(os.path.dirname(__file__), "..", "data", "live", "current_predictions.json")
 )
 
@@ -68,6 +72,7 @@ RISK_STATE_TO_LEVEL = {
     "NOT_EVALUATED_MODEL_IS_DAILY_MEAN": "Unavailable",
     "NOT_APPLICABLE_HOURLY":           "Unavailable",
     "DISABLED_INPUT_NOT_VALIDATED":    "Unavailable",
+    "NOT_SUPPORTED_FAILED_EVALUATION": "Unavailable",
 }
 
 # Statuses that come from an actual probabilistic evaluation (everything else = not evaluated)
@@ -82,6 +87,8 @@ STATUS_EXPLANATION = {
     "NOT_APPLICABLE_HOURLY": "Heavy-rain alert uses 24 h accumulation only",
     "UNMONITORED_INSUFFICIENT_DATA": "Unmonitored",
     "DISABLED_INPUT_NOT_VALIDATED": "Rainfall forecast disabled (no validated live input; see Data & Coverage)",
+    "NOT_SUPPORTED_FAILED_EVALUATION": "Not available: this horizon did not beat a simple baseline in evaluation",
+    "NOT_EVALUATED_HEATWAVE_CRITERION": "Heatwave not evaluated (needs Tmax and a verified climatological normal)",
 }
 
 RISK_LEVEL_COLOR = {
@@ -91,6 +98,9 @@ RISK_LEVEL_COLOR = {
     "Critical":    "#ef4444",   # red
     "Unmonitored": "#6b7280",   # gray
     "Unavailable": "#374151",   # dark gray
+    "Estimate":    "#64748b",   # slate — MRF spatial estimate, no elevated risk (uncertain)
+    "Stale":       "#78716c",   # stone — forecast from stale input / target passed
+    "Stale warning": "#a16207", # dark amber — old WATCH/WARNING kept for review, not active
 }
 
 RISK_LEVEL_BG = {
@@ -100,7 +110,21 @@ RISK_LEVEL_BG = {
     "Critical":    "rgba(239,68,68,0.15)",
     "Unmonitored": "rgba(107,114,128,0.12)",
     "Unavailable": "rgba(55,65,81,0.12)",
+    "Estimate":    "rgba(100,116,139,0.14)",
+    "Stale":       "rgba(120,113,108,0.14)",
+    "Stale warning": "rgba(161,98,7,0.16)",
 }
+
+FORECAST_FRESHNESS_LABEL = {
+    fr.CURRENT: "forecast",
+    fr.STALE_INPUT: "STALE INPUT",
+    fr.EXPIRED: "EXPIRED",
+    fr.UNKNOWN: "time unknown",
+}
+
+
+def _now(now=None) -> pd.Timestamp:
+    return fr.to_utc(now) if now is not None else pd.Timestamp.now(tz="UTC")
 
 
 def load_predictions() -> Optional[Dict[str, Any]]:
@@ -199,21 +223,74 @@ def get_risk_level(alert_status: str) -> str:
     return RISK_STATE_TO_LEVEL.get(alert_status, "Unavailable")
 
 
-def get_dominant_risk_for_zone(data: Dict, zone_id: int) -> str:
+def _aqi_origin(data: Dict) -> Optional[str]:
+    meta = data.get("meta") or {}
+    return (meta.get("data_times") or {}).get("aqi_forecast_origin_utc") or meta.get("timestamp_utc")
+
+
+def _forecast_input_time(data: Dict, zone_id: int, variable: str, availability: Optional[str]):
+    if variable == "AQI":
+        return fr.aqi_forecast_input_time(zone_id, availability, data.get("aqi_zone_inputs"), _aqi_origin(data))
+    if variable == "rainfall":
+        return ((data.get("meta") or {}).get("data_times") or {}).get("rainfall_forecast_origin_utc")
+    if variable == "temperature":
+        return ((data.get("meta") or {}).get("data_times") or {}).get("temperature_forecast_origin_utc")
+    return None
+
+
+def forecast_view(data: Dict, zone_id: int, variable: str, horizon: str, now=None) -> Optional[Dict]:
     """
-    Zone colour = worst EVALUATED alert across AQI (all horizons) and rainfall (24 h accumulation).
-    If no variable was evaluated for the zone, the result is "Unavailable" — a zone without data is
-    never shown as low risk.
+    Prediction record plus freshness evaluated at VIEW time (src/freshness.py R2) and the
+    display risk (R3): keys forecast_freshness, input_observed_at_utc, input_age_hours,
+    level, evaluated, stale_warning, is_estimate. Model values are passed through unchanged.
     """
-    priority = {"High": 3, "Moderate": 2, "Low": 1}
+    zp = get_predictions_for_zone(data, zone_id, variable, horizon)
+    if zp is None:
+        return None
+    t_now = _now(now)
+    src_time = _forecast_input_time(data, zone_id, variable, zp.get("availability"))
+    f = fr.forecast_freshness(zp.get("target_time_utc"), src_time, t_now)
+    return {**zp, "forecast_freshness": f, "input_observed_at_utc": src_time,
+            "input_age_hours": fr.age_hours(src_time, t_now),
+            **fr.display_risk(zp.get("alert_status"), zp.get("availability"), f)}
+
+
+def aqi_observation(data: Dict, zone_id: int, now=None) -> Dict[str, Any]:
+    """
+    Latest AQI observation for a zone with rule R1 re-applied at view time.
+    state: MEASURED (current) | MEASURED_STALE | NO_LIVE_DATA | NO_STATION.
+    A stale reading keeps its value, timestamp and age, but is never labelled current.
+    """
+    zm = get_zone_meta_map(data).get(zone_id, {})
+    t = zm.get("aqi_observed_at_utc")
+    value = zm.get("last_measured_aqi")
+    if value is None:
+        value = zm.get("cpcb_aqi_computed")
+    state = zm.get("aqi_state") or "NO_LIVE_DATA"
+    if t is not None and value is not None:
+        state = "MEASURED" if fr.is_observation_current(t, _now(now)) else "MEASURED_STALE"
+    return {"state": state, "value": value if state in ("MEASURED", "MEASURED_STALE") else None,
+            "observed_at_utc": t, "age_hours": fr.age_hours(t, _now(now)), "station": zm.get("aqi_station")}
+
+
+# Map colour priority: current evidence first; stale/estimated/missing data is never green.
+_LEVEL_PRIORITY = {"High": 7, "Moderate": 6, "Low": 5, fr.LEVEL_STALE_WARNING: 4,
+                   fr.LEVEL_ESTIMATE: 3, fr.LEVEL_STALE: 2, fr.LEVEL_UNAVAILABLE: 1}
+
+
+def get_dominant_risk_for_zone(data: Dict, zone_id: int, now=None) -> str:
+    """
+    Zone colour across AQI (all horizons) and rainfall (24 h accumulation), using view-time
+    freshness. Low (green) requires a CURRENT forecast from measured input; spatial estimates,
+    stale/expired forecasts and missing data are never shown as low risk.
+    """
     worst, worst_p = "Unavailable", 0
     checks = [("AQI", h) for h in data.get("predictions", {}).get("AQI", {})] + [("rainfall", "24h")]
     for var, hz in checks:
-        zp = get_predictions_for_zone(data, zone_id, var, hz)
-        if zp and zp.get("alert_status") in EVALUATED_STATUSES:
-            lvl = get_risk_level(zp["alert_status"])
-            if priority[lvl] > worst_p:
-                worst, worst_p = lvl, priority[lvl]
+        v = forecast_view(data, zone_id, var, hz, now)
+        p = _LEVEL_PRIORITY.get(v["level"], 0) if v else 0
+        if p > worst_p:
+            worst, worst_p = v["level"], p
     return worst
 
 
@@ -236,30 +313,53 @@ def data_is_stale(data: Dict) -> bool:
     return any(s.get("stale") for s in get_source_status(data).values())
 
 
-def get_zone_risk_map(data: Dict) -> Dict[int, str]:
+def get_zone_risk_map(data: Dict, now=None) -> Dict[int, str]:
     """Return {zone_id: risk_level} for all 15 zones."""
-    return {z: get_dominant_risk_for_zone(data, z) for z in range(1, 16)}
+    return {z: get_dominant_risk_for_zone(data, z, now) for z in range(1, 16)}
 
 
-def get_summary_stats(data: Dict) -> Dict[str, Any]:
-    """Compute Chennai-wide summary statistics from live predictions."""
-    zone_risks = get_zone_risk_map(data)
+def evaluation_breakdown(data: Dict, now=None) -> Dict[str, int]:
+    """
+    Zones by whether a risk could be evaluated now:
+      evaluated           Low/Moderate/High from a CURRENT forecast (incl. estimates showing WATCH/WARNING)
+      estimate_uncertain  CURRENT MRF spatial estimate with no elevated risk (uncertain, not 'safe')
+      stale               only stale-input / expired forecasts (not evaluated)
+      unavailable         no forecast at all (not evaluated)
+    """
+    out = {"evaluated": 0, "estimate_uncertain": 0, "stale": 0, "unavailable": 0, "total": 15}
+    for lvl in get_zone_risk_map(data, now).values():
+        if lvl in ("High", "Moderate", "Low"):
+            out["evaluated"] += 1
+        elif lvl == fr.LEVEL_ESTIMATE:
+            out["estimate_uncertain"] += 1
+        elif lvl in (fr.LEVEL_STALE, fr.LEVEL_STALE_WARNING):
+            out["stale"] += 1
+        else:
+            out["unavailable"] += 1
+    return out
+
+
+def get_summary_stats(data: Dict, now=None) -> Dict[str, Any]:
+    """Compute Chennai-wide summary statistics from live predictions (view-time freshness)."""
+    zone_risks = get_zone_risk_map(data, now)
     high_or_crit  = sum(1 for l in zone_risks.values() if l in ("High", "Critical"))
     moderate_plus = sum(1 for l in zone_risks.values() if l in ("High", "Critical", "Moderate"))
 
-    # Average AQI across monitored zones (current observation)
-    aqi_vals = []
-    for zm in data.get("zone_meta", []):
-        v = zm.get("cpcb_aqi_computed")
-        if v is not None and not (isinstance(v, float) and math.isnan(v)):
-            aqi_vals.append(float(v))
+    # Average AQI across zones whose observation is CURRENT (stale readings are not averaged in)
+    aqi_vals, n_stale_obs = [], 0
+    for z in range(1, 16):
+        obs = aqi_observation(data, z, now)
+        if obs["state"] == "MEASURED":
+            aqi_vals.append(float(obs["value"]))
+        elif obs["state"] == "MEASURED_STALE":
+            n_stale_obs += 1
     avg_aqi = round(sum(aqi_vals) / len(aqi_vals), 1) if aqi_vals else None
 
-    # Zones with rainfall risk (WATCH or WARNING at 24h)
+    # Zones with an evaluated (CURRENT) rainfall WATCH or WARNING at 24h
     rf_risk = 0
     for zid in range(1, 16):
-        zp = get_predictions_for_zone(data, zid, "rainfall", "24h")
-        if zp and zp.get("alert_status") in ("WATCH", "WARNING"):
+        v = forecast_view(data, zid, "rainfall", "24h", now)
+        if v and v["evaluated"] and v.get("alert_status") in ("WATCH", "WARNING"):
             rf_risk += 1
 
     # Zones with an evaluated AQI forecast / estimate (not unavailable)
@@ -276,18 +376,39 @@ def get_summary_stats(data: Dict) -> Dict[str, Any]:
         "aqi_estimate_zones": aqi_estimate_zones,
         "unavailable_zones": unavailable_zones,
         "monitored_aqi":     len(aqi_vals),
+        "stale_aqi":         n_stale_obs,
+        "evaluation":        evaluation_breakdown(data, now),
         "total_zones":       15,
     }
 
 
-def get_alerts(data: Dict, active_only: bool = True) -> List[Dict]:
-    """Return alert records, optionally filtered to WATCH/WARNING only."""
-    if active_only and "active_alerts" in data:
-        return data["active_alerts"]
-    all_alerts = data.get("alerts", [])
+def get_alerts(data: Dict, active_only: bool = True, now=None) -> List[Dict]:
+    """
+    Alert records annotated with view-time forecast_freshness. With active_only, only
+    WATCH/WARNING from CURRENT forecasts are returned — the file's precomputed active_alerts
+    is not used because the file ages after it is written.
+    """
+    t_now = _now(now)
+    records = data.get("alerts") or data.get("active_alerts") or []
+    out = []
+    for a in records:
+        src = _forecast_input_time(data, a.get("zone_id"), a.get("variable"), a.get("availability"))
+        out.append({**a, "forecast_freshness": fr.forecast_freshness(a.get("target_time_utc"), src, t_now)})
     if active_only:
-        return [a for a in all_alerts if a.get("alert_status") in ("WATCH", "WARNING")]
-    return all_alerts
+        return [a for a in out if a.get("alert_status") in ("WATCH", "WARNING")
+                and a["forecast_freshness"] == fr.CURRENT]
+    return out
+
+
+def get_stale_warnings(data: Dict, now=None) -> List[Dict]:
+    """WATCH/WARNING from stale-input or expired forecasts: kept for review, never active alerts."""
+    return [a for a in get_alerts(data, active_only=False, now=now)
+            if a.get("alert_status") in ("WATCH", "WARNING") and a["forecast_freshness"] != fr.CURRENT]
+
+
+def get_pipeline_status(data: Dict, now=None) -> Dict[str, Any]:
+    """ON_SCHEDULE / OVERDUE / NO_SCHEDULE with minutes, per src/freshness.py R4."""
+    return fr.pipeline_status(data.get("meta", {}), _now(now))
 
 
 
@@ -302,18 +423,24 @@ def format_ist_timestamp(ts_parsed) -> str:
         return str(ts_parsed)
 
 
-def get_countdown_minutes(data: Dict) -> Optional[int]:
-    """Minutes until next pipeline update, or None."""
-    meta = get_meta(data)
-    nxt = meta.get("next_update_utc_parsed")
-    if nxt is None:
-        return None
-    now = pd.Timestamp.now(tz="UTC")
-    delta = (nxt - now).total_seconds()
-    return max(0, int(delta // 60))
+def get_countdown_minutes(data: Dict, now=None) -> Optional[int]:
+    """Minutes until the next scheduled update; None when overdue or nothing is scheduled
+    (use get_pipeline_status to tell those apart — overdue is never shown as 0 min)."""
+    return get_pipeline_status(data, now)["minutes_to_next"]
 
 
-def generate_zone_insights(data: Dict, zone_id: int) -> List[str]:
+def format_age(hours: Optional[float]) -> str:
+    """'45 min', '5.2 h', '1 d 22 h' — for observation and output ages."""
+    if hours is None:
+        return "unknown age"
+    if hours < 1:
+        return f"{max(0, int(round(hours * 60)))} min"
+    if hours < 24:
+        return f"{hours:.1f} h"
+    return f"{int(hours // 24)} d {int(hours % 24)} h"
+
+
+def generate_zone_insights(data: Dict, zone_id: int, now=None) -> List[str]:
     """
     Generate human-readable Key Insights for a zone from actual prediction data.
     Returns an empty list if no meaningful insight exists.
@@ -321,10 +448,18 @@ def generate_zone_insights(data: Dict, zone_id: int) -> List[str]:
     insights = []
     zm = get_zone_meta_map(data).get(zone_id, {})
 
-    # AQI trend: current vs 24h
-    cur_aqi = zm.get("cpcb_aqi_computed")
-    zp_aqi_1h = get_predictions_for_zone(data, zone_id, "AQI", "1h")
-    zp_aqi_24 = get_predictions_for_zone(data, zone_id, "AQI", "24h")
+    # AQI trend: current observation vs a CURRENT 24h forecast only (never from stale data)
+    obs = aqi_observation(data, zone_id, now)
+    cur_aqi = obs["value"] if obs["state"] == "MEASURED" else None
+    zp_aqi_1h = forecast_view(data, zone_id, "AQI", "1h", now)
+    zp_aqi_24 = forecast_view(data, zone_id, "AQI", "24h", now)
+    if obs["state"] == "MEASURED_STALE":
+        insights.append(f"Latest AQI reading is {format_age(obs['age_hours'])} old (stale); "
+                        f"forecasts made from it are not evaluated.")
+    if zp_aqi_24 and zp_aqi_24["forecast_freshness"] != fr.CURRENT:
+        zp_aqi_24 = None
+    if zp_aqi_1h and not zp_aqi_1h["evaluated"]:
+        zp_aqi_1h = None
 
     if cur_aqi and not math.isnan(float(cur_aqi)):
         if zp_aqi_24 and zp_aqi_24.get("mrf_pred"):
@@ -372,7 +507,7 @@ def generate_zone_insights(data: Dict, zone_id: int) -> List[str]:
 
     # Check neighboring zones for active alerts
     neighbors = get_adjacent_zones(zone_id)
-    active_alerts = get_alerts(data, active_only=True)
+    active_alerts = get_alerts(data, active_only=True, now=now)
     for a in active_alerts:
         nid = a.get("zone_id")
         if nid in neighbors:
